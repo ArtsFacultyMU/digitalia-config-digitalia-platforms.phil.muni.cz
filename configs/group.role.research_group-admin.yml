@@ -1,0 +1,14 @@
+uuid: 8d4e5206-e1d7-45cd-a22d-eb2c3dcddd34
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+id: research_group-admin
+label: Admin
+weight: -7
+admin: true
+scope: individual
+global_role: null
+group_type: research_group
+permissions: {  }

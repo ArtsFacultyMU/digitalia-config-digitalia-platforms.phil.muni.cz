@@ -1,0 +1,17 @@
+uuid: 99b1347f-e4a6-4526-83c5-ad871038c1ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+    - node.type.dataset
+  module:
+    - gnode
+    - node
+id: research_group-8bd064dea4ff29983
+group_type: research_group
+content_plugin: 'group_node:dataset'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

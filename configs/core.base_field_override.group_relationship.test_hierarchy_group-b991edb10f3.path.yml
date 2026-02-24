@@ -1,0 +1,20 @@
+uuid: 010a4031-de13-4647-8217-1c29d86396fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.relationship_type.test_hierarchy_group-b991edb10f3
+  module:
+    - path
+id: group_relationship.test_hierarchy_group-b991edb10f3.path
+field_name: path
+entity_type: group_relationship
+bundle: test_hierarchy_group-b991edb10f3
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

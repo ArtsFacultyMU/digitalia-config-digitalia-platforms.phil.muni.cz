@@ -1,0 +1,21 @@
+uuid: b6169baa-b7a9-459b-aab4-481eb1b45a1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+id: digitalia_muni_entity.field_last_names
+field_name: field_last_names
+entity_type: digitalia_muni_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

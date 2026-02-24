@@ -1,0 +1,9 @@
+hdl_admin_handle: 11222/admin_digitalia
+hdl_prefix: '11222'
+hdl_qualifier: archaeovault-devel
+hdl_metaplatform_qualifier: ''
+hdl_metaplatform_url: ''
+hdl_handle_api_endpoint: 'https://handle.phil.muni.cz:8000'
+hdl_admin_index: '300'
+hdl_handle_permissions: ''
+hdl_admin_private_key: 'null'

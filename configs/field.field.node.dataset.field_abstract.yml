@@ -1,0 +1,28 @@
+uuid: e80ad693-8a0f-4910-848b-f58ffe65f3c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_abstract
+field_name: field_abstract
+entity_type: node
+bundle: dataset
+label: Abstract
+description: 'A brief description of the resource and the context in which the resource was created.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - plain_text
+field_type: text_long

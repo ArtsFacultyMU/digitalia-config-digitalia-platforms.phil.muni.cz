@@ -1,0 +1,20 @@
+uuid: e0bf12df-1b2e-4acd-ba8a-d17a7c5ba6d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.archaeodata
+id: media.archaeodata.uid
+field_name: uid
+entity_type: media
+bundle: archaeodata
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

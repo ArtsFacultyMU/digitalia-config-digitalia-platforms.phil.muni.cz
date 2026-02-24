@@ -1,0 +1,19 @@
+uuid: e904171b-ff0c-4ad7-8591-5a686318146d
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.first_and_last_name
+    - field.storage.digitalia_muni_entity.field_last_names
+id: digitalia_muni_entity.first_and_last_name.field_last_names
+field_name: field_last_names
+entity_type: digitalia_muni_entity
+bundle: first_and_last_name
+label: 'Last names'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

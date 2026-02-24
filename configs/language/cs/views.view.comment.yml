@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Akce
+        subject:
+          label: Předmět
+      exposed_form:
+        options:
+          submit_button: Filtr
+      filters:
+        subject:
+          expose:
+            label: Předmět
+  page_unapproved:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Akce
+        subject:
+          label: Předmět
+      filters:
+        subject:
+          expose:
+            label: Předmět

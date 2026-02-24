@@ -1,0 +1,24 @@
+uuid: 662bdbe6-902f-4989-af3c-cf050d6e259f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_about
+    - filter.format.basic_html
+    - group.type.research_group
+  module:
+    - text
+id: group.research_group.field_about
+field_name: field_about
+entity_type: group
+bundle: research_group
+label: About
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

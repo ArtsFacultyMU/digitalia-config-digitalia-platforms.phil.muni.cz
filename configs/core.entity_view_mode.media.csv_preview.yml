@@ -1,0 +1,11 @@
+uuid: 4e0bb4c1-760a-4bf7-8a33-a73a2d342be9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.csv_preview
+label: 'CSV preview'
+description: ''
+targetEntityType: media
+cache: true

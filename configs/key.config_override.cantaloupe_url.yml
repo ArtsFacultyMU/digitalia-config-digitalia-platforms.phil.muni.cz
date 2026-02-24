@@ -1,0 +1,14 @@
+uuid: fe39ce30-eb44-42d1-b492-882864dd640c
+langcode: en
+status: true
+dependencies:
+  config:
+    - islandora_iiif.settings
+    - key.key.default_cantaloupe_url
+id: cantaloupe_url
+label: 'Cantaloupe URL'
+config_type: system.simple
+config_prefix: ''
+config_name: islandora_iiif.settings
+config_item: iiif_server
+key_id: default_cantaloupe_url

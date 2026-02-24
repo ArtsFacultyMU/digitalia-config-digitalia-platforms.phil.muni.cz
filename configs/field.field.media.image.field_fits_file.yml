@@ -1,0 +1,32 @@
+uuid: f53f7a85-e6e1-43b9-966e-12317fe1f9db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_fits_file
+    - media.type.image
+  module:
+    - file
+    - filehash
+third_party_settings:
+  filehash:
+    dedupe: 0
+    dedupe_original: false
+id: media.image.field_fits_file
+field_name: field_fits_file
+entity_type: media
+bundle: image
+label: 'FITS file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: xml
+  max_filesize: ''
+  description_field: false
+field_type: file

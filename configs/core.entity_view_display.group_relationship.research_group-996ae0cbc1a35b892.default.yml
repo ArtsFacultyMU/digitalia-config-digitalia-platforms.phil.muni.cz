@@ -1,0 +1,35 @@
+uuid: d2e6a425-be0c-48b2-9ebf-6b397f336aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.research_group-996ae0cbc1a35b892.grequest_status
+    - field.field.group_relationship.research_group-996ae0cbc1a35b892.grequest_updated_by
+    - group.relationship_type.research_group-996ae0cbc1a35b892
+  module:
+    - options
+id: group_relationship.research_group-996ae0cbc1a35b892.default
+targetEntityType: group_relationship
+bundle: research_group-996ae0cbc1a35b892
+mode: default
+content:
+  grequest_status:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  grequest_updated_by:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -3
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

@@ -1,0 +1,20 @@
+uuid: 79338b19-55cc-40b1-b58e-49a8d1a2936a
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - taxonomy
+id: digitalia_muni_entity.field_person
+field_name: field_person
+entity_type: digitalia_muni_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

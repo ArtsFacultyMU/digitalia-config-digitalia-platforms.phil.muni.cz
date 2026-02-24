@@ -1,0 +1,20 @@
+uuid: 9c62d7c5-9825-4881-bc2c-266efb0f1d40
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.3d_model
+  module:
+    - path
+id: media.3d_model.path
+field_name: path
+entity_type: media
+bundle: 3d_model
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

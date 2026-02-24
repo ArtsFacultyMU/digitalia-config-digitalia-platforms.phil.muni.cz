@@ -1,0 +1,160 @@
+uuid: 2b8be888-2b3f-4807-9d47-b0aa4ea4088e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.subfield_1
+    - core.entity_form_mode.node.subfield_2
+    - field.field.node.test_complex_type.body
+    - field.field.node.test_complex_type.field_handle
+    - field.field.node.test_complex_type.field_plain_text_long
+    - field.field.node.test_complex_type.field_switch_list
+    - field.field.node.test_complex_type.field_switch_taxonomy
+    - field.field.node.test_complex_type.field_test_subfield
+    - field.field.node.test_complex_type.field_test_subfield_2
+    - node.type.test_complex_type
+    - workflows.workflow.test_workflow
+  module:
+    - content_moderation
+    - inline_entity_form
+    - path
+    - text
+id: node.test_complex_type.default
+targetEntityType: node
+bundle: test_complex_type
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 9
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_handle:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_plain_text_long:
+    type: string_textarea
+    weight: 14
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_switch_list:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_switch_taxonomy:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_test_subfield:
+    type: inline_entity_form_simple
+    weight: 10
+    region: content
+    settings:
+      form_mode: subfield_1
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_test_subfield_2:
+    type: inline_entity_form_complex
+    weight: 11
+    region: content
+    settings:
+      form_mode: subfield_2
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: keep
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: ef9bf85c-c24e-4c92-a962-73c807880b33
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - taxonomy
+id: digitalia_muni_entity.field_agent_role
+field_name: field_agent_role
+entity_type: digitalia_muni_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

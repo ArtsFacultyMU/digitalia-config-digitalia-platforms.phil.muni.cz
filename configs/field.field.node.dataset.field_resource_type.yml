@@ -1,0 +1,29 @@
+uuid: fc874006-0b78-47c1-918d-4c2ddafe78c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_type
+    - node.type.dataset
+    - taxonomy.vocabulary.islandora_models
+id: node.dataset.field_resource_type
+field_name: field_resource_type
+entity_type: node
+bundle: dataset
+label: Type
+description: 'The general nature or genre of the content of the resource.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      islandora_models: islandora_models
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

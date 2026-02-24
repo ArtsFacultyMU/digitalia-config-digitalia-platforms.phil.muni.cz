@@ -1,0 +1,49 @@
+uuid: b46d7e6c-cd25-4856-a913-0e31fcf26c5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+    - user.role.data_curator
+id: research_group-data_curator
+label: 'Data curator'
+weight: -4
+admin: false
+scope: outsider
+global_role: data_curator
+group_type: research_group
+permissions:
+  - 'access group_node overview'
+  - 'administer members'
+  - 'administer membership requests'
+  - 'create group_node:dataset entity'
+  - 'create group_node:dataset relationship'
+  - 'delete any group_node:dataset entity'
+  - 'delete any group_node:dataset relationship'
+  - 'delete own group_node:dataset entity'
+  - 'delete own group_node:dataset relationship'
+  - 'edit group'
+  - 'update any group_node:dataset entity'
+  - 'update any group_node:dataset relationship'
+  - 'update own group_node:dataset entity'
+  - 'update own group_node:dataset relationship'
+  - 'use dataset_workflow transition create_new_draft'
+  - 'use dataset_workflow transition finalize_draft'
+  - 'use dataset_workflow transition publish'
+  - 'use dataset_workflow transition return_to_draft'
+  - 'use dataset_workflow transition submit_to_review'
+  - 'use research_group_workflow transition approve'
+  - 'use research_group_workflow transition edit_request'
+  - 'use research_group_workflow transition publish'
+  - 'use research_group_workflow transition unpublish'
+  - 'view any group_membership_request relationship'
+  - 'view any unpublished group'
+  - 'view group'
+  - 'view group_membership relationship'
+  - 'view group_node:dataset entity'
+  - 'view group_node:dataset relationship'
+  - 'view latest group version'
+  - 'view own group_membership_request relationship'
+  - 'view own unpublished group'
+  - 'view own unpublished group_node:dataset entity'
+  - 'view unpublished group_node:dataset entity'

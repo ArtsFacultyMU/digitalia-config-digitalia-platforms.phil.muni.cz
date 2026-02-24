@@ -1,0 +1,434 @@
+uuid: 79dce628-18d5-4137-b6f9-bcbbc2443bde
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.storage.node.body
+    - field.storage.node.field_alternative_title
+    - field.storage.node.field_assessment_type
+    - field.storage.node.field_data_service
+    - field.storage.node.field_date_accepted
+    - field.storage.node.field_date_available
+    - field.storage.node.field_date_issued
+    - field.storage.node.field_date_submitted
+    - field.storage.node.field_date_updated
+    - field.storage.node.field_date_valid
+    - field.storage.node.field_date_withdrawn
+    - field.storage.node.field_doi
+    - field.storage.node.field_edtf_date_collected
+    - field.storage.node.field_edtf_date_coverage
+    - field.storage.node.field_edtf_date_created
+    - field.storage.node.field_feature_specification
+    - field.storage.node.field_feature_type
+    - field.storage.node.field_language
+    - field.storage.node.field_license
+    - field.storage.node.field_methods
+    - field.storage.node.field_model
+    - field.storage.node.field_object_specification
+    - field.storage.node.field_object_type
+    - field.storage.node.field_related_resource
+    - field.storage.node.field_series_information
+    - field.storage.node.field_subtitle
+    - field.storage.node.field_table_of_contents
+    - field.storage.node.field_tags
+    - field.storage.node.field_technical_info
+    - field.storage.node.field_temporal_subject
+    - search_api.server.default_solr_server
+  module:
+    - controlled_access_terms
+    - dgi_image_discovery
+    - node
+    - search_api_solr
+    - taxonomy
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    debug_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+      fuzzy_analyzer: true
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+      use_language_undefined_as_fallback_language: false
+      specific_languages:
+        en: '0'
+        cs: '0'
+      use_universal_collation: false
+id: archaeovault_index
+name: 'ArchaeoVault Index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_alternative_title:
+    label: 'Alternative Title'
+    datasource_id: 'entity:node'
+    property_path: field_alternative_title
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_alternative_title
+  field_data_service:
+    label: 'Data Service'
+    datasource_id: 'entity:node'
+    property_path: field_data_service
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_data_service
+  field_date_accepted:
+    label: 'Date Accepted'
+    datasource_id: 'entity:node'
+    property_path: field_date_accepted
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_accepted
+  field_date_available:
+    label: 'Date Available'
+    datasource_id: 'entity:node'
+    property_path: field_date_available
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_available
+  field_date_issued:
+    label: 'Date Issued'
+    datasource_id: 'entity:node'
+    property_path: field_date_issued
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_issued
+  field_date_submitted:
+    label: 'Date Submitted'
+    datasource_id: 'entity:node'
+    property_path: field_date_submitted
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_submitted
+  field_date_updated:
+    label: 'Date Updated'
+    datasource_id: 'entity:node'
+    property_path: field_date_updated
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_updated
+  field_date_valid:
+    label: 'Date Valid'
+    datasource_id: 'entity:node'
+    property_path: field_date_valid
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_valid
+  field_date_withdrawn:
+    label: 'Date Withdrawn'
+    datasource_id: 'entity:node'
+    property_path: field_date_withdrawn
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_withdrawn
+  field_doi:
+    label: DOI
+    datasource_id: 'entity:node'
+    property_path: field_doi
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_doi
+  field_edtf_date_collected:
+    label: 'Date Collected'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_collected
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_collected
+  field_edtf_date_coverage:
+    label: 'Date Coverage'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_coverage
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_coverage
+  field_edtf_date_created:
+    label: 'Date Created'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_created
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_created
+  field_feature_specification_name:
+    label: 'Feature Specification » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_feature_specification:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_feature_specification
+      module:
+        - taxonomy
+  field_feature_type_name:
+    label: 'Feature Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_feature_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_feature_type
+      module:
+        - taxonomy
+  field_language_name:
+    label: 'Language » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_language:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_language
+      module:
+        - taxonomy
+  field_license_name:
+    label: 'License » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_license:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_license
+      module:
+        - taxonomy
+  field_methods:
+    label: Methods
+    datasource_id: 'entity:node'
+    property_path: field_methods
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_methods
+  field_model_name:
+    label: 'Record Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_model:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_model
+      module:
+        - taxonomy
+  field_object_specification_name:
+    label: 'Object Specification » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_object_specification:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_object_specification
+      module:
+        - taxonomy
+  field_object_type_name:
+    label: 'Object Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_object_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_object_type
+      module:
+        - taxonomy
+  field_related_resource:
+    label: 'Related Resource'
+    datasource_id: 'entity:node'
+    property_path: field_related_resource
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_related_resource
+  field_series_information:
+    label: 'Series Information'
+    datasource_id: 'entity:node'
+    property_path: field_series_information
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_series_information
+  field_subtitle:
+    label: Subtitle
+    datasource_id: 'entity:node'
+    property_path: field_subtitle
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_subtitle
+  field_table_of_contents:
+    label: 'Table of Contents'
+    datasource_id: 'entity:node'
+    property_path: field_table_of_contents
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_table_of_contents
+  field_tags_name:
+    label: 'Keywords » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  field_technical_info:
+    label: 'Technical Information'
+    datasource_id: 'entity:node'
+    property_path: field_technical_info
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_technical_info
+  field_temporal_subject_name:
+    label: 'Time Period » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_temporal_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_temporal_subject
+      module:
+        - taxonomy
+  name:
+    label: 'Assessment Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_assessment_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_assessment_type
+      module:
+        - taxonomy
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: 'solr_text_custom_omit_norms:ngram'
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          ':default': search_index
+          dataset: search_index
+          page: search_index
+  rendered_item_search_index:
+    label: 'Rendered entity fields'
+    property_path: rendered_item
+    type: 'solr_text_custom:ngram'
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          ':default': search_index
+          dataset: ':default'
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - dataset
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
+  dgi_image_discovery: {  }
+  edtf_date_processor:
+    fields: {  }
+    open_start_year: '0'
+    open_end_year: ''
+    spring_date: '3'
+    summer_date: '6'
+    autumn_date: '9'
+    winter_date: '12'
+    ignore_open_start: null
+    ignore_open_end: null
+  edtf_year_only:
+    fields: {  }
+    ignore_undated: 1
+    ignore_open_start: 0
+    open_start_year: '0'
+    ignore_open_end: 0
+    open_end_year: ''
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  index_parallel:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: default_solr_server

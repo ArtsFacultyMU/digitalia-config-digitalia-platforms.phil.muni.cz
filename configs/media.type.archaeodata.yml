@@ -1,0 +1,14 @@
+uuid: 38992d33-54ee-401c-8f97-162d74fa7fde
+langcode: en
+status: false
+dependencies: {  }
+id: archaeodata
+label: ArchaeoData
+description: 'A ZIP file with data intended for import into the ArchaeoData repository.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

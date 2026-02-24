@@ -1,0 +1,12 @@
+uuid: 9086de86-5db6-4b1b-a5c1-f62c4ee54ebe
+langcode: en
+status: true
+dependencies: {  }
+id: test_hierarchy_group
+label: 'Test hierarchy group'
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: false
+creator_roles:
+  - test_hierarchy_group-content_edi

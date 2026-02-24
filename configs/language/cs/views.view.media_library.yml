@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      title: Média
+      fields:
+        media_bulk_form:
+          action_title: Akce
+  page:
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Akce
+        edit_media:
+          text: Upravit
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Vše
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Náhled
+      arguments:
+        bundle:
+          exception:
+            title: Vše

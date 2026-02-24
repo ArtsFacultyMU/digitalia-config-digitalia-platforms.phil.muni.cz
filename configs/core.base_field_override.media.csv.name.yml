@@ -1,0 +1,20 @@
+uuid: b6494953-df5d-4764-8d6b-6a74dc0a4be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.csv
+id: media.csv.name
+field_name: name
+entity_type: media
+bundle: csv
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

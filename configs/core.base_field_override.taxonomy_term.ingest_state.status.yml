@@ -1,0 +1,22 @@
+uuid: 5751ec76-b718-464f-9e34-17f81a1324c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ingest_state
+id: taxonomy_term.ingest_state.status
+field_name: status
+entity_type: taxonomy_term
+bundle: ingest_state
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

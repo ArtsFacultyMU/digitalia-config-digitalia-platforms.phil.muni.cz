@@ -1,0 +1,165 @@
+uuid: beac1da9-aaa7-4abd-bc67-1e04d682c8fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+    - node.type.islandora_object
+    - views.view.dev_get_parent_entity_group
+  module:
+    - eca_content
+    - eca_views
+    - group_action
+id: process_elfshut
+modeller: bpmn_io
+label: 'Node create'
+version: ''
+weight: 0
+events:
+  Event_176zlv4:
+    plugin: 'content_entity:insert'
+    label: 'node created'
+    configuration:
+      type: 'node islandora_object'
+    successors:
+      -
+        id: Activity_0u9ir3q
+        condition: ''
+  event_add_to_parent_group:
+    plugin: 'content_entity:custom'
+    label: 'add parent group action'
+    configuration:
+      event_id: event_add_to_parent_group
+    successors:
+      -
+        id: Activity_1336dil
+        condition: ''
+conditions:
+  Flow_1rkgwvw:
+    plugin: eca_entity_field_value_empty
+    configuration:
+      field_name: field_member_of
+      negate: true
+      entity: node
+  Flow_1jvmq28:
+    plugin: eca_entity_field_value_empty
+    configuration:
+      negate: false
+      field_name: field_member_of
+      entity: node
+gateways:
+  Gateway_1k9mjdl:
+    type: 0
+    successors:
+      -
+        id: Activity_1it26lb
+        condition: Flow_1rkgwvw
+      -
+        id: Activity_1sditos
+        condition: Flow_1jvmq28
+actions:
+  Activity_0u9ir3q:
+    plugin: eca_new_entity
+    label: 'create group'
+    configuration:
+      token_name: group
+      type: 'group test_hierarchy_group'
+      langcode: ''
+      label: '[current-user:uid]_[node:id]_[node:title]'
+      published: true
+      owner: '[current-user:uid]'
+    successors:
+      -
+        id: Activity_11qvipz
+        condition: ''
+  Activity_11qvipz:
+    plugin: eca_save_entity
+    label: 'save it! *facepalm'
+    configuration:
+      object: group
+    successors:
+      -
+        id: Activity_1yeyqt9
+        condition: ''
+  Activity_0xds500:
+    plugin: 'group_add_content:node'
+    label: 'Add node to group'
+    configuration:
+      replace_tokens: false
+      values: {  }
+      operation: create
+      content_plugin: group_node
+      group_id: '[group:id]'
+      entity_id: '[node:id]'
+      add_method: update_existing
+      object: node
+    successors:
+      -
+        id: Activity_1ej7vn9
+        condition: ''
+  Activity_1yeyqt9:
+    plugin: group_add_member
+    label: 'Add user to group'
+    configuration:
+      replace_tokens: false
+      values: {  }
+      operation: create
+      content_plugin: group_membership
+      group_id: '[group:id]'
+      entity_id: '[current-user:id]'
+      add_method: update_existing
+      object: current-user
+    successors:
+      -
+        id: Activity_0xds500
+        condition: ''
+  Activity_1ej7vn9:
+    plugin: eca_views_query
+    label: 'get parent groups list'
+    configuration:
+      token_name: parent_groups
+      view_id: dev_get_parent_entity_group
+      display_id: default
+      arguments: '[node:id]'
+    successors:
+      -
+        id: Gateway_1k9mjdl
+        condition: ''
+  Activity_1336dil:
+    plugin: group_add_content
+    label: 'add node to parent entity group'
+    configuration:
+      values: {  }
+      operation: create
+      content_plugin: group_node
+      group_id: '[entity:id]'
+      entity_id: '[node:id]'
+      add_method: skip_existing
+      object: parent_groups
+      replace_tokens: true
+    successors: {  }
+  Activity_17dq7kq:
+    plugin: eca_trigger_content_entity_custom_event
+    label: 'Add node to all parent hierarchical groups'
+    configuration:
+      event_id: event_add_to_parent_group
+      tokens: node
+      object: parent_groups
+    successors: {  }
+  Activity_1it26lb:
+    plugin: action_message_action
+    label: 'parent message'
+    configuration:
+      replace_tokens: false
+      message: 'Node has a parent.'
+    successors:
+      -
+        id: Activity_17dq7kq
+        condition: ''
+  Activity_1sditos:
+    plugin: action_message_action
+    label: 'no parent message'
+    configuration:
+      replace_tokens: false
+      message: 'Node has no parents.'
+    successors: {  }

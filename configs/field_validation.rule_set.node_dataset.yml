@@ -1,0 +1,9 @@
+uuid: 4b84b911-4e20-4bbe-849a-01f4deaba42d
+langcode: en
+status: true
+dependencies: {  }
+name: node_dataset
+label: 'node dataset validation'
+entity_type: node
+bundle: dataset
+field_validation_rules: {  }

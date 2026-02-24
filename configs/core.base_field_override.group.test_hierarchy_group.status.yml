@@ -1,0 +1,22 @@
+uuid: e7179f76-9188-4e3d-ab49-91409ad9e27d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+id: group.test_hierarchy_group.status
+field_name: status
+entity_type: group
+bundle: test_hierarchy_group
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

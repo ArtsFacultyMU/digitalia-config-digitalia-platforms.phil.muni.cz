@@ -1,0 +1,33 @@
+uuid: b63c96a1-ff9d-4c6b-85ce-944271be6082
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_ingest_state
+    - media.type.sip
+    - taxonomy.vocabulary.ingest_state
+  content:
+    - 'taxonomy_term:ingest_state:b022f7b8-0222-436f-aca4-aa69ce756d4e'
+id: media.sip.field_ingest_state
+field_name: field_ingest_state
+entity_type: media
+bundle: sip
+label: 'Ingest state'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: b022f7b8-0222-436f-aca4-aa69ce756d4e
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      ingest_state: ingest_state
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

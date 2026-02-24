@@ -1,0 +1,20 @@
+uuid: c25addcd-697d-43ac-bfdc-614b778a0ea0
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.csv
+  module:
+    - path
+id: media.csv.path
+field_name: path
+entity_type: media
+bundle: csv
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

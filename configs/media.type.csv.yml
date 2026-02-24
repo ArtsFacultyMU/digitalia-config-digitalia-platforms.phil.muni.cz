@@ -1,0 +1,16 @@
+uuid: 073914f6-a6f8-43ae-8b65-bb248ba6161b
+langcode: en
+status: true
+dependencies: {  }
+id: csv
+label: CSV
+description: 'CSV file with fields for specifying separator, enclosure, header.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name
+  mimetype: field_mime_type
+  filesize: field_file_size

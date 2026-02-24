@@ -1,0 +1,20 @@
+uuid: 1d720618-f34c-443e-bca0-b8de32715af2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+  module:
+    - path
+id: group.test_hierarchy_group.path
+field_name: path
+entity_type: group
+bundle: test_hierarchy_group
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

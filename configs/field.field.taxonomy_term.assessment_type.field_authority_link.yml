@@ -1,0 +1,28 @@
+uuid: 6aec074a-9eb9-4d69-8198-88646c66e71c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_authority_link
+    - taxonomy.vocabulary.assessment_type
+  module:
+    - controlled_access_terms
+id: taxonomy_term.assessment_type.field_authority_link
+field_name: field_authority_link
+entity_type: taxonomy_term
+bundle: assessment_type
+label: 'Autoritní zdroje'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  authority_sources:
+    aiscr: 'Archaeological Information System of the Czech Republic'
+    aat: 'Art & Architecture Thesaurus'
+    wiki: Wikidata
+    other: Other
+  title: 1
+  link_type: 16
+field_type: authority_link

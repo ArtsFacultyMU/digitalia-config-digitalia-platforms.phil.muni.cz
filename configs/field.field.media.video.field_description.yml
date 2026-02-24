@@ -1,0 +1,26 @@
+uuid: ae4a6763-92e9-4acf-8b60-4d3b70e649e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - media.type.video
+  module:
+    - text
+id: media.video.field_description
+field_name: field_description
+entity_type: media
+bundle: video
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - restricted_html
+    - plain_text
+field_type: text_long

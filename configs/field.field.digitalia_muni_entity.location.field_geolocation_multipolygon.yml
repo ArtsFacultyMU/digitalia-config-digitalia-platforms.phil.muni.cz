@@ -1,0 +1,21 @@
+uuid: 43a74f71-e65d-4765-aa4e-5412f789db15
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.location
+    - field.storage.digitalia_muni_entity.field_geolocation_multipolygon
+  module:
+    - geolocation_geometry
+id: digitalia_muni_entity.location.field_geolocation_multipolygon
+field_name: field_geolocation_multipolygon
+entity_type: digitalia_muni_entity
+bundle: location
+label: 'Geolocation MultiPolygon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation_geometry_multipolygon

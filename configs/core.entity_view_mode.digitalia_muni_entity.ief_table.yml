@@ -1,0 +1,11 @@
+uuid: 56740763-9aba-4757-abb7-dd40ddc9fee6
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+id: digitalia_muni_entity.ief_table
+label: 'Inline Entity Form Table'
+description: ''
+targetEntityType: digitalia_muni_entity
+cache: true

@@ -1,0 +1,29 @@
+uuid: 40ab0af9-c7cf-46eb-8cb6-d775980b7691
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.first_and_last_name
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_agent_relationship
+    - field.storage.digitalia_muni_entity.field_person_name
+id: digitalia_muni_entity.resource_to_agent_relationship.field_person_name
+field_name: field_person_name
+entity_type: digitalia_muni_entity
+bundle: resource_to_agent_relationship
+label: 'Person name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digitalia_muni_entity'
+  handler_settings:
+    target_bundles:
+      first_and_last_name: first_and_last_name
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,13 @@
+uuid: 17bd372c-268b-4f43-bf6f-7056f7b4e174
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+_core:
+  default_config_hash: AeU3vu55rlmGHpaGvqDT9dz6VwqMs1-moC5CurgbolM
+id: digitalia_muni_entity_delete_action
+label: 'Delete digitalia muni custom entities'
+type: digitalia_muni_entity
+plugin: 'entity:delete_action:digitalia_muni_entity'
+configuration: {  }

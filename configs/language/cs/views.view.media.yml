@@ -1,0 +1,26 @@
+label: Média
+display:
+  default:
+    display_options:
+      title: Média
+      fields:
+        media_bulk_form:
+          action_title: Akce
+        thumbnail__target_id:
+          label: Náhled
+        bundle:
+          label: Typ
+        status:
+          label: Stav
+      exposed_form:
+        options:
+          submit_button: Filtr
+      filters:
+        bundle:
+          expose:
+            label: Typ
+  media_page_list:
+    display_title: Média
+    display_options:
+      menu:
+        title: Média

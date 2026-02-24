@@ -1,0 +1,11 @@
+uuid: c8864add-e779-4aa1-81f1-9b39a5700f9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.subfield_2
+label: 'Subfield 2'
+description: ''
+targetEntityType: node
+cache: true

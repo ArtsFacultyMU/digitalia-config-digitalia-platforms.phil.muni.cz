@@ -1,0 +1,29 @@
+uuid: 72a15e0d-441b-47d5-8ee9-bfb82c40a3a6
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment_type
+    - node.type.dataset
+    - taxonomy.vocabulary.assessment_type
+id: node.dataset.field_assessment_type
+field_name: field_assessment_type
+entity_type: node
+bundle: dataset
+label: 'Typ posudku'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      assessment_type: assessment_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,51 @@
+uuid: 76c9c90c-494d-4dd5-8bd3-ef0d8344ba4b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_core_feature
+_core:
+  default_config_hash: yZv_uq0keKLQ-7vf3ngJIA00vS7I-CZAbPh7J-pBL5o
+id: ais_object_specification
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: digitalia
+label: 'AIS Object specification'
+source:
+  plugin: csv
+  path: ../data/ais_object_specification.csv
+  header_row_count: 1
+  constants:
+    authority_source_aat: aat
+    authority_source_ais: aiscr
+    authority_source_ais_base_url: 'https://api.aiscr.cz/id/'
+  ids:
+    - id
+process:
+  name: name_en
+  vid: vid
+  description: id
+  field_authority_link/0/source: constants/authority_source_aat
+  field_authority_link/0/uri:
+    plugin: urlencode
+    source: external_uri
+  field_authority_link/1/source: constants/authority_source_ais
+  field_authority_link/1/uri:
+    -
+      plugin: concat
+      source:
+        - constants/authority_source_ais_base_url
+        - id
+    -
+      plugin: urlencode
+  weight: weight
+destination:
+  plugin: 'entity:taxonomy_term'
+idMap: {  }
+migration_dependencies:
+  required: {  }
+  optional: {  }
+include: null

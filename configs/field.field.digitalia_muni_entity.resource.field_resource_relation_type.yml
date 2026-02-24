@@ -1,0 +1,29 @@
+uuid: 83715ad5-5401-4bfb-9723-dc1f71d2c48f
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.storage.digitalia_muni_entity.field_resource_relation_type
+    - taxonomy.vocabulary.relation_type
+id: digitalia_muni_entity.resource.field_resource_relation_type
+field_name: field_resource_relation_type
+entity_type: digitalia_muni_entity
+bundle: resource
+label: 'Resource Relation Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      relation_type: relation_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

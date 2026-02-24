@@ -1,0 +1,40 @@
+uuid: 33a095bb-84c2-4020-8316-a0569f99a92a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_core_feature
+_core:
+  default_config_hash: yZv_uq0keKLQ-7vf3ngJIA00vS7I-CZAbPh7J-pBL5o
+id: ais_license_cs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: digitalia
+label: 'AIS Licenses CS'
+source:
+  plugin: csv
+  path: ../data/ais_license.csv
+  header_row_count: 1
+  constants:
+    langcode: cs
+  ids:
+    - id
+process:
+  tid:
+    plugin: migration_lookup
+    migration: ais_license
+    source: id
+  name: name
+  langcode: constants/langcode
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+idMap: {  }
+migration_dependencies:
+  required:
+    - ais_license
+  optional: {  }
+include: null

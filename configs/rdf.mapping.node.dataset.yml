@@ -1,0 +1,111 @@
+uuid: DB90CE98-4D1B-4747-9AB3-E8145D52BC6C
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dataset
+  module:
+    - node
+id: node.dataset
+targetEntityType: node
+bundle: dataset
+types:
+  - 'dcat:Dataset'
+fieldMappings:
+  field_abstract:
+    properties:
+      - 'datacite:description'
+  field_alternative_title:
+    properties:
+      - 'dcterms:alternative'
+  field_date_accepted:
+    properties:
+      - 'ccmm:hasTimeReference'
+  field_date_available:
+    properties:
+      - 'ccmm:hasTimeReference'
+  field_edtf_date_collected:
+    properties:
+      - 'ccmm:hasTimeReference'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  field_copyright_date:
+    properties:
+      - 'ccmm:hasTimeReference'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  field_edtf_date_coverage:
+    properties:
+      - 'ccmm:hasTimeReference'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  field_edtf_date_created:
+    properties:
+      - 'ccmm:hasTimeReference'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  field_date_issued:
+    properties:
+      - 'ccmm:hasTimeReference'
+  field_date_submitted:
+    properties:
+      - 'ccmm:hasTimeReference'
+  field_date_updated:
+    properties:
+      - 'ccmm:hasTimeReference'
+  field_date_valid:
+    properties:
+      - 'ccmm:hasTimeReference'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  field_date_withdrawn:
+    properties:
+      - 'ccmm:hasTimeReference'
+  field_license:
+    properties:
+      - 'dcat:rights'
+  field_member_of:
+    properties:
+      - 'pcdm:memberOf'
+    mapping_type: rel
+  field_methods:
+    properties:
+      - 'datacite:hasDescription'
+  field_note:
+    properties:
+      - 'skos:note'
+  field_series_information:
+    properties:
+      - 'datacite:hasDescription'
+  field_geographic_subject:
+    properties:
+      - 'dcterms:spatial'
+  field_temporal_subject:
+    properties:
+      - 'dcterms:temporal'
+  field_subtitle:
+    properties:
+      - 'ccmm:hasAlternateTitle'
+  field_table_of_contents:
+    properties:
+      - 'datacite:hasDescription'
+  field_technical_info:
+    properties:
+      - 'datacite:hasDescription'
+  title:
+    properties:
+      - 'dcterms:title'
+  created:
+    properties:
+      - 'schema:dateCreated'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  uid:
+    properties:
+      - 'schema:author'
+    mapping_type: rel

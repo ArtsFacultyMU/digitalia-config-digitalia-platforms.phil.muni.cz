@@ -1,0 +1,19 @@
+uuid: 2a3cd05a-dbf4-45fc-b7d5-e7b590d96db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_agent_relationship
+    - field.storage.digitalia_muni_entity.field_corporate_body_name
+id: digitalia_muni_entity.resource_to_agent_relationship.field_corporate_body_name
+field_name: field_corporate_body_name
+entity_type: digitalia_muni_entity
+bundle: resource_to_agent_relationship
+label: 'Corporate Body Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

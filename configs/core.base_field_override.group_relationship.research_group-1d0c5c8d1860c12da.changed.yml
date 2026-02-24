@@ -1,0 +1,18 @@
+uuid: b9568a44-c9a3-41b6-8ba2-b15943e75808
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.relationship_type.research_group-1d0c5c8d1860c12da
+id: group_relationship.research_group-1d0c5c8d1860c12da.changed
+field_name: changed
+entity_type: group_relationship
+bundle: research_group-1d0c5c8d1860c12da
+label: 'Changed on'
+description: 'The time that the group relationship was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

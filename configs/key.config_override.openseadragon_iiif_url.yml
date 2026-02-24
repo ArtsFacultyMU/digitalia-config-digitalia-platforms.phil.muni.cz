@@ -1,0 +1,14 @@
+uuid: 68699bc2-47aa-431c-a9cc-446b3db279dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.default_cantaloupe_url
+    - openseadragon.settings
+id: openseadragon_iiif_url
+label: 'Openseadragon iiif url'
+config_type: system.simple
+config_prefix: ''
+config_name: openseadragon.settings
+config_item: iiif_server
+key_id: default_cantaloupe_url

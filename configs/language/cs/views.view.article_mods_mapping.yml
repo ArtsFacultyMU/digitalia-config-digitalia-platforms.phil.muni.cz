@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: nadpis
+      arguments:
+        nid:
+          exception:
+            title: Vše

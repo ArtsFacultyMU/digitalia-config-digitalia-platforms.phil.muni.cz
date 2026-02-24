@@ -1,0 +1,55 @@
+uuid: 11016df5-b53b-4e70-ad8f-1e42415880c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.digitalia_muni_entity.ief_table
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.field.digitalia_muni_entity.resource.field_date_issued
+    - field.field.digitalia_muni_entity.resource.field_identifier
+    - field.field.digitalia_muni_entity.resource.field_resource_relation_type
+    - field.field.digitalia_muni_entity.resource.field_resource_type
+    - field.field.digitalia_muni_entity.resource.field_resource_url
+    - field.field.digitalia_muni_entity.resource.field_title
+  module:
+    - link
+id: digitalia_muni_entity.resource.ief_table
+targetEntityType: digitalia_muni_entity
+bundle: resource
+mode: ief_table
+content:
+  field_identifier:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_resource_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_resource_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_date_issued: true
+  field_resource_relation_type: true
+  field_title: true
+  label: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: 053cc886-13a0-4763-b2ae-da81ba92ebfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+id: group.test_hierarchy_group.label
+field_name: label
+entity_type: group
+bundle: test_hierarchy_group
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

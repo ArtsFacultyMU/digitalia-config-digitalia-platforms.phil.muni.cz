@@ -1,0 +1,57 @@
+uuid: 69374af7-b935-42f2-9284-dc37dffa7e3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+  module:
+    - eca_content
+    - eca_user
+    - group
+id: process_xhnvfnk
+modeller: bpmn_io
+label: 'Request group'
+version: ''
+weight: 0
+events:
+  Event_0cnm0ii:
+    plugin: 'content_entity:insert'
+    label: 'Group created'
+    configuration:
+      type: 'group research_group'
+    successors:
+      -
+        id: Activity_1saqs95
+        condition: Flow_0etcrjh
+conditions:
+  Flow_0etcrjh:
+    plugin: eca_current_user_role
+    configuration:
+      negate: false
+      role: contributor
+gateways: {  }
+actions:
+  Activity_1saqs95:
+    plugin: eca_switch_account
+    label: 'Switch user to admin'
+    configuration:
+      user_id: '1'
+    successors:
+      -
+        id: Activity_1gxw9dk
+        condition: ''
+  Activity_1gxw9dk:
+    plugin: 'entity:unpublish_action:group'
+    label: 'Unpublish group'
+    configuration:
+      object: group
+    successors: {  }
+  Activity_103vx1i:
+    plugin: action_send_email_action
+    label: 'Send notification'
+    configuration:
+      replace_tokens: false
+      recipient: adler@phil.muni.cz
+      subject: 'A research group was created by Contributor'
+      message: Message!
+    successors: {  }

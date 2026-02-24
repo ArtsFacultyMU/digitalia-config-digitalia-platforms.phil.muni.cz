@@ -1,0 +1,20 @@
+uuid: 9dfd8d8b-8ae6-47b5-a6b3-08edeaaa7dbf
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - node
+id: node.field_funding_reference
+field_name: field_funding_reference
+entity_type: node
+type: entity_reference
+settings:
+  target_type: digitalia_muni_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

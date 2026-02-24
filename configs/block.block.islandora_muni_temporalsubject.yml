@@ -1,0 +1,43 @@
+uuid: 50bd2112-c7b9-46b7-a585-098c757ab758
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.temporal_subject
+  module:
+    - context
+    - facets
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: 1BMA18tJL_4xlrR2wg5QSmr499p157HBiWAgv_rJmQ4
+id: islandora_muni_temporalsubject
+theme: islandora_muni
+region: header
+weight: -7
+provider: null
+plugin: 'facet_block:temporal_subject'
+settings:
+  id: 'facet_block:temporal_subject'
+  label: 'Temporal Subject'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: temporalsubject
+visibility:
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-solr_search_content-page_1: view-solr_search_content-page_1

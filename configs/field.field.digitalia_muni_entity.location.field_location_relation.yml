@@ -1,0 +1,21 @@
+uuid: ed2e8fa5-8f3f-41a6-88fc-8954c5d04cd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.location
+    - field.storage.digitalia_muni_entity.field_location_relation
+  module:
+    - options
+id: digitalia_muni_entity.location.field_location_relation
+field_name: field_location_relation
+entity_type: digitalia_muni_entity
+bundle: location
+label: 'Location Relation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

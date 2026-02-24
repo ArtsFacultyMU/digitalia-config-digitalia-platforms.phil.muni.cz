@@ -1,0 +1,33 @@
+uuid: da7a5b28-ff86-4af5-ba6c-0ef2640a7729
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.csv.field_enclosure
+    - field.field.media.csv.field_file_size
+    - field.field.media.csv.field_has_header
+    - field.field.media.csv.field_media_file
+    - field.field.media.csv.field_media_of
+    - field.field.media.csv.field_mime_type
+    - field.field.media.csv.field_separator
+    - media.type.csv
+id: media.csv.media_library
+targetEntityType: media
+bundle: csv
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_enclosure: true
+  field_file_size: true
+  field_has_header: true
+  field_media_file: true
+  field_media_of: true
+  field_mime_type: true
+  field_separator: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

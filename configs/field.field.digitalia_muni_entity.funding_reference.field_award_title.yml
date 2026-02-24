@@ -1,0 +1,19 @@
+uuid: 885ea744-dff3-4a1e-8c03-0cdce0bd1c43
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.funding_reference
+    - field.storage.digitalia_muni_entity.field_award_title
+id: digitalia_muni_entity.funding_reference.field_award_title
+field_name: field_award_title
+entity_type: digitalia_muni_entity
+bundle: funding_reference
+label: 'Award title'
+description: 'The human readable title or name of the award (grant).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

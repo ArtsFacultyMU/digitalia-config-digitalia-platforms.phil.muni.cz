@@ -1,0 +1,9 @@
+uuid: ff00a408-116e-47fa-9b6c-79ca05b1701d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Relation Type'
+vid: relation_type
+description: 'Relation to the relation type between dataset and resource'
+weight: 0
+new_revision: true

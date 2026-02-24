@@ -1,0 +1,37 @@
+uuid: 293f5ed7-f438-44c0-abfd-81c0aaac1ecd
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.location
+    - field.field.digitalia_muni_entity.location.field_geofield_multipolygon
+    - field.field.digitalia_muni_entity.location.field_geolocation_multipolygon
+    - field.field.digitalia_muni_entity.location.field_location_relation
+  module:
+    - geofield
+    - geolocation_geometry
+id: digitalia_muni_entity.location.default
+targetEntityType: digitalia_muni_entity
+bundle: location
+mode: default
+content:
+  field_geofield_multipolygon:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_geolocation_multipolygon:
+    type: geolocation_geometry_wkt
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_location_relation: true
+  langcode: true
+  search_api_excerpt: true

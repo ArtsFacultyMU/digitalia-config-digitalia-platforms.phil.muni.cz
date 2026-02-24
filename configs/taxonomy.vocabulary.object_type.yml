@@ -1,0 +1,9 @@
+uuid: 8b03fd08-4cec-4326-b15a-17f48e7db9c0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Object type'
+vid: object_type
+description: 'AIS CR vocabulary "predmet_druh"'
+weight: 0
+new_revision: true

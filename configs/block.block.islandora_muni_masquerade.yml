@@ -1,0 +1,29 @@
+uuid: 5b7803a7-3342-41a9-a7bb-8aa1a8e0795f
+langcode: en
+status: true
+dependencies:
+  module:
+    - masquerade
+    - user
+  theme:
+    - islandora_muni
+id: islandora_muni_masquerade
+theme: islandora_muni
+region: featured_bottom_first
+weight: -22
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  label_display: '0'
+  provider: masquerade
+  show_unmasquerade_link: true
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

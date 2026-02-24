@@ -1,0 +1,11 @@
+uuid: 546721e7-a299-4962-993c-e8fe564cb18e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: footer_copyright
+title: 'Footer copyright'
+content:
+  value: '<p>©&nbsp;<script>const datey = new Date(); document.write(datey.getFullYear());</script><span> </span><a href="https://www.muni.cz/en" target="_blank">Masaryk university</a><br><a href="mailto:digitalia@phil.muni.cz">Webmaster</a> | <a class="mc-open-dialog" href="#">Cookies</a></p>'
+  format: full_html

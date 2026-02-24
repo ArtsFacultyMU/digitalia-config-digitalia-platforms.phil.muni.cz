@@ -1,0 +1,69 @@
+uuid: d71b98b4-cc52-406c-a9cc-c96dcc0cb578
+langcode: en
+status: true
+dependencies: {  }
+name: digitalia_muni_entity_resource_to_agent_relationship
+label: 'digitalia_muni_entity resource_to_agent_relationship validation'
+entity_type: digitalia_muni_entity
+bundle: resource_to_agent_relationship
+field_validation_rules:
+  8511f7a8-7949-4c42-abba-da9bfdc44aff:
+    id: one_of_several_validation_rule
+    title: 'Require organization when organization'
+    data:
+      data: ''
+    weight: -8
+    uuid: 8511f7a8-7949-4c42-abba-da9bfdc44aff
+    field_name: field_corporate_body
+    column: target_id
+    error_message: 'Corporate body field is required.'
+    roles: {  }
+    condition:
+      field: field_agent_type
+      operator: equals
+      value: organization
+  980dd45a-7ae4-4f3a-a230-4c04fab9d412:
+    id: one_of_several_validation_rule
+    title: 'Require organization name when organization'
+    data:
+      data: ''
+    weight: 4
+    uuid: 980dd45a-7ae4-4f3a-a230-4c04fab9d412
+    field_name: field_corporate_body_name
+    column: value
+    error_message: 'Corporate body name is required.'
+    roles: {  }
+    condition:
+      field: field_agent_type
+      operator: equals
+      value: organization
+  5c7fdd11-68db-416f-b2f8-5ae59a329aee:
+    id: one_of_several_validation_rule
+    title: 'Require person when person'
+    data:
+      data: ''
+    weight: -10
+    uuid: 5c7fdd11-68db-416f-b2f8-5ae59a329aee
+    field_name: field_person
+    column: target_id
+    error_message: 'Person is required.'
+    roles: {  }
+    condition:
+      field: field_agent_type
+      operator: equals
+      value: person
+  72197a95-a0db-42c8-b2e3-4bcc1d84320f:
+    id: one_of_several_validation_rule
+    title: 'Require person name when person'
+    data:
+      data: ''
+    weight: -9
+    uuid: 72197a95-a0db-42c8-b2e3-4bcc1d84320f
+    field_name: field_person_name
+    column: target_id
+    error_message: 'Person name field is required.'
+    roles: {  }
+    condition:
+      field: field_agent_type
+      operator: equals
+      value: person

@@ -1,0 +1,35 @@
+uuid: eb10695c-c52e-48c3-b9ac-95b52e1a1053
+langcode: en
+status: false
+dependencies:
+  config:
+    - group.type.research_group
+  module:
+    - eca_workflow
+id: process_iaeg5vs
+modeller: bpmn_io
+label: 'Assign inside contributor'
+version: ''
+weight: 0
+events:
+  Event_0wa7jc4:
+    plugin: 'workflow:transition'
+    label: 'Group state: draft -> published'
+    configuration:
+      type: 'group research_group'
+      from_state: draft
+      to_state: published
+    successors:
+      -
+        id: Activity_0drjr2r
+        condition: ''
+conditions: {  }
+gateways: {  }
+actions:
+  Activity_0drjr2r:
+    plugin: action_message_action
+    label: 'Test message'
+    configuration:
+      replace_tokens: false
+      message: TEST
+    successors: {  }

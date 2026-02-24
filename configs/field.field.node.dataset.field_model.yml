@@ -1,0 +1,25 @@
+uuid: 0b44e839-bb4c-48e5-bcfb-d1bde5168fd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model
+    - node.type.dataset
+id: node.dataset.field_model
+field_name: field_model
+entity_type: node
+bundle: dataset
+label: 'Record Type'
+description: 'The internal category of the resource. Affects how the item is displayed/viewed in the repository.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: record_type_select_filter
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

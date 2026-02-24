@@ -1,0 +1,69 @@
+uuid: 9eb979ea-433a-4834-86fa-5120a6f53740
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dataset
+  module:
+    - content_moderation
+id: dataset_workflow
+label: 'Dataset workflow'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: -2
+      published: false
+      default_revision: false
+    finalized:
+      label: Finalized
+      weight: 0
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 1
+      published: true
+      default_revision: true
+    review:
+      label: Review
+      weight: -1
+      published: false
+      default_revision: false
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+      to: draft
+      weight: -3
+    finalize_draft:
+      label: 'Finalize draft'
+      from:
+        - review
+      to: finalized
+      weight: 0
+    publish:
+      label: Publish
+      from:
+        - finalized
+        - published
+      to: published
+      weight: 1
+    return_to_draft:
+      label: 'Return to draft'
+      from:
+        - review
+      to: draft
+      weight: -1
+    submit_to_review:
+      label: 'Submit to review'
+      from:
+        - draft
+      to: review
+      weight: -2
+  entity_types:
+    node:
+      - dataset
+  default_moderation_state: draft

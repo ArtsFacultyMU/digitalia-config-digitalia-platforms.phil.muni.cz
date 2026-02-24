@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        group_roles:
+          label: Role
+      arguments:
+        gid:
+          exception:
+            title: Vše

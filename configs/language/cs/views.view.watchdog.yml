@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      fields:
+        type:
+          label: Typ
+        message:
+          label: Zpráva
+      exposed_form:
+        options:
+          submit_button: Filtr
+      filters:
+        type:
+          expose:
+            label: Typ

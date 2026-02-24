@@ -1,0 +1,14 @@
+uuid: b001c96d-53af-4273-85f9-703c2214d708
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_editor_junior
+  module:
+    - user
+id: user_remove_role_action.content_editor_junior
+label: 'Remove the Content editor junior role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_editor_junior

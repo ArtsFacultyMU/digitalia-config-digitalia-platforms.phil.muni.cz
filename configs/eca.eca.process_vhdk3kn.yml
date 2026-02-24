@@ -1,0 +1,42 @@
+uuid: 0096dbca-e233-477f-ae35-360c7b2be92d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.file
+  module:
+    - eca_content
+id: process_vhdk3kn
+modeller: bpmn_io
+label: 'CSV preview'
+version: ''
+weight: 0
+events:
+  Event_0auuj6o:
+    plugin: 'content_entity:viewmodealter'
+    label: Event_0auuj6o
+    configuration:
+      type: 'media file'
+    successors:
+      -
+        id: Activity_0m05btg
+        condition: Flow_12rq8ta
+conditions:
+  Flow_12rq8ta:
+    plugin: eca_entity_field_value
+    configuration:
+      negate: false
+      case: false
+      expected_value: .csv
+      field_name: field_media_file
+      operator: endswith
+      type: value
+      entity: media
+gateways: {  }
+actions:
+  Activity_0m05btg:
+    plugin: eca_set_view_mode
+    label: 'Change view to csv'
+    configuration:
+      new_view_mode: csv_preview
+    successors: {  }

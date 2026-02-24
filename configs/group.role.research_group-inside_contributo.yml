@@ -1,0 +1,29 @@
+uuid: 98485215-3c45-4e37-b721-9c3e771dc4fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+id: research_group-inside_contributo
+label: 'Inside contributor'
+weight: -1
+admin: false
+scope: individual
+global_role: null
+group_type: research_group
+permissions:
+  - 'access group_node overview'
+  - 'create group_node:dataset entity'
+  - 'create group_node:dataset relationship'
+  - 'update any group_node:dataset entity'
+  - 'update own group_node:dataset entity'
+  - 'use dataset_workflow transition create_new_draft'
+  - 'use dataset_workflow transition submit_to_review'
+  - 'view group'
+  - 'view group_membership relationship'
+  - 'view group_node:dataset entity'
+  - 'view latest group version'
+  - 'view own group_membership_request relationship'
+  - 'view own unpublished group'
+  - 'view own unpublished group_node:dataset entity'
+  - 'view unpublished group_node:dataset entity'

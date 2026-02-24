@@ -1,0 +1,35 @@
+uuid: 59cc1aff-978c-4285-9660-a8c677bd024c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test_workbench_access
+    - node.type.islandora_object
+    - taxonomy.vocabulary.workbench_access
+  module:
+    - epp
+third_party_settings:
+  epp:
+    value: '[current-user:uid]'
+    on_update: 0
+id: node.islandora_object.field_test_workbench_access
+field_name: field_test_workbench_access
+entity_type: node
+bundle: islandora_object
+label: test_workbench_access
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      workbench_access: workbench_access
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

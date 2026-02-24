@@ -1,0 +1,73 @@
+uuid: 915f9ff8-95a1-4fe6-888f-993b034a67ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_complex_type
+  module:
+    - eca_base
+    - eca_content
+    - hdl
+id: process_ghfqwhi
+modeller: bpmn_io
+label: 'Create handle on node creation'
+version: ''
+weight: 0
+events:
+  Event_1lm92hx:
+    plugin: 'content_entity:insert'
+    label: 'Node is created'
+    configuration:
+      type: 'node test_complex_type'
+    successors:
+      -
+        id: Gateway_07if4e9
+        condition: ''
+  Event_03i82vz:
+    plugin: 'content_entity:update'
+    label: 'Node is updated'
+    configuration:
+      type: 'node test_complex_type'
+    successors:
+      -
+        id: Gateway_07if4e9
+        condition: ''
+conditions:
+  Flow_15jrmdu:
+    plugin: eca_entity_field_value
+    configuration:
+      negate: false
+      case: false
+      expected_value: '1'
+      field_name: status
+      operator: equal
+      type: value
+      entity: node
+  Flow_0k0l6gy:
+    plugin: eca_entity_field_value_empty
+    configuration:
+      negate: false
+      field_name: field_handle
+      entity: node
+gateways:
+  Gateway_07if4e9:
+    type: 0
+    successors:
+      -
+        id: Activity_0ne3jg0
+        condition: Flow_15jrmdu
+actions:
+  Activity_0ne3jg0:
+    plugin: eca_void_and_condition
+    label: AND
+    configuration: {  }
+    successors:
+      -
+        id: Activity_142z5k8
+        condition: Flow_0k0l6gy
+  Activity_142z5k8:
+    plugin: hdl_mint_handle
+    label: 'Create handle'
+    configuration:
+      replace_tokens: 'no'
+    successors: {  }

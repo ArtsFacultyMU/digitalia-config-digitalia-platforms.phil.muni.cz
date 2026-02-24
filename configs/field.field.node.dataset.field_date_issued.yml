@@ -1,0 +1,21 @@
+uuid: 8735c5dc-37a6-4f1e-93c2-580f28470431
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_issued
+    - node.type.dataset
+  module:
+    - datetime
+id: node.dataset.field_date_issued
+field_name: field_date_issued
+entity_type: node
+bundle: dataset
+label: 'Date Issued'
+description: 'The date that the resource is published or distributed, e.g., to a data centre.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

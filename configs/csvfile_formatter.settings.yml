@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: d-iUdhxIPHIWyy7fjEKb6uMCUyXmiivXZRIeEqDp0r0
+dataTableSettings:
+  dataTableLibrarySourceLocal: false
+  autoWidth: true
+  deferRender: false
+  info: false
+  lengthChange: false
+  ordering: false
+  paging: true
+  processing: true
+  searching: false
+  stateSave: false
+  scrollX: -1
+  scrollY: -1
+  pageLength: 25
+  bundle: csv

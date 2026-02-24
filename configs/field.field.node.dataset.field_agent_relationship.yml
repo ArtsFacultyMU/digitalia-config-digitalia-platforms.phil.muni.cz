@@ -1,0 +1,29 @@
+uuid: 6c795fff-3a7f-44dd-9900-5cf586674d61
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_agent_relationship
+    - field.storage.node.field_agent_relationship
+    - node.type.dataset
+id: node.dataset.field_agent_relationship
+field_name: field_agent_relationship
+entity_type: node
+bundle: dataset
+label: 'Creators and Contributors'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digitalia_muni_entity'
+  handler_settings:
+    target_bundles:
+      resource_to_agent_relationship: resource_to_agent_relationship
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

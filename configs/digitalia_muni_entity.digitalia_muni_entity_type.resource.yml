@@ -1,0 +1,6 @@
+uuid: 70b9ca86-02ab-4595-afbd-e87a271e7d72
+langcode: en
+status: true
+dependencies: {  }
+id: resource
+label: Resource

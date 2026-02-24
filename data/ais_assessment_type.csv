@@ -1,0 +1,42 @@
+vid,id,name,name_en,external_uri,weight,parent
+assessment_type,HES-001492,absolutní datování,absolute dating,http://vocab.getty.edu/aat/300224276,1,
+assessment_type,HES-001491,bioarcheologie,bioarchaeology,http://vocab.getty.edu/aat/300054464,2,
+assessment_type,HES-001493,geoarcheologie,geoarchaeology,http://vocab.getty.edu/aat/300251618,3,
+assessment_type,HES-001494,materiálové analýzy,material analysis,http://vocab.getty.edu/aat/300379378,4,
+assessment_type,HES-001495,jiné expertní zpracování,other expert analysis,http://vocab.getty.edu/aat/300081683,5,
+assessment_type,HES-000634,absolutní datování,absolute dating,http://vocab.getty.edu/aat/300224276,1,HES-001492
+assessment_type,HES-000609,dendrochronologie,dendrochronology,http://vocab.getty.edu/aat/300054715,2,HES-001492
+assessment_type,HES-000608,radiouhlíkové datování,radiocarbon dating,http://vocab.getty.edu/aat/300054717,3,HES-001492
+assessment_type,HES-001439,bioarcheologie,bioarchaeology,http://vocab.getty.edu/aat/300054464,4,HES-001491
+assessment_type,HES-000618,analýza stabilních izotopů,stable isotope analysis,http://vocab.getty.edu/aat/300247011,5,HES-001491
+assessment_type,HES-000604,antrakologie/xylotomie,anthracology/xylotomy,http://vocab.getty.edu/aat/300438514,6,HES-001491
+assessment_type,HES-000624,archeoentomologie,archeoentomology,http://vocab.getty.edu/aat/300251856,7,HES-001491
+assessment_type,HES-000606,archeogenetika,archaeogenetics,http://vocab.getty.edu/aat/300138822,8,HES-001491
+assessment_type,HES-000621,archeomalakologie,archeomalacology,http://vocab.getty.edu/aat/300251929,9,HES-001491
+assessment_type,HES-000626,archeoparazitologie,archeoparasitology,http://vocab.getty.edu/aat/300258961,10,HES-001491
+assessment_type,HES-000607,archeozoologie,archaeozoology,http://vocab.getty.edu/aat/300251929,11,HES-001491
+assessment_type,HES-000605,biologická antropologie,biological anthropology,http://vocab.getty.edu/aat/300054315,12,HES-001491
+assessment_type,HES-000610,diatomární analýza,diatomic analysis,http://vocab.getty.edu/aat/300379411,13,HES-001491
+assessment_type,HES-000612,fytolitová analýza,phytological analysis,http://vocab.getty.edu/aat/300251771,14,HES-001491
+assessment_type,HES-000620,makrozbytková analýza,macroremains analysis,http://vocab.getty.edu/aat/300251771,15,HES-001491
+assessment_type,HES-001440,osteozoologie,osteozoology,http://vocab.getty.edu/aat/300054472,16,HES-001491
+assessment_type,HES-000625,palynologie,palynology,http://vocab.getty.edu/aat/300251145,17,HES-001491
+assessment_type,HES-001441,tafonomie,taphonomy,http://vocab.getty.edu/aat/300379641,18,HES-001491
+assessment_type,HES-000613,geoarcheologie,geoarchaeology,http://vocab.getty.edu/aat/300251618,19,HES-001493
+assessment_type,HES-000614,geofyzika,geophysics,http://vocab.getty.edu/aat/300054548,20,HES-001493
+assessment_type,HES-000615,geochemie,geochemistry,http://vocab.getty.edu/aat/300054543,21,HES-001493
+assessment_type,HES-001442,geochronologie,geochronology,http://vocab.getty.edu/aat/300056104,22,HES-001493
+assessment_type,HES-001443,geomorfologie,geomorphology,http://vocab.getty.edu/aat/300054547,23,HES-001493
+assessment_type,HES-001444,mikrostratigrafie,microstratigraphy,http://vocab.getty.edu/aat/300192073,24,HES-001493
+assessment_type,HES-001445,paleoklimatologie,paleoclimatology,http://vocab.getty.edu/aat/300379447,25,HES-001493
+assessment_type,HES-000627,pedologie,pedology,http://vocab.getty.edu/aat/300054557,26,HES-001493
+assessment_type,HES-000628,petrografie/mineralogie,petrography,http://vocab.getty.edu/aat/300379416,27,HES-001493
+assessment_type,HES-000633,materiálová analýza,material analysis,http://vocab.getty.edu/aat/300379378,28,HES-001494
+assessment_type,HES-000617,chemická analýza,chemical analysis,http://vocab.getty.edu/aat/300081685,29,HES-001494
+assessment_type,HES-000631,prvková analýza,elemental analysis,http://vocab.getty.edu/aat/300379383,30,HES-001494
+assessment_type,HES-000630,metalografie,metallography,http://vocab.getty.edu/aat/300226182,31,HES-001494
+assessment_type,HES-000623,numismatika,numismatics,http://vocab.getty.edu/aat/300054419,32,HES-001494
+assessment_type,HES-000619,expertní analýza,expert analysis,http://vocab.getty.edu/aat/300081683,33,HES-001495
+assessment_type,HES-001446,experimentální archeologie,experimental archaeology,http://vocab.getty.edu/aat/300252681,34,HES-001495
+assessment_type,HES-000629,konzervace a restaurování,conservation and restoration,http://vocab.getty.edu/aat/300379523,35,HES-001495
+assessment_type,HES-000632,stavebně-historický průzkum,building-historical survey,http://vocab.getty.edu/aat/300379566,36,HES-001495

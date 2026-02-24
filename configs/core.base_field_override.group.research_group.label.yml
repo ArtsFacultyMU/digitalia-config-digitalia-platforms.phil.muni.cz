@@ -1,0 +1,18 @@
+uuid: 82fb31ac-faee-4060-a848-8114db500051
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+id: group.research_group.label
+field_name: label
+entity_type: group
+bundle: research_group
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

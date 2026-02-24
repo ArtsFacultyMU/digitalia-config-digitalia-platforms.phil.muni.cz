@@ -1,0 +1,20 @@
+uuid: 469e9e5c-e443-4286-bdfd-8019d89e1d78
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_complex_type
+id: node.test_complex_type.menu_link
+field_name: menu_link
+entity_type: node
+bundle: test_complex_type
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

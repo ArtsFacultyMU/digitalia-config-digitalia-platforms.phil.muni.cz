@@ -1,0 +1,21 @@
+uuid: bd05d631-0b78-4d2f-9d5b-b767ec5f4df0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ingest_state
+  module:
+    - text
+id: taxonomy_term.ingest_state.description
+field_name: description
+entity_type: taxonomy_term
+bundle: ingest_state
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

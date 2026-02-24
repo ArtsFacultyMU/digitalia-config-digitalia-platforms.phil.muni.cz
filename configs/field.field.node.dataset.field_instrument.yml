@@ -1,0 +1,22 @@
+uuid: 5d30e009-864a-49c9-b188-77c6824e0b6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrument
+    - node.type.dataset
+id: node.dataset.field_instrument
+field_name: field_instrument
+entity_type: node
+bundle: dataset
+label: Instrument
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: eca
+  handler_settings:
+    field_name: field_instrument
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 700cbe58-fecc-42f3-be54-51970bd87e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.license
+id: taxonomy_term.license.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: license
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

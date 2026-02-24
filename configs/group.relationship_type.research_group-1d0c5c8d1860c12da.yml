@@ -1,0 +1,17 @@
+uuid: 366da4ab-a9e6-4fd3-ab76-01087af0dfa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+    - node.type.article
+  module:
+    - gnode
+    - node
+id: research_group-1d0c5c8d1860c12da
+group_type: research_group
+content_plugin: 'group_node:article'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

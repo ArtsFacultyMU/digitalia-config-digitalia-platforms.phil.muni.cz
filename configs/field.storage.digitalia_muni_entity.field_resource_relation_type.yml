@@ -1,0 +1,20 @@
+uuid: e6d9fb0f-1efd-48e5-ac81-a16cc9e1244f
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - taxonomy
+id: digitalia_muni_entity.field_resource_relation_type
+field_name: field_resource_relation_type
+entity_type: digitalia_muni_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

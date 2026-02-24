@@ -1,0 +1,18 @@
+uuid: d7fc5472-8f74-41d7-bfd5-25a8d800c293
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.archaeodata
+id: media.archaeodata.created
+field_name: created
+entity_type: media
+bundle: archaeodata
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

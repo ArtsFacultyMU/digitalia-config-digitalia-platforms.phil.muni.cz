@@ -1,0 +1,10 @@
+uuid: 0f5d64bf-267d-4345-b550-38e8e66ecc4a
+langcode: en
+status: true
+dependencies: {  }
+id: digitalia
+label: Digitalia
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

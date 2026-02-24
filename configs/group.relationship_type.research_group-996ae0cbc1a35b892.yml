@@ -1,0 +1,16 @@
+uuid: aab94ca3-aea7-4d1c-92cd-ec423a44a303
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+  module:
+    - grequest
+    - user
+id: research_group-996ae0cbc1a35b892
+group_type: research_group
+content_plugin: group_membership_request
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  remove_group_membership_request: true

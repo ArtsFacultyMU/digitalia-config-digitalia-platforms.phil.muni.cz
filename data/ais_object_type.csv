@@ -1,0 +1,227 @@
+vid,id,name,name_en,external_uri,weight,parent
+object_type,HES-000842,běžný nález,common find,http://vocab.getty.edu/aat/300117127,100,
+object_type,HES-000843,architektonický článek,architectural element,http://vocab.getty.edu/aat/300000885,200,
+object_type,HES-000844,doklad umění/kultu,artistic/ritual object,http://vocab.getty.edu/aat/300234117,300,
+object_type,HES-000845,ekofakt,ecofact,http://vocab.getty.edu/aat/300423942,400,
+object_type,HES-000846,funkčně neurčený předmět,object of unspecified function,http://vocab.getty.edu/aat/300117127,500,
+object_type,HES-000847,militaria,weapons and armour,http://vocab.getty.edu/aat/300185689,600,
+object_type,HES-000848,platidlo,currency,http://vocab.getty.edu/aat/300387350,700,
+object_type,HES-000849,nádoba,vessel,http://vocab.getty.edu/aat/300193015,800,
+object_type,HES-000850,nástroj hrubý,utensil,http://vocab.getty.edu/aat/300241917,900,
+object_type,HES-000851,nástroj jemný,instrument,http://vocab.getty.edu/aat/300024838,1000,
+object_type,HES-000852,nehotový výrobek/polotovar,semiproduct/blank,http://vocab.getty.edu/aat/300194594,1100,
+object_type,HES-000853,ozdoba,adornment,http://vocab.getty.edu/aat/300386734,1200,
+object_type,HES-000854,písemnost,written document,http://vocab.getty.edu/aat/300189226,1300,
+object_type,HES-000855,postroj/doprava,harness/transportation,http://vocab.getty.edu/aat/300055244,1400,
+object_type,HES-000856,součást hrobu,grave component,http://vocab.getty.edu/aat/300122208,1500,
+object_type,HES-000857,součást oděvu,costume component,http://vocab.getty.edu/aat/300178802,1600,
+object_type,HES-000858,stavební/spojovací prvek,structural element component,http://vocab.getty.edu/aat/300078053,1700,
+object_type,HES-000859,herní předmět,game equipment,http://vocab.getty.edu/aat/300419973,1800,
+object_type,HES-000860,vzorek,sample,http://vocab.getty.edu/aat/300428645,1900,
+object_type,HES-000635,dýmka,pipe,http://vocab.getty.edu/aat/300248067,804,HES-000849
+object_type,HES-000636,džbán,jug,http://vocab.getty.edu/aat/300045685,806,HES-000849
+object_type,HES-000637,zápona,clasp,http://vocab.getty.edu/aat/300239507,1609,HES-000857
+object_type,HES-000638,zavazadlo,luggage,http://vocab.getty.edu/aat/300225937,1610,HES-000857
+object_type,HES-000639,zlomek kosti,bone fragment,http://vocab.getty.edu/aat/300191781,104,HES-000842
+object_type,HES-000640,kamenná industrie,lithics,http://vocab.getty.edu/aat/300379567,105,HES-000842
+object_type,HES-000641,doklad umění/kultu,artistic/ritual object,http://vocab.getty.edu/aat/300234117,300,HES-000844
+object_type,HES-000642,kostra,skeleton,http://vocab.getty.edu/aat/300191778,403,HES-000845
+object_type,HES-000643,přechovávaná přírodnina,natural object,http://vocab.getty.edu/aat/300404125,408,HES-000845
+object_type,HES-000644,rostlinné makrozbytky,plant macro-remain,http://vocab.getty.edu/aat/300375171,409,HES-000845
+object_type,HES-000645,struska,slag,http://vocab.getty.edu/aat/300011790,411,HES-000845
+object_type,HES-000646,vejce,eggshell,http://vocab.getty.edu/aat/300191893,413,HES-000845
+object_type,HES-000647,zub,tooth,http://vocab.getty.edu/aat/300400467,414,HES-000845
+object_type,HES-000648,součást zbroje,armor component,http://vocab.getty.edu/aat/300197059,612,HES-000847
+object_type,HES-000649,zbraň palná,firearm,http://vocab.getty.edu/aat/300037148,617,HES-000847
+object_type,HES-000650,bankovka,paper money,http://vocab.getty.edu/aat/300191324,701,HES-000848
+object_type,HES-000651,akvamanile,aquamanile,http://vocab.getty.edu/aat/300045667,801,HES-000849
+object_type,HES-000652,amfora,amphorae,http://vocab.getty.edu/aat/300148696,802,HES-000849
+object_type,HES-000653,nástroj hrubý,utensil,http://vocab.getty.edu/aat/300241917,900,HES-000850
+object_type,HES-000654,kovadlina,anvil,http://vocab.getty.edu/aat/300023119,908,HES-000850
+object_type,HES-000655,lopata/rýč,shovel/spade,http://vocab.getty.edu/aat/300024300,909,HES-000850
+object_type,HES-000656,otloukač,hammerstone,http://vocab.getty.edu/aat/300024854,911,HES-000850
+object_type,HES-000657,pila,saw,http://vocab.getty.edu/aat/300024671,912,HES-000850
+object_type,HES-000658,součást pluhu,plow component,http://vocab.getty.edu/aat/300233317,916,HES-000850
+object_type,HES-000659,srp,sickle,http://vocab.getty.edu/aat/300264860,917,HES-000850
+object_type,HES-000660,škrabadlo,endscraper,http://vocab.getty.edu/aat/300024836,918,HES-000850
+object_type,HES-000661,břitva,razor,http://vocab.getty.edu/aat/300236438,1002,HES-000851
+object_type,HES-000662,čepel/čepelka,blade/small blade,http://vocab.getty.edu/aat/300024917,1003,HES-000851
+object_type,HES-000663,korálek,bead,http://vocab.getty.edu/aat/300234006,1205,HES-000853
+object_type,HES-000664,křížek,cross,http://vocab.getty.edu/aat/300429888,1206,HES-000853
+object_type,HES-000665,nákrčník,neck ring,http://vocab.getty.edu/aat/300046001,1208,HES-000853
+object_type,HES-000666,náramek,bracelet,http://vocab.getty.edu/aat/300045991,1211,HES-000853
+object_type,HES-000667,náušnice,earring,http://vocab.getty.edu/aat/300045998,1212,HES-000853
+object_type,HES-000668,nákončí,mordant,http://vocab.getty.edu/aat/300262745,1213,HES-000853
+object_type,HES-000669,prsten,finger ring,http://vocab.getty.edu/aat/300046012,1214,HES-000853
+object_type,HES-000670,listina,deed,http://vocab.getty.edu/aat/300027249,1302,HES-000854
+object_type,HES-000671,třmen,stirrup,http://vocab.getty.edu/aat/300255573,1407,HES-000855
+object_type,HES-000672,udidlo,bridle bit,http://vocab.getty.edu/aat/300248085,1408,HES-000855
+object_type,HES-000673,součást hrobu,grave component,http://vocab.getty.edu/aat/300122208,1500,HES-000856
+object_type,HES-000674,součást oděvu,costume component,http://vocab.getty.edu/aat/300178802,1600,HES-000857
+object_type,HES-000675,knoflík,button,http://vocab.getty.edu/aat/300239261,1601,HES-000857
+object_type,HES-000676,opasek,belt,http://vocab.getty.edu/aat/300210002,1604,HES-000857
+object_type,HES-000677,pochva/pouzdro,sheath,http://vocab.getty.edu/aat/300198733,1605,HES-000857
+object_type,HES-000678,dlaždice,floor tile,http://vocab.getty.edu/aat/300250799,1702,HES-000858
+object_type,HES-000679,hřeb/hřebík/nýt,nail/rivet,http://vocab.getty.edu/aat/300033565,1703,HES-000858
+object_type,HES-000680,plech,metal sheet,http://vocab.getty.edu/aat/300014671,506,HES-000846
+object_type,HES-000681,herní předmět,game equipment,http://vocab.getty.edu/aat/300419973,1800,HES-000859
+object_type,HES-000682,cedník,colander,http://vocab.getty.edu/aat/300200469,803,HES-000849
+object_type,HES-000683,průvlečka,clothing buckle,http://vocab.getty.edu/aat/300423332,1606,HES-000857
+object_type,HES-000684,hrací kámen,game piece,http://vocab.getty.edu/aat/300211101,1801,HES-000859
+object_type,HES-000685,vzorek geologický,geological sample,http://vocab.getty.edu/aat/300054546,1903,HES-000860
+object_type,HES-000686,vzorek malakologický,malacological sample,http://vocab.getty.edu/aat/300251929,1904,HES-000860
+object_type,HES-000687,prkno/fošna,board/plank,http://vocab.getty.edu/aat/300012825,1712,HES-000858
+object_type,HES-000688,stéla,stela,http://vocab.getty.edu/aat/300007023,1502,HES-000856
+object_type,HES-000689,dyzna,nozzle,http://vocab.getty.edu/aat/300249766,805,HES-000849
+object_type,HES-000690,konvice,pitcher,http://vocab.getty.edu/aat/300194765,809,HES-000849
+object_type,HES-000691,lahev,bottle,http://vocab.getty.edu/aat/300045627,811,HES-000849
+object_type,HES-000692,vzorek palynologický,palynological sample,http://vocab.getty.edu/aat/300251145,1906,HES-000860
+object_type,HES-000693,gombík,spherical button,http://vocab.getty.edu/aat/300239261,1202,HES-000853
+object_type,HES-000694,kování,mount,http://vocab.getty.edu/aat/300171585,503,HES-000846
+object_type,HES-000695,lampa/kahan,lamp/burner,http://vocab.getty.edu/aat/300037592,812,HES-000849
+object_type,HES-000696,hrací kostka,dice,http://vocab.getty.edu/aat/300211084,1802,HES-000859
+object_type,HES-000697,vzorek pedologický,pedological sample,http://vocab.getty.edu/aat/300054557,1907,HES-000860
+object_type,HES-000698,vzorek paleobotanický,palaeobotanical sample,http://vocab.getty.edu/aat/300379414,1905,HES-000860
+object_type,HES-000699,jehlice,clothing pin,http://vocab.getty.edu/aat/300423336,1203,HES-000853
+object_type,HES-000700,kaptorga,kaptorga (metal pendant case),http://vocab.getty.edu/aat/300046004,1204,HES-000853
+object_type,HES-000701,rolnička,jingle bell,http://vocab.getty.edu/aat/300379261,1216,HES-000853
+object_type,HES-000702,růženec/medailon,rosary/medallion,http://vocab.getty.edu/aat/300262831,1217,HES-000853
+object_type,HES-000703,součást vozu,cargo vehicle component,http://vocab.getty.edu/aat/300227811,1406,HES-000855
+object_type,HES-000704,rakev,coffin,http://vocab.getty.edu/aat/300197585,1501,HES-000856
+object_type,HES-000705,zlomek keramiky,potsherd,http://vocab.getty.edu/aat/300249323,100,HES-000842
+object_type,HES-000706,zlomek mazanice,daub fragment,http://vocab.getty.edu/aat/300163933,103,HES-000842
+object_type,HES-000707,amorfní zlomek/předmět,amorphous fragment/object,http://vocab.getty.edu/aat/300311889,106,HES-000842
+object_type,HES-000708,atypický předmět,exceptional object,http://vocab.getty.edu/aat/300311889,107,HES-000842
+object_type,HES-000709,architektonický článek,architectural element,http://vocab.getty.edu/aat/300000885,200,HES-000843
+object_type,HES-000710,ostění,jamb,http://vocab.getty.edu/aat/300003146,201,HES-000843
+object_type,HES-000711,portál,portal,http://vocab.getty.edu/aat/300076641,202,HES-000843
+object_type,HES-000712,deska,board,http://vocab.getty.edu/aat/300014616,500,HES-000846
+object_type,HES-000713,zbraň chladná,cold weapon,http://vocab.getty.edu/aat/300037110,616,HES-000847
+object_type,HES-000714,nádoba,vessel,http://vocab.getty.edu/aat/300193015,800,HES-000849
+object_type,HES-000715,drasadlo,side scraper,http://vocab.getty.edu/aat/300432482,901,HES-000850
+object_type,HES-000716,kadlub,mold,http://vocab.getty.edu/aat/300024814,903,HES-000850
+object_type,HES-000717,klín,wedge,http://vocab.getty.edu/aat/300024101,906,HES-000850
+object_type,HES-000718,závaží,weight,http://vocab.getty.edu/aat/300343371,919,HES-000850
+object_type,HES-000719,mísa,bowl,http://vocab.getty.edu/aat/300203596,813,HES-000849
+object_type,HES-000720,pánev,pan,http://vocab.getty.edu/aat/300042983,814,HES-000849
+object_type,HES-000721,závaží rybářské,net weight,http://vocab.getty.edu/aat/300429537,920,HES-000850
+object_type,HES-000722,pohár/číše,beaker/goblet,http://vocab.getty.edu/aat/300043198,816,HES-000849
+object_type,HES-000723,závaží tkalcovské,loom weight,http://vocab.getty.edu/aat/300248042,921,HES-000850
+object_type,HES-000724,poklička,lid,http://vocab.getty.edu/aat/300045712,817,HES-000849
+object_type,HES-000725,žernov/mlýnský kámen,quern,http://vocab.getty.edu/aat/300200181,922,HES-000850
+object_type,HES-000726,popelnice,urn,http://vocab.getty.edu/aat/300124808,818,HES-000849
+object_type,HES-000727,nástroj jemný,instrument,http://vocab.getty.edu/aat/300024838,1000,HES-000851
+object_type,HES-000728,klíč,key,http://vocab.getty.edu/aat/300251159,1008,HES-000851
+object_type,HES-000729,křesadlo/ocílka,firesteel,http://vocab.getty.edu/aat/300266523,1009,HES-000851
+object_type,HES-000730,lžíce,spoon,http://vocab.getty.edu/aat/300043149,1010,HES-000851
+object_type,HES-000731,gemma,gem,http://vocab.getty.edu/aat/300011172,1201,HES-000853
+object_type,HES-000732,přezka,buckle,http://vocab.getty.edu/aat/300239260,1607,HES-000857
+object_type,HES-000733,spona,fibula,http://vocab.getty.edu/aat/300209303,1608,HES-000857
+object_type,HES-000734,nátepní destička,wrist guard,http://vocab.getty.edu/aat/300433337,1602,HES-000857
+object_type,HES-000735,obuv,footwear,http://vocab.getty.edu/aat/300209280,1603,HES-000857
+object_type,HES-000736,kachel,stove tile,http://vocab.getty.edu/aat/300427128,1704,HES-000858
+object_type,HES-000737,kůl,pole,http://vocab.getty.edu/aat/300001874,1706,HES-000858
+object_type,HES-000738,okenní výplň,window panes,http://vocab.getty.edu/aat/300209746,1707,HES-000858
+object_type,HES-000739,omítka,plaster,http://vocab.getty.edu/aat/300014922,1708,HES-000858
+object_type,HES-000740,pojivo,binder,http://vocab.getty.edu/aat/300014720,1709,HES-000858
+object_type,HES-000741,potrubí,plumbing pipe,http://vocab.getty.edu/aat/300430511,1710,HES-000858
+object_type,HES-000742,postroj/doprava,harness/transportation,http://vocab.getty.edu/aat/300055244,1400,HES-000855
+object_type,HES-000743,brusle,ice skate,http://vocab.getty.edu/aat/300229602,1401,HES-000855
+object_type,HES-000744,člun,boat,http://vocab.getty.edu/aat/300178749,1402,HES-000855
+object_type,HES-000745,faléra,phalera,http://vocab.getty.edu/aat/300261080,1403,HES-000855
+object_type,HES-000746,podkova,horseshoe,http://vocab.getty.edu/aat/300024400,1404,HES-000855
+object_type,HES-000747,součást postroje,harness component,http://vocab.getty.edu/aat/300212971,1405,HES-000855
+object_type,HES-000748,stavební keramika,construction ceramics,http://vocab.getty.edu/aat/300151343,101,HES-000842
+object_type,HES-000749,hudební nástroj,musical instrument,http://vocab.getty.edu/aat/300041620,301,HES-000844
+object_type,HES-000750,plastika/soška,sculpture/statue,http://vocab.getty.edu/aat/300047090,302,HES-000844
+object_type,HES-000751,plastika/soška antropomorfní,anthropomorphic sculpture/statue,http://vocab.getty.edu/aat/300047455,303,HES-000844
+object_type,HES-000752,plastika/soška zoomorfní,zoomorphic sculpture/statue,http://vocab.getty.edu/aat/300047455,304,HES-000844
+object_type,HES-000753,kost,single bone,http://vocab.getty.edu/aat/300191781,402,HES-000845
+object_type,HES-000754,skořápka plodu,fruit shell/nutshell,http://vocab.getty.edu/aat/300262564,410,HES-000845
+object_type,HES-000755,projektil/kule/munice,projectile/bullet/ammunition,http://vocab.getty.edu/aat/300036928,609,HES-000847
+object_type,HES-000756,řetízek,chain necklace,http://vocab.getty.edu/aat/300046001,1218,HES-000853
+object_type,HES-000757,stavební/spojovací prvek,structural element component,http://vocab.getty.edu/aat/300078053,1700,HES-000858
+object_type,HES-000758,vzorek dendrochronologický,dendrochronological sample,http://vocab.getty.edu/aat/300054715,1902,HES-000860
+object_type,HES-000759,vzorek pro radiokarbonové datování,radiocarbon dating sample,http://vocab.getty.edu/aat/300054717,1908,HES-000860
+object_type,HES-000760,kulička/koule,ball/sphere,http://vocab.getty.edu/aat/300217875,505,HES-000846
+object_type,HES-000761,pekáč,baking pan,http://vocab.getty.edu/aat/300226883,815,HES-000849
+object_type,HES-000762,žeton,token,http://vocab.getty.edu/aat/300037334,1803,HES-000859
+object_type,HES-000763,vzorek antrakologický,anthracological sample,http://vocab.getty.edu/aat/300438514,1901,HES-000860
+object_type,HES-000764,kroužek/kruh,circle/ring,http://vocab.getty.edu/aat/300263678,504,HES-000846
+object_type,HES-000765,tyčinka/váleček,rod/log,http://vocab.getty.edu/aat/300014669,507,HES-000846
+object_type,HES-000766,talíř,plate,http://vocab.getty.edu/aat/300042991,820,HES-000849
+object_type,HES-000767,zásobnice,storage vessel,http://vocab.getty.edu/aat/300198880,824,HES-000849
+object_type,HES-000768,hrnec,pot,http://vocab.getty.edu/aat/300045697,807,HES-000849
+object_type,HES-000769,koflík,cup,http://vocab.getty.edu/aat/300043202,808,HES-000849
+object_type,HES-000770,kotel/kotlík,kettle,http://vocab.getty.edu/aat/300195349,810,HES-000849
+object_type,HES-000771,pražnice,frying pan,http://vocab.getty.edu/aat/300234996,819,HES-000849
+object_type,HES-000772,tyglík,crucible,http://vocab.getty.edu/aat/300196462,821,HES-000849
+object_type,HES-000773,prejz,pantile,http://vocab.getty.edu/aat/300010713,1711,HES-000858
+object_type,HES-000774,technická keramika,technical ceramics,http://vocab.getty.edu/aat/300151343,102,HES-000842
+object_type,HES-000775,ekofakt,ecofact,http://vocab.getty.edu/aat/300423942,400,HES-000845
+object_type,HES-000776,kamenné jádro,stone core,http://vocab.getty.edu/aat/300265134,401,HES-000845
+object_type,HES-000777,malakofauna,mollusca,http://vocab.getty.edu/aat/300266510,404,HES-000845
+object_type,HES-000778,odpad,waste,http://vocab.getty.edu/aat/300253876,405,HES-000845
+object_type,HES-000779,odpad stavební,construction waste,http://vocab.getty.edu/aat/300253876,406,HES-000845
+object_type,HES-000780,odpad výrobní,production waste,http://vocab.getty.edu/aat/300253876,407,HES-000845
+object_type,HES-000781,uhlíky/popel,charcoal/ash,http://vocab.getty.edu/aat/300012862,412,HES-000845
+object_type,HES-000782,drát,wire,http://vocab.getty.edu/aat/300011063,501,HES-000846
+object_type,HES-000783,hrot/hák,spike/hook,http://vocab.getty.edu/aat/300036427,502,HES-000846
+object_type,HES-000784,militaria,weapons and armour,http://vocab.getty.edu/aat/300185689,600,HES-000847
+object_type,HES-000785,bulava,club,http://vocab.getty.edu/aat/300037206,601,HES-000847
+object_type,HES-000786,meč,sword,http://vocab.getty.edu/aat/300037048,606,HES-000847
+object_type,HES-000787,ostruha,spur,http://vocab.getty.edu/aat/300036923,607,HES-000847
+object_type,HES-000788,oštěp/hrot oštěpu,javelin/javelin head,http://vocab.getty.edu/aat/300037019,608,HES-000847
+object_type,HES-000789,sekeromlat/mlat,hammer axe,http://vocab.getty.edu/aat/300201648,610,HES-000847
+object_type,HES-000790,součást štítu,shield part,http://vocab.getty.edu/aat/300036869,611,HES-000847
+object_type,HES-000791,šavle,sabre,http://vocab.getty.edu/aat/300037086,613,HES-000847
+object_type,HES-000792,šíp/šipka/hrot šípu/šipky,arrow/arrowhead,http://vocab.getty.edu/aat/300036976,614,HES-000847
+object_type,HES-000793,tesák,dussack,http://vocab.getty.edu/aat/300037091,615,HES-000847
+object_type,HES-000794,mince,coin,http://vocab.getty.edu/aat/300037222,700,HES-000848
+object_type,HES-000795,drtidlo/zrnotěrka,handstone/saddle quern,http://vocab.getty.edu/aat/300263933,902,HES-000850
+object_type,HES-000796,kladivo/palice,hammer/sledgehammer,http://vocab.getty.edu/aat/300024823,904,HES-000850
+object_type,HES-000797,kleště,pliers,http://vocab.getty.edu/aat/300024744,905,HES-000850
+object_type,HES-000798,kosa,scythe,http://vocab.getty.edu/aat/300024371,907,HES-000850
+object_type,HES-000799,motyka/krumpáč,mattock/pickaxe,http://vocab.getty.edu/aat/300024491,910,HES-000850
+object_type,HES-000800,pilník,file,http://vocab.getty.edu/aat/300024809,913,HES-000850
+object_type,HES-000801,sekáč,chopper,http://vocab.getty.edu/aat/300024665,914,HES-000850
+object_type,HES-000802,sekera,axe,http://vocab.getty.edu/aat/300024664,915,HES-000850
+object_type,HES-000803,brousek,whetstone,http://vocab.getty.edu/aat/300023299,1001,HES-000851
+object_type,HES-000804,jehla/špendlík,needle/pin,http://vocab.getty.edu/aat/300024789,1007,HES-000851
+object_type,HES-000805,náprstek,thimble,http://vocab.getty.edu/aat/300247551,1011,HES-000851
+object_type,HES-000806,nůž,knife,http://vocab.getty.edu/aat/300024668,1012,HES-000851
+object_type,HES-000807,nůžky,scissors,http://vocab.getty.edu/aat/300023459,1013,HES-000851
+object_type,HES-000808,pinzeta,tweezers,http://vocab.getty.edu/aat/300024749,1014,HES-000851
+object_type,HES-000809,přeslen,spindle whorl,http://vocab.getty.edu/aat/300265738,1015,HES-000851
+object_type,HES-000810,rydlo,graver,http://vocab.getty.edu/aat/300022718,1016,HES-000851
+object_type,HES-000811,stilus,stylus,http://vocab.getty.edu/aat/300022483,1017,HES-000851
+object_type,HES-000812,nápažník,armlet,http://vocab.getty.edu/aat/300045990,1210,HES-000853
+object_type,HES-000813,cihla,brick,http://vocab.getty.edu/aat/300010463,1701,HES-000858
+object_type,HES-000814,řetěz,chain,http://vocab.getty.edu/aat/300014625,1713,HES-000858
+object_type,HES-000815,střešní krytina,roofing tile,http://vocab.getty.edu/aat/300010699,1714,HES-000858
+object_type,HES-000816,trám,beam,http://vocab.getty.edu/aat/300001497,1715,HES-000858
+object_type,HES-000817,zámek,lock,http://vocab.getty.edu/aat/300033407,1716,HES-000858
+object_type,HES-000818,vzorek,sample,http://vocab.getty.edu/aat/300428645,1900,HES-000860
+object_type,HES-000819,vědro/situla,bucket/situla,http://vocab.getty.edu/aat/300045651,823,HES-000849
+object_type,HES-000820,dýka,dagger,http://vocab.getty.edu/aat/300037058,602,HES-000847
+object_type,HES-000821,kopí/hrot kopí,spear/spearhead,http://vocab.getty.edu/aat/300037038,603,HES-000847
+object_type,HES-000822,kuše,crossbow,http://vocab.getty.edu/aat/300037000,604,HES-000847
+object_type,HES-000823,luk,bow,http://vocab.getty.edu/aat/300036999,605,HES-000847
+object_type,HES-000824,dláto,chisel,http://vocab.getty.edu/aat/300024665,1004,HES-000851
+object_type,HES-000825,hladítko,smoother,http://vocab.getty.edu/aat/300433081,1005,HES-000851
+object_type,HES-000826,hřeben,comb,http://vocab.getty.edu/aat/300236397,1006,HES-000851
+object_type,HES-000827,šídlo,awl,http://vocab.getty.edu/aat/300024663,1018,HES-000851
+object_type,HES-000828,nehotový výrobek/polotovar,semiproduct/blank,http://vocab.getty.edu/aat/300194594,1100,HES-000852
+object_type,HES-000829,hřivna,ingot,http://vocab.getty.edu/aat/300137865,1101,HES-000852
+object_type,HES-000830,ruda,ore,http://vocab.getty.edu/aat/300152583,1102,HES-000852
+object_type,HES-000831,slitek,bloom,http://vocab.getty.edu/aat/300421990,1103,HES-000852
+object_type,HES-000832,surovina,raw material,http://vocab.getty.edu/aat/300015351,1104,HES-000852
+object_type,HES-000833,valoun,pebble,http://vocab.getty.edu/aat/300011691,1105,HES-000852
+object_type,HES-000834,ozdoba,adornment,http://vocab.getty.edu/aat/300386734,1200,HES-000853
+object_type,HES-000835,náhrdelník,necklace,http://vocab.getty.edu/aat/300046001,1207,HES-000853
+object_type,HES-000836,nánožník,anklet,http://vocab.getty.edu/aat/300209294,1209,HES-000853
+object_type,HES-000837,přívěsek/závěsek,pendant,http://vocab.getty.edu/aat/300046002,1215,HES-000853
+object_type,HES-000838,záušnice,temple ring,http://vocab.getty.edu/aat/300209301,1219,HES-000853
+object_type,HES-000839,písemnost,written document,http://vocab.getty.edu/aat/300189226,1300,HES-000854
+object_type,HES-000840,kniha,book,http://vocab.getty.edu/aat/300028051,1301,HES-000854
+object_type,HES-000841,váza,vase,http://vocab.getty.edu/aat/300132254,822,HES-000849

@@ -1,0 +1,18 @@
+uuid: 5edf701b-0599-445e-a461-ad9bc64ef14c
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.sip
+id: media.sip.created
+field_name: created
+entity_type: media
+bundle: sip
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

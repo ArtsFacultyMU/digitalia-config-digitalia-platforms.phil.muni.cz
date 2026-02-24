@@ -1,0 +1,29 @@
+uuid: f046aeb1-a5c8-4966-ab1f-a71016ac3c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.funding_reference
+    - field.storage.node.field_funding_reference
+    - node.type.dataset
+id: node.dataset.field_funding_reference
+field_name: field_funding_reference
+entity_type: node
+bundle: dataset
+label: 'Funding reference'
+description: 'Has reference for funding of a dataset acquisition.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digitalia_muni_entity'
+  handler_settings:
+    target_bundles:
+      funding_reference: funding_reference
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: 7cdb4b2b-7621-4007-8347-5f6b7ef57741
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - options
+id: digitalia_muni_entity.field_agent_type
+field_name: field_agent_type
+entity_type: digitalia_muni_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: person
+      label: Person
+    -
+      value: organization
+      label: Organization
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

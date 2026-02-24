@@ -1,0 +1,9 @@
+uuid: ef9a0f55-8b3a-4a79-9b3e-1a5255f9ea4d
+langcode: und
+status: true
+dependencies: {  }
+name: 'Workbench Access'
+vid: workbench_access
+description: 'Test taxonomy for Workbench Access'
+weight: 100
+new_revision: false

@@ -1,0 +1,20 @@
+uuid: 1d89a19b-c827-4246-b883-ce4a92352e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.sip
+id: media.sip.name
+field_name: name
+entity_type: media
+bundle: sip
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 1a11b962-4f02-42b0-bea1-6ca586cf8e71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_integer
+    - node.type.test_subfield_type
+id: node.test_subfield_type.field_integer
+field_name: field_integer
+entity_type: node
+bundle: test_subfield_type
+label: integer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

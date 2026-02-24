@@ -1,0 +1,54 @@
+uuid: 311a9858-98fc-45e3-a8cc-83130b96e717
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.3d_model.field_description
+    - field.field.media.3d_model.field_fits_file
+    - field.field.media.3d_model.field_media_file
+    - media.type.3d_model
+  module:
+    - file
+    - islandora_fits
+    - text
+id: media.3d_model.default
+targetEntityType: media
+bundle: 3d_model
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fits_file:
+    type: fits_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

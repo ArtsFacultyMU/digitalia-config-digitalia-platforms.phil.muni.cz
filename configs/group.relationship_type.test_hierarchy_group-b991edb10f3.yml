@@ -1,0 +1,17 @@
+uuid: ffa9165b-a4ed-491f-8554-a1cd1e069023
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+    - node.type.islandora_object
+  module:
+    - gnode
+    - node
+id: test_hierarchy_group-b991edb10f3
+group_type: test_hierarchy_group
+content_plugin: 'group_node:islandora_object'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

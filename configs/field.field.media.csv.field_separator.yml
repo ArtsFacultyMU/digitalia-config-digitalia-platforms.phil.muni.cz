@@ -1,0 +1,19 @@
+uuid: 20408d34-7797-40b6-a609-8a97cc3a1329
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_separator
+    - media.type.csv
+id: media.csv.field_separator
+field_name: field_separator
+entity_type: media
+bundle: csv
+label: separator
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,26 @@
+uuid: fa859a7c-3ad3-4371-897e-7c09eaf97ae8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - media.type.file
+  module:
+    - text
+id: media.file.field_description
+field_name: field_description
+entity_type: media
+bundle: file
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - restricted_html
+    - plain_text
+field_type: text_long

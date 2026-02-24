@@ -1,0 +1,29 @@
+uuid: cfd92b23-20d4-4e8f-9bbd-2751369516fd
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_object_specification
+    - node.type.dataset
+    - taxonomy.vocabulary.object_specification
+id: node.dataset.field_object_specification
+field_name: field_object_specification
+entity_type: node
+bundle: dataset
+label: 'Specifikace předmětu'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      object_specification: object_specification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

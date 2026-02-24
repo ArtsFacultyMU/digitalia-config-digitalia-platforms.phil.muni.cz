@@ -1,0 +1,20 @@
+uuid: 05643fcf-9582-4a26-9136-76db78a4881e
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - node
+id: node.field_agent_relationship
+field_name: field_agent_relationship
+entity_type: node
+type: entity_reference
+settings:
+  target_type: digitalia_muni_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,50 @@
+uuid: 3a3e31ff-e8a0-4480-9193-5e0b18a51aa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.test_complex_type.body
+    - field.field.node.test_complex_type.field_handle
+    - field.field.node.test_complex_type.field_plain_text_long
+    - field.field.node.test_complex_type.field_switch_list
+    - field.field.node.test_complex_type.field_switch_taxonomy
+    - field.field.node.test_complex_type.field_test_subfield
+    - field.field.node.test_complex_type.field_test_subfield_2
+    - node.type.test_complex_type
+  module:
+    - text
+    - user
+id: node.test_complex_type.teaser
+targetEntityType: node
+bundle: test_complex_type
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  did_image: true
+  field_handle: true
+  field_plain_text_long: true
+  field_switch_list: true
+  field_switch_taxonomy: true
+  field_test_subfield: true
+  field_test_subfield_2: true
+  langcode: true
+  search_api_excerpt: true

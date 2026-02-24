@@ -1,0 +1,29 @@
+uuid: c29dd03b-c6bc-4357-b2b9-fbda53275afa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test_subfield
+    - node.type.test_complex_type
+    - node.type.test_subfield_type
+id: node.test_complex_type.field_test_subfield
+field_name: field_test_subfield
+entity_type: node
+bundle: test_complex_type
+label: test_subfield
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      test_subfield_type: test_subfield_type
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

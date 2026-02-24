@@ -1,0 +1,21 @@
+uuid: 9dbe9ae0-2524-48d6-858e-547fad793f89
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.storage.digitalia_muni_entity.field_date_issued
+  module:
+    - controlled_access_terms
+id: digitalia_muni_entity.resource.field_date_issued
+field_name: field_date_issued
+entity_type: digitalia_muni_entity
+bundle: resource
+label: 'Date Issued'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

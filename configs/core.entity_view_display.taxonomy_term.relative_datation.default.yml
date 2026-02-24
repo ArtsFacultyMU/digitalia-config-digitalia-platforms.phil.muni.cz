@@ -1,0 +1,37 @@
+uuid: ab87f967-efd5-4173-bba3-dc8c6293893a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.relative_datation.field_external_uri
+    - taxonomy.vocabulary.relative_datation
+  module:
+    - link
+    - text
+id: taxonomy_term.relative_datation.default
+targetEntityType: taxonomy_term
+bundle: relative_datation
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_external_uri:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

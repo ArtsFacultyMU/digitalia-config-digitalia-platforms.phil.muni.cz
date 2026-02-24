@@ -1,0 +1,19 @@
+uuid: 7ef04375-8f8c-4a83-bf4f-6bf298cc35c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - geolocation_geometry
+id: digitalia_muni_entity.field_polygon
+field_name: field_polygon
+entity_type: digitalia_muni_entity
+type: geolocation_geometry_polygon
+settings: {  }
+module: geolocation_geometry
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

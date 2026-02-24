@@ -1,0 +1,18 @@
+uuid: 2efc2cce-3f7b-4ec2-b1ce-56441964f608
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_types_dcmi
+id: taxonomy_term.resource_types_dcmi.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: resource_types_dcmi
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

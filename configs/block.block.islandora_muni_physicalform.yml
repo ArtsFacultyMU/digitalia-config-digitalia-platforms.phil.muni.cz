@@ -1,0 +1,43 @@
+uuid: c894ec63-1925-4b1a-9577-f743eda6d05c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.physical_form
+  module:
+    - context
+    - facets
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: Gb14JbPGc1IX6-hfhZr_EVEg-AUiYnV50EJcfUIIgHc
+id: islandora_muni_physicalform
+theme: islandora_muni
+region: header
+weight: -14
+provider: null
+plugin: 'facet_block:physical_form'
+settings:
+  id: 'facet_block:physical_form'
+  label: 'Physical Form'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: physicalform
+visibility:
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-solr_search_content-page_1: view-solr_search_content-page_1

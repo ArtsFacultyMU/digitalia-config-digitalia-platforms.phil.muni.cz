@@ -1,0 +1,19 @@
+uuid: a62580c8-28f3-4b02-85c0-44b96da03652
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_withdrawn
+    - node.type.dataset
+id: node.dataset.field_date_withdrawn
+field_name: field_date_withdrawn
+entity_type: node
+bundle: dataset
+label: 'Date Withdrawn'
+description: 'The date the resource is removed. It is good practice to include a description that indicates the reason for the retraction or withdrawal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

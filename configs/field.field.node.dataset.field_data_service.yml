@@ -1,0 +1,23 @@
+uuid: f327fb86-d2f6-4a0b-8428-7793c8926c3e
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_service
+    - node.type.dataset
+  module:
+    - link
+id: node.dataset.field_data_service
+field_name: field_data_service
+entity_type: node
+bundle: dataset
+label: 'Datová služba'
+description: 'A collection of operations that provides access to one or more datasets or data processing functions. Use for external distributions of the dataset, such as API endpoints.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 16
+field_type: link

@@ -1,0 +1,19 @@
+uuid: 54301d92-cac7-4e7a-8fee-69526b5b42d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_methods
+field_name: field_methods
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

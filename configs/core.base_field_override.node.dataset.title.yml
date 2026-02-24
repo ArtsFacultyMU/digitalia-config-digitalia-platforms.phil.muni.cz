@@ -1,0 +1,18 @@
+uuid: 91267f70-32a3-4aa1-8f91-fa0e2e355bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dataset
+id: node.dataset.title
+field_name: title
+entity_type: node
+bundle: dataset
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

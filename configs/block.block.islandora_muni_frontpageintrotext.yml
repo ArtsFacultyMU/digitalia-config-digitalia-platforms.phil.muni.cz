@@ -1,0 +1,27 @@
+uuid: 5fbe8322-0d19-4ea1-ab65-71c86c7d30e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.front_page_intro_text
+  module:
+    - simple_block
+    - system
+  theme:
+    - islandora_muni
+id: islandora_muni_frontpageintrotext
+theme: islandora_muni
+region: content
+weight: -18
+provider: null
+plugin: 'simple_block:front_page_intro_text'
+settings:
+  id: 'simple_block:front_page_intro_text'
+  label: 'Front page intro text'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,60 @@
+uuid: f9f28513-be60-4549-a4a2-98b5e3e68213
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+  module:
+    - eca_content
+    - eca_user
+    - group
+id: process_lua0c8v
+modeller: bpmn_io
+label: 'Contributor created group'
+version: ''
+weight: 0
+events:
+  Event_190v177:
+    plugin: 'content_entity:insert'
+    label: 'Research group created'
+    configuration:
+      type: 'group research_group'
+    successors:
+      -
+        id: Activity_1o9f2q9
+        condition: Flow_12ijrfx
+conditions:
+  Flow_12ijrfx:
+    plugin: eca_current_user_role
+    configuration:
+      negate: false
+      role: contributor
+gateways: {  }
+actions:
+  Activity_16a60f0:
+    plugin: 'entity:unpublish_action:group'
+    label: 'Unpublish it'
+    configuration:
+      object: group
+    successors:
+      -
+        id: Activity_0q58mab
+        condition: ''
+  Activity_1o9f2q9:
+    plugin: eca_switch_account
+    label: 'switch to admin'
+    configuration:
+      user_id: '1'
+    successors:
+      -
+        id: Activity_16a60f0
+        condition: ''
+  Activity_0q58mab:
+    plugin: action_send_email_action
+    label: 'Send notification'
+    configuration:
+      replace_tokens: false
+      recipient: adler@phil.muni.cz
+      subject: 'Test group creation'
+      message: 'A group was created'
+    successors: {  }

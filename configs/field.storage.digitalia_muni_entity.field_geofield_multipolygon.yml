@@ -1,0 +1,20 @@
+uuid: 1532a4ac-5eac-4f78-af11-28d0918d0b56
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - geofield
+id: digitalia_muni_entity.field_geofield_multipolygon
+field_name: field_geofield_multipolygon
+entity_type: digitalia_muni_entity
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

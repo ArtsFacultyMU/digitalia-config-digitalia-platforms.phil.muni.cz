@@ -1,0 +1,28 @@
+uuid: 7d98c20d-243d-4092-bdc2-6373837124ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_license_text
+    - taxonomy.vocabulary.license
+  module:
+    - text
+id: taxonomy_term.license.field_license_text
+field_name: field_license_text
+entity_type: taxonomy_term
+bundle: license
+label: 'License text'
+description: 'The full text of the license'
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    summary: 'Summarize the license conditions.'
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

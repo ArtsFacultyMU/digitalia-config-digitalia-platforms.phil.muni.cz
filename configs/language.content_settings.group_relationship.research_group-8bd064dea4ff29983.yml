@@ -1,0 +1,18 @@
+uuid: f800ae91-1a6c-4ea0-b697-16a61d8bed8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.relationship_type.research_group-8bd064dea4ff29983
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group_relationship.research_group-8bd064dea4ff29983
+target_entity_type_id: group_relationship
+target_bundle: research_group-8bd064dea4ff29983
+default_langcode: site_default
+language_alterable: false

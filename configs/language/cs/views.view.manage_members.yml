@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      fields:
+        node_bulk_form:
+          action_title: Akce
+        title:
+          label: Nadpis
+      arguments:
+        field_member_of_target_id:
+          exception:
+            title: Vše

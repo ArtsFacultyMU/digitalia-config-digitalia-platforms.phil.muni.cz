@@ -1,0 +1,18 @@
+uuid: c8320792-06b4-41dc-b544-d91fc9428408
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Test subfield type'
+type: test_subfield_type
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

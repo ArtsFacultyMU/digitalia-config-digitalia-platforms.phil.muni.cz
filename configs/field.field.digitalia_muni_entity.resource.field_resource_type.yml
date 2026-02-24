@@ -1,0 +1,29 @@
+uuid: d0019da6-d1b2-4652-976e-2ed1012a573a
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.storage.digitalia_muni_entity.field_resource_type
+    - taxonomy.vocabulary.resource_types_dcmi
+id: digitalia_muni_entity.resource.field_resource_type
+field_name: field_resource_type
+entity_type: digitalia_muni_entity
+bundle: resource
+label: 'Resource Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      resource_types_dcmi: resource_types_dcmi
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

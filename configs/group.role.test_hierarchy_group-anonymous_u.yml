@@ -1,0 +1,16 @@
+uuid: 934b8c20-1d33-4f10-97d8-7b747a68b561
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+    - user.role.anonymous
+id: test_hierarchy_group-anonymous_u
+label: 'Anonymous  user'
+weight: 104
+admin: false
+scope: outsider
+global_role: anonymous
+group_type: test_hierarchy_group
+permissions:
+  - 'view group_node:islandora_object entity'

@@ -1,0 +1,59 @@
+uuid: 9697b770-2ea6-4ce6-9993-51c1e9c510ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.funding_reference
+    - field.field.digitalia_muni_entity.funding_reference.field_award_title
+    - field.field.digitalia_muni_entity.funding_reference.field_funder
+    - field.field.digitalia_muni_entity.funding_reference.field_funding_program
+    - field.field.digitalia_muni_entity.funding_reference.field_local_identifier
+  module:
+    - link
+id: digitalia_muni_entity.funding_reference.default
+targetEntityType: digitalia_muni_entity
+bundle: funding_reference
+mode: default
+content:
+  field_award_title:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_funder:
+    type: entity_reference_autocomplete
+    weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_funding_program:
+    type: link_default
+    weight: 27
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_local_identifier:
+    type: string_textfield
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

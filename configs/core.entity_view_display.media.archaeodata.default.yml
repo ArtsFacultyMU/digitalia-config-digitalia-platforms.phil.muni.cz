@@ -1,0 +1,29 @@
+uuid: 180b170e-9329-42e8-b97c-dc8f7f39454b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.archaeodata.field_media_file
+    - media.type.archaeodata
+  module:
+    - file
+id: media.archaeodata.default
+targetEntityType: media
+bundle: archaeodata
+mode: default
+content:
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

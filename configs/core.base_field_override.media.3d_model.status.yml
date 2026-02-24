@@ -1,0 +1,22 @@
+uuid: fd830605-2687-426a-b684-247b3fedf9b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.3d_model
+id: media.3d_model.status
+field_name: status
+entity_type: media
+bundle: 3d_model
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

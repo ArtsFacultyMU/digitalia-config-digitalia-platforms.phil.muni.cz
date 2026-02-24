@@ -1,0 +1,18 @@
+uuid: 3a42cb56-d776-4269-897b-7ac5ba145697
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_date_accepted
+field_name: field_date_accepted
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

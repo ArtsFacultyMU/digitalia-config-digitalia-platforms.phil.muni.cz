@@ -1,0 +1,20 @@
+uuid: fc40c4b7-b88b-4003-8b07-75fa237b23e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.relationship_type.research_group-group_membership
+  module:
+    - path
+id: group_relationship.research_group-group_membership.path
+field_name: path
+entity_type: group_relationship
+bundle: research_group-group_membership
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

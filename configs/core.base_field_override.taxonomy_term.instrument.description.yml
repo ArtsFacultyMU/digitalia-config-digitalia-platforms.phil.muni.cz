@@ -1,0 +1,21 @@
+uuid: 2f729a76-8b04-4172-9edd-56f64f188c54
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.instrument
+  module:
+    - text
+id: taxonomy_term.instrument.description
+field_name: description
+entity_type: taxonomy_term
+bundle: instrument
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

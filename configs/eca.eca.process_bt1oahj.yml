@@ -1,0 +1,75 @@
+uuid: 933dfc34-9cd2-42d5-a7a6-3b1c30427d4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - eca_access
+    - eca_base
+    - eca_content
+    - eca_misc
+    - eca_views
+id: process_bt1oahj
+modeller: bpmn_io
+label: 'Permissions test'
+version: ''
+weight: 0
+events:
+  Event_1gy17at:
+    plugin: 'eca_views:access'
+    label: 'Manage members view'
+    configuration:
+      view_id: manage_members
+      display_id: ''
+    successors:
+      -
+        id: Activity_0ub9wem
+        condition: ''
+conditions:
+  Flow_1ibxoxq:
+    plugin: eca_entity_is_accessible
+    configuration:
+      negate: false
+      operation: view
+      entity: current_node
+  Flow_1b683xk:
+    plugin: eca_token_exists
+    configuration:
+      negate: false
+      token_name: current_node_id
+gateways: {  }
+actions:
+  Activity_0a8qv2w:
+    plugin: eca_access_set_result
+    label: 'allow all users, that can edit node'
+    configuration:
+      access_result: allowed
+    successors: {  }
+  Activity_0ub9wem:
+    plugin: eca_token_load_route_param
+    label: 'get node id'
+    configuration:
+      token_name: current_node_id
+      request: '2'
+      parameter_name: node
+    successors:
+      -
+        id: Activity_05idwdc
+        condition: Flow_1b683xk
+  Activity_05idwdc:
+    plugin: eca_token_load_entity
+    label: 'load node'
+    configuration:
+      token_name: current_node
+      from: id
+      entity_type: node
+      entity_id: '[current_node_id]'
+      revision_id: ''
+      properties: ''
+      langcode: _interface
+      latest_revision: true
+      unchanged: false
+      object: ''
+    successors:
+      -
+        id: Activity_0a8qv2w
+        condition: Flow_1ibxoxq

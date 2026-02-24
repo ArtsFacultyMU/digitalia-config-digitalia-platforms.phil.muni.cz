@@ -1,0 +1,9 @@
+uuid: 771dfd21-e3a0-4156-b3d3-f8e6c2f109d0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Object Specification'
+vid: object_specification
+description: 'AIS CR vocabulary "predmet_specifikace"'
+weight: 0
+new_revision: true

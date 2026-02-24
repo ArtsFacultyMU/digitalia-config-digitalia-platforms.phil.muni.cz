@@ -1,0 +1,7 @@
+uuid: e31fce52-c999-4273-9567-10c161911f48
+langcode: en
+status: false
+dependencies: {  }
+formId: node_islandora_object_form
+captchaType: default
+label: node_islandora_object_form

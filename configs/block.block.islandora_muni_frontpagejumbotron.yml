@@ -1,0 +1,27 @@
+uuid: 3ff51011-40e3-405d-8ed5-ae8a7cd2acf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.front_page_jumbotron
+  module:
+    - simple_block
+    - system
+  theme:
+    - islandora_muni
+id: islandora_muni_frontpagejumbotron
+theme: islandora_muni
+region: content
+weight: -20
+provider: null
+plugin: 'simple_block:front_page_jumbotron'
+settings:
+  id: 'simple_block:front_page_jumbotron'
+  label: 'Front page jumbotron'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

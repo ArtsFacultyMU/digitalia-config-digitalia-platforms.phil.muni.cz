@@ -1,0 +1,9 @@
+uuid: 2d02b713-641f-4497-a2a3-63f8df708c3e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Feature Specification'
+vid: feature_specification
+description: 'AIS vocabulary "objekt_specifikace"'
+weight: 0
+new_revision: true

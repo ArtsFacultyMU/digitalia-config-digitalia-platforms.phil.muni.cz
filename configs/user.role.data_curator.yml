@@ -1,0 +1,57 @@
+uuid: d2aa9e52-6418-4c88-bbda-c7115c9a407f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dataset
+    - node.type.page
+    - user.role.authenticated
+    - user.role.contributor
+    - workflows.workflow.dataset_workflow
+    - workflows.workflow.research_group_workflow
+  module:
+    - content_moderation
+    - group
+    - masquerade
+    - node
+    - persistent_identifiers
+    - system
+    - toolbar
+id: data_curator
+label: 'Data curator'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access group overview'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'create dataset content'
+  - 'create research_group group'
+  - 'delete any dataset content'
+  - 'delete dataset revisions'
+  - 'delete own dataset content'
+  - 'edit any dataset content'
+  - 'edit any page content'
+  - 'edit own dataset content'
+  - 'edit own page content'
+  - 'masquerade as authenticated'
+  - 'masquerade as contributor'
+  - 'mint persistent identifiers'
+  - 'revert dataset revisions'
+  - 'revert page revisions'
+  - 'use dataset_workflow transition create_new_draft'
+  - 'use dataset_workflow transition finalize_draft'
+  - 'use dataset_workflow transition publish'
+  - 'use dataset_workflow transition return_to_draft'
+  - 'use dataset_workflow transition submit_to_review'
+  - 'use research_group_workflow transition approve'
+  - 'use research_group_workflow transition edit_request'
+  - 'use research_group_workflow transition publish'
+  - 'use research_group_workflow transition unpublish'
+  - 'view any unpublished content'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view the administration theme'

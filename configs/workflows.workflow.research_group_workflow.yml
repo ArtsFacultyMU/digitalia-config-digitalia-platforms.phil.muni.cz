@@ -1,0 +1,54 @@
+uuid: 717b552c-01f8-47bb-b960-ed0818b07f62
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_moderation
+id: research_group_workflow
+label: 'Research group workflow'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: -1
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 0
+      published: true
+      default_revision: true
+    requested:
+      label: Requested
+      weight: -2
+      published: false
+      default_revision: false
+  transitions:
+    approve:
+      label: Approve
+      from:
+        - requested
+      to: draft
+      weight: 3
+    edit_request:
+      label: 'Edit request'
+      from:
+        - requested
+      to: requested
+      weight: 2
+    publish:
+      label: Publish
+      from:
+        - draft
+        - published
+      to: published
+      weight: 4
+    unpublish:
+      label: Unpublish
+      from:
+        - published
+      to: draft
+      weight: 5
+  entity_types: {  }
+  default_moderation_state: requested

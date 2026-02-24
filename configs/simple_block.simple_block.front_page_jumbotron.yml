@@ -1,0 +1,11 @@
+uuid: 9f0ea8d1-d91a-4071-946e-4637eb8d6021
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: front_page_jumbotron
+title: 'Front page jumbotron'
+content:
+  value: '<p><span>ArchaeoVault</span><br><span>The Czech Archaeological Repository for Analytical Data</span></p>'
+  format: full_html

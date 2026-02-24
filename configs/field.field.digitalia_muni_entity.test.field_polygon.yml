@@ -1,0 +1,21 @@
+uuid: 251821a1-d005-4f41-90d0-b27531f7dd3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.test
+    - field.storage.digitalia_muni_entity.field_polygon
+  module:
+    - geolocation_geometry
+id: digitalia_muni_entity.test.field_polygon
+field_name: field_polygon
+entity_type: digitalia_muni_entity
+bundle: test
+label: polygon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation_geometry_polygon

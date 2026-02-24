@@ -1,0 +1,19 @@
+uuid: 92206df4-4038-4d5e-8622-d2a6afeba5da
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - geolocation_geometry
+id: digitalia_muni_entity.field_test_collection_01
+field_name: field_test_collection_01
+entity_type: digitalia_muni_entity
+type: geolocation_geometry_geometrycollection
+settings: {  }
+module: geolocation_geometry
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

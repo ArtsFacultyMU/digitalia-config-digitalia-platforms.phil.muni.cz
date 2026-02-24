@@ -1,0 +1,11 @@
+uuid: fdf7a8ed-6591-41a6-b7ed-8a348c8000f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: front_page_intro_text
+title: 'Front page intro text'
+content:
+  value: '<p>ArchaeoVault is a national repository for analytical archaeological data from the Czech environment and Czech archaeology. We mainly store geospatial data, the results of laboratory analyses, anthropological data, 3D data, and databases. The repository is complementary to the Archaeological Information System of the Czech Republic and ensures FAIR principles: clear metadata, standardization, persistent identifiers, and connection to industry repositories. Data is curated for quality, long-term retention, and ease of reuse. The aim is to make research results available to experts, students, and institutions in one place.</p>'
+  format: full_html

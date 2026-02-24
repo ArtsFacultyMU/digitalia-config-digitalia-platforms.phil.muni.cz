@@ -1,0 +1,9 @@
+uuid: e0a81e28-e0c8-42a9-b9ab-0685058bb513
+langcode: en
+status: true
+dependencies: {  }
+name: 'Agent Role'
+vid: agent_role
+description: 'The function of an agent with respect to a dataset or resource.'
+weight: 0
+new_revision: true

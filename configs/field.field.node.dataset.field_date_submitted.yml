@@ -1,0 +1,19 @@
+uuid: d1dc8e8a-5c64-4b72-bbe8-8780a2f0726a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_submitted
+    - node.type.dataset
+id: node.dataset.field_date_submitted
+field_name: field_date_submitted
+entity_type: node
+bundle: dataset
+label: 'Date Submitted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

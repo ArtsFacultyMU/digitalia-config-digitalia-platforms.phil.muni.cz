@@ -1,0 +1,18 @@
+uuid: 63bf7403-8cf1-429f-8aae-3f468eb82225
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Dataset
+type: dataset
+description: 'A collection of data, published or curated by a single source, and available for access or download in one or more representations.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

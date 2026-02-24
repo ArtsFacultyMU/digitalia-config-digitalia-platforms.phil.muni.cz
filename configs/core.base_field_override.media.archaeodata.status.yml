@@ -1,0 +1,22 @@
+uuid: 560c9b24-257e-47bd-adc7-a396516d0086
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.archaeodata
+id: media.archaeodata.status
+field_name: status
+entity_type: media
+bundle: archaeodata
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

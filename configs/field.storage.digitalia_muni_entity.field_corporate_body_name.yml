@@ -1,0 +1,21 @@
+uuid: 6b32b5b9-f836-4af3-940f-42d396944733
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+id: digitalia_muni_entity.field_corporate_body_name
+field_name: field_corporate_body_name
+entity_type: digitalia_muni_entity
+type: string
+settings:
+  max_length: 500
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

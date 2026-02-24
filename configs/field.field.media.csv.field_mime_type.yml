@@ -1,0 +1,19 @@
+uuid: e611abe0-151a-4710-8746-4d62d84b17b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_mime_type
+    - media.type.csv
+id: media.csv.field_mime_type
+field_name: field_mime_type
+entity_type: media
+bundle: csv
+label: 'MIME type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

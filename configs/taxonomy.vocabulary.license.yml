@@ -1,0 +1,9 @@
+uuid: 2d49b306-1698-4bbd-aefe-9f13438669f3
+langcode: en
+status: true
+dependencies: {  }
+name: License
+vid: license
+description: 'A legal document giving official permission to do something with the resource.'
+weight: 0
+new_revision: true

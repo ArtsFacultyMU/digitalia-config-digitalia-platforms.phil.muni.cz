@@ -1,0 +1,37 @@
+uuid: 16728baf-0a04-4caa-ba93-303e05d8b932
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_fits_generator
+    - media
+  theme:
+    - islandora_muni
+id: islandora_muni_pronominfo
+theme: islandora_muni
+region: featured_bottom_first
+weight: -21
+provider: null
+plugin: digitalia_muni_fits_pronom_info
+settings:
+  id: digitalia_muni_fits_pronom_info
+  label: 'PRONOM info'
+  label_display: visible
+  provider: digitalia_muni_fits_generator
+  example: null
+visibility:
+  'entity_bundle:media':
+    id: 'entity_bundle:media'
+    negate: false
+    context_mapping:
+      media: '@islandora.media_route_context_provider:media'
+    bundles:
+      3d_model: 3d_model
+      archaeodata: archaeodata
+      audio: audio
+      csv: csv
+      document: document
+      file: file
+      image: image
+      sip: sip
+      video: video

@@ -1,0 +1,21 @@
+uuid: 3c8644c3-8e9f-4f55-92c1-e716ea1977fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_created
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_created
+field_name: field_edtf_date_created
+entity_type: node
+bundle: dataset
+label: 'Date Created'
+description: 'Date of creation of the dataset, the value must follow the EDTF standard (YYYY-MM-DD), which also allows recording date intervals and uncertain values, see https://www.loc.gov/standards/datetime/'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

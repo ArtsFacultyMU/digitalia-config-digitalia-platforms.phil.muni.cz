@@ -1,0 +1,14 @@
+uuid: 5ed2b8f7-c4ff-40b4-9b68-8fe339ffb5b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.data_curator
+  module:
+    - user
+id: user_add_role_action.data_curator
+label: 'Add the Data curator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: data_curator

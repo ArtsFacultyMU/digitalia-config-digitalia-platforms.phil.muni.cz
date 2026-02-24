@@ -1,0 +1,15 @@
+uuid: 7928a500-8a30-4f5b-9e7f-d7a78035b9c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+    - user.role.anonymous
+id: research_group-anonymous
+label: Anonymous
+weight: -10
+admin: false
+scope: outsider
+global_role: anonymous
+group_type: research_group
+permissions: {  }

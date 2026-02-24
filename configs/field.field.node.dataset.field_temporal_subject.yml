@@ -1,0 +1,29 @@
+uuid: 237449a0-7a3c-44b7-a4d1-8396e7c7c5da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_temporal_subject
+    - node.type.dataset
+    - taxonomy.vocabulary.temporal_subjects
+id: node.dataset.field_temporal_subject
+field_name: field_temporal_subject
+entity_type: node
+bundle: dataset
+label: 'Time Period'
+description: 'The time periods the dataset covers.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      temporal_subjects: temporal_subjects
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

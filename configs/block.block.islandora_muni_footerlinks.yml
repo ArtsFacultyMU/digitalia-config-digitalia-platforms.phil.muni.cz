@@ -1,0 +1,22 @@
+uuid: 4efda753-02c2-48ea-9e36-5035a7c51cdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_links
+  module:
+    - simple_block
+  theme:
+    - islandora_muni
+id: islandora_muni_footerlinks
+theme: islandora_muni
+region: featured_bottom_first
+weight: -23
+provider: null
+plugin: 'simple_block:footer_links'
+settings:
+  id: 'simple_block:footer_links'
+  label: 'Footer links'
+  label_display: '0'
+  provider: simple_block
+visibility: {  }

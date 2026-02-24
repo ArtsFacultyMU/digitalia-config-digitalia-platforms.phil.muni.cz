@@ -1,0 +1,79 @@
+uuid: 8a4227bf-1e57-4623-92cb-be45f82a4ef8
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.field.digitalia_muni_entity.resource.field_date_issued
+    - field.field.digitalia_muni_entity.resource.field_identifier
+    - field.field.digitalia_muni_entity.resource.field_resource_relation_type
+    - field.field.digitalia_muni_entity.resource.field_resource_type
+    - field.field.digitalia_muni_entity.resource.field_resource_url
+    - field.field.digitalia_muni_entity.resource.field_title
+  module:
+    - controlled_access_terms
+    - link
+id: digitalia_muni_entity.resource.default
+targetEntityType: digitalia_muni_entity
+bundle: resource
+mode: default
+content:
+  field_date_issued:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_identifier:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_resource_relation_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_resource_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_resource_url:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: efb8fde9-3fa2-4d6e-9922-242e5d2bca0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_subfield_type
+id: node.test_subfield_type.changed
+field_name: changed
+entity_type: node
+bundle: test_subfield_type
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

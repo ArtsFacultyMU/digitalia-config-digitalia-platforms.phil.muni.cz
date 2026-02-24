@@ -1,0 +1,199 @@
+vid,id,name,name_en,external_uri,weight,parent
+temporal_subjects,HES-000411,pravěk,prehistory,http://vocab.getty.edu/aat/300417277,1700,
+temporal_subjects,HES-000418,datace neurčena,unspecified dating,http://vocab.getty.edu/aat/300379012,2600,
+temporal_subjects,HES-000417,industriální období,Industrial Period,http://vocab.getty.edu/aat/300264736,2400,
+temporal_subjects,HES-000413,vrcholný–pozdní středověk,High–Late Middle Ages,http://vocab.getty.edu/aat/300111307,1900,
+temporal_subjects,HES-000408,doba stěhování národů,Migration Period,http://vocab.getty.edu/aat/300106913,1400,
+temporal_subjects,HES-001470,mladší doba stěhování národů,Late Migration Period,http://vocab.getty.edu/aat/300106913,1420,
+temporal_subjects,HES-001469,starší doba stěhování národů,Early Migration Period,http://vocab.getty.edu/aat/300106913,1410,
+temporal_subjects,HES-000399,eneolit,Eneolithic,http://vocab.getty.edu/aat/300106757,500,
+temporal_subjects,HES-001478,mladší eneolit,Late Eneolithic,http://vocab.getty.edu/aat/300106755,540,
+temporal_subjects,HES-001477,střední eneolit,Middle Eneolithic,http://vocab.getty.edu/aat/300106753,530,
+temporal_subjects,HES-001476,starší eneolit,Early Eneolithic,http://vocab.getty.edu/aat/300106751,520,
+temporal_subjects,HES-001475,časný eneolit,Proto-Eneolithic,http://vocab.getty.edu/aat/300106751,510,
+temporal_subjects,HES-001479,mladší–pozdní eneolit,Late–Final Eneolithic,http://vocab.getty.edu/aat/300106747,550,
+temporal_subjects,HES-001468,pozdní paleolit,Epipalaeolithic,http://vocab.getty.edu/aat/300106730,140,
+temporal_subjects,HES-000397,paleolit–mezolit,Palaeolithic–Mesolithic,http://vocab.getty.edu/aat/300106724,300,
+temporal_subjects,HES-000415,novověk,Modern Period,http://vocab.getty.edu/aat/300021033,2100,
+temporal_subjects,HES-000420,novověk–industriální období,Modern–Industrial Period,http://vocab.getty.edu/aat/300021033,2500,
+temporal_subjects,HES-001472,raný středověk 4,Early Middle Ages 4,http://vocab.getty.edu/aat/300020766,1850,
+temporal_subjects,HES-001471,raný středověk 3,Early Middle Ages 3,http://vocab.getty.edu/aat/300020764,1840,
+temporal_subjects,HES-000412,raný středověk,Early Middle Ages,http://vocab.getty.edu/aat/300020760,1800,
+temporal_subjects,HES-000416,středověk–novověk,Middle Ages–Modern Period,http://vocab.getty.edu/aat/300020756,2300,
+temporal_subjects,HES-000414,středověk,Middle Ages,http://vocab.getty.edu/aat/300020756,2000,
+temporal_subjects,HES-000406,doba římská,Roman Period,http://vocab.getty.edu/aat/300020533,1200,
+temporal_subjects,HES-001466,mladší doba římská,Late Roman Period,http://vocab.getty.edu/aat/300020533,1220,
+temporal_subjects,HES-001465,starší doba římská,Early Roman Period,http://vocab.getty.edu/aat/300020533,1210,
+temporal_subjects,HES-000404,doba laténská,La Tène Period,http://vocab.getty.edu/aat/300019384,1000,
+temporal_subjects,HES-001462,pozdní doba laténská (LtD),Final La Tène Period (LtD),http://vocab.getty.edu/aat/300019384,1040,
+temporal_subjects,HES-001461,mladší–pozdní doba laténská (LtC2–D),Late–Final La Tène Period (LtC2–D),http://vocab.getty.edu/aat/300019384,1030,
+temporal_subjects,HES-001460,střední/mladší doba laténská (LtC1–2),Middle/Late La Tène Period (LtC1–2),http://vocab.getty.edu/aat/300019384,1025,
+temporal_subjects,HES-001459,střední doba laténská (LtB–C1),Middle La Tène Period (LtB–C1),http://vocab.getty.edu/aat/300019384,1020,
+temporal_subjects,HES-001458,časná doba laténská (LtA),Early La Tène Period (LtA),http://vocab.getty.edu/aat/300019384,1010,
+temporal_subjects,HES-000402,doba halštatská,Hallstatt Period,http://vocab.getty.edu/aat/300019368,800,
+temporal_subjects,HES-001487,mladší doba halštatská (HaD2–3),Late Hallstatt Period (HaD2–3),http://vocab.getty.edu/aat/300019368,830,
+temporal_subjects,HES-001485,starší doba halštatská (HaC–D1),Early Hallstatt Period (HaC–D1),http://vocab.getty.edu/aat/300019368,810,
+temporal_subjects,HES-001482,období popelnicových polí,Urnfield Period,http://vocab.getty.edu/aat/300019362,730,
+temporal_subjects,HES-000400,neolit–eneolit,Neolithic–Eneolithic,http://vocab.getty.edu/aat/300019332,600,
+temporal_subjects,HES-000403,doba bronzová–halštatská,Bronze Age–Hallstatt Period,http://vocab.getty.edu/aat/300019279,900,
+temporal_subjects,HES-001486,HaD–LtA,HaD–LtA,http://vocab.getty.edu/aat/300019279,820,
+temporal_subjects,HES-000409,doba římská–stěhování národů,Roman–Migration Period,http://vocab.getty.edu/aat/300019279,1500,
+temporal_subjects,HES-000407,doba laténská–římská,La Tène–Roman Period,http://vocab.getty.edu/aat/300019279,1300,
+temporal_subjects,HES-000405,doba halštatská–laténská,Hallstatt–La Tène Period,http://vocab.getty.edu/aat/300019279,1100,
+temporal_subjects,HES-001483,mladší doba bronzová,Late Bronze Age,http://vocab.getty.edu/aat/300019278,740,
+temporal_subjects,HES-001484,pozdní doba bronzová,Final Bronze Age,http://vocab.getty.edu/aat/300019278,750,
+temporal_subjects,HES-001481,střední doba bronzová,Middle Bronze Age,http://vocab.getty.edu/aat/300019277,720,
+temporal_subjects,HES-001480,starší doba bronzová,Early Bronze Age,http://vocab.getty.edu/aat/300019276,710,
+temporal_subjects,HES-000401,doba bronzová,Bronze Age,http://vocab.getty.edu/aat/300019275,700,
+temporal_subjects,HES-001474,střední–mladší neolit,Middle–Late Neolithic,http://vocab.getty.edu/aat/300019272,420,
+temporal_subjects,HES-001473,starší neolit,Early Neolithic,http://vocab.getty.edu/aat/300019270,410,
+temporal_subjects,HES-000398,neolit,Neolithic,http://vocab.getty.edu/aat/300019267,400,
+temporal_subjects,HES-000396,mezolit,Mesolithic,http://vocab.getty.edu/aat/300019264,200,
+temporal_subjects,HES-001467,mladší paleolit,Upper Palaeolithic,http://vocab.getty.edu/aat/300019262,130,
+temporal_subjects,HES-001464,střední paleolit,Middle Palaeolithic,http://vocab.getty.edu/aat/300019261,120,
+temporal_subjects,HES-001463,starší paleolit,Lower Palaeolithic,http://vocab.getty.edu/aat/300019260,110,
+temporal_subjects,HES-000395,paleolit,Palaeolithic,http://vocab.getty.edu/aat/300019258,100,
+temporal_subjects,HES-000277,rané středohradištní období,Early Middle Hillfort Period,http://vocab.getty.edu/aat/300020764,1841,HES-001471
+temporal_subjects,HES-000301,raný středověk 2,Early Middle Ages 2,http://vocab.getty.edu/aat/300020760,1830,HES-000412
+temporal_subjects,HES-000283,magdalénien,Magdalenian,http://vocab.getty.edu/aat/300019305,136,HES-001467
+temporal_subjects,HES-000363,kultura s moravskou malovanou keramikou 2,Moravian Painted Ware Culture 2,http://vocab.getty.edu/aat/300106751,511,HES-001475
+temporal_subjects,HES-000377,billendorfská kultura (HaC),Billendorf Culture (HaC),http://vocab.getty.edu/aat/300019368,811,HES-001485
+temporal_subjects,HES-000299,nynická kultura,Nynice Culture,http://vocab.getty.edu/aat/300019278,756,HES-001484
+temporal_subjects,HES-000309,HaD–LtA,HaD–LtA,http://vocab.getty.edu/aat/300019279,820,HES-001486
+temporal_subjects,HES-000286,časný eneolit,Proto-Eneolithic,http://vocab.getty.edu/aat/300106751,510,HES-001475
+temporal_subjects,HES-000346,doba římská–stěhování národů,Roman–Migration Period,http://vocab.getty.edu/aat/300019279,1500,HES-000409
+temporal_subjects,HES-000271,pozdní středověk,Late Middle Ages,http://vocab.getty.edu/aat/300111307,1920,HES-000413
+temporal_subjects,HES-000328,vrcholný středověk,High Middle Ages,http://vocab.getty.edu/aat/300111307,1910,HES-000413
+temporal_subjects,HES-000384,doba bronzová–halštatská,Bronze Age–Hallstatt Period,http://vocab.getty.edu/aat/300019279,900,HES-000403
+temporal_subjects,HES-000379,raný středověk 3,Early Middle Ages 3,http://vocab.getty.edu/aat/300020764,1840,HES-001471
+temporal_subjects,HES-000391,protoúnětická kultura,Proto-Únětice Culture,http://vocab.getty.edu/aat/300019361,711,HES-001480
+temporal_subjects,HES-000380,středověk,Middle Ages,http://vocab.getty.edu/aat/300020756,2000,HES-000414
+temporal_subjects,HES-000252,novověk,Modern Period,http://vocab.getty.edu/aat/300021033,2100,HES-000415
+temporal_subjects,HES-000371,chamská kultura,Cham Culture,http://vocab.getty.edu/aat/300106753,532,HES-001477
+temporal_subjects,HES-000388,saská lužická kultura,Saxonian-Lusatian Culture,http://vocab.getty.edu/aat/300019362,746,HES-001483
+temporal_subjects,HES-000302,vyspělé středohradištní období,Advanced Middle Hillfort Period,http://vocab.getty.edu/aat/300020764,1842,HES-001471
+temporal_subjects,HES-000373,jevišovická kultura,Jevišovice Culture,http://vocab.getty.edu/aat/300106755,541,HES-001478
+temporal_subjects,HES-000273,vrcholný středověk–novověk,High Middle Ages–Modern Period,http://vocab.getty.edu/aat/300020756,2200,HES-000416
+temporal_subjects,HES-000325,raný středověk 4,Early Middle Ages 4,http://vocab.getty.edu/aat/300020766,1850,HES-001472
+temporal_subjects,HES-000382,novověk 2,Modern Period 2,http://vocab.getty.edu/aat/300021147,2120,HES-000415
+temporal_subjects,HES-000344,dobrodzieńská skupina,Dobrodzień Group,http://vocab.getty.edu/aat/300106913,1411,HES-001469
+temporal_subjects,HES-000297,štítarská kultura,Štítary Culture,http://vocab.getty.edu/aat/300019278,754,HES-001484
+temporal_subjects,HES-000294,chebská kultura,Cheb Culture,http://vocab.getty.edu/aat/300019278,745,HES-001483
+temporal_subjects,HES-000259,kobylská skupina,Kobyly Group,http://vocab.getty.edu/aat/300019384,1041,HES-001462
+temporal_subjects,HES-000389,kultura münchshöfenská,Münchshofen Culture,http://vocab.getty.edu/aat/300019272,424,HES-001474
+temporal_subjects,HES-000341,mladší doba římská,Late Roman Period,http://vocab.getty.edu/aat/300020533,1220,HES-001466
+temporal_subjects,HES-000295,slezskoplatěnická kultura,Silesian-Platěnice Culture,http://vocab.getty.edu/aat/300019362,751,HES-001484
+temporal_subjects,HES-000318,kultura zvoncovitých pohárů,Bell Beaker Culture,http://vocab.getty.edu/aat/300106854,553,HES-001479
+temporal_subjects,HES-000276,raný středověk 2–4,Early Middle Ages 2–4,http://vocab.getty.edu/aat/300020760,1820,HES-000412
+temporal_subjects,HES-000284,paleolit–mezolit,Palaeolithic–Mesolithic,http://vocab.getty.edu/aat/300106724,300,HES-000397
+temporal_subjects,HES-000317,badenská kultura,Baden Culture,http://vocab.getty.edu/aat/300390564,531,HES-001477
+temporal_subjects,HES-000268,starší neolit,Early Neolithic,http://vocab.getty.edu/aat/300019270,410,HES-001473
+temporal_subjects,HES-000332,halštatská mohylová kultura,Hallstatt Tumulus Culture,http://vocab.getty.edu/aat/300019368,813,HES-001485
+temporal_subjects,HES-000322,střední doba bronzová,Middle Bronze Age,http://vocab.getty.edu/aat/300019277,720,HES-001481
+temporal_subjects,HES-000339,milavečská kultura,Milavče Culture,http://vocab.getty.edu/aat/300019278,743,HES-001483
+temporal_subjects,HES-000313,taubachien,Taubachian,http://vocab.getty.edu/aat/300019261,122,HES-001464
+temporal_subjects,HES-000349,industriální období 2,Industrial Period 2,http://vocab.getty.edu/aat/300404514,2420,HES-000417
+temporal_subjects,HES-000324,českofalcká mohylová kultura,Bohemian-Palatinate Tumulus Culture,http://vocab.getty.edu/aat/300019360,722,HES-001481
+temporal_subjects,HES-000358,únětická kultura,Únětice Culture,http://vocab.getty.edu/aat/300019361,712,HES-001480
+temporal_subjects,HES-000393,plaňanský typ,Plaňany Type,http://vocab.getty.edu/aat/300020533,1211,HES-001465
+temporal_subjects,HES-000320,hatvanská kultura,Hatvan Culture,http://vocab.getty.edu/aat/300019276,714,HES-001480
+temporal_subjects,HES-000361,kultura s vypíchanou keramikou,Stroke Pottery Culture,http://vocab.getty.edu/aat/300106849,421,HES-001474
+temporal_subjects,HES-000258,pozdní doba laténská (LtD),Final La Tène Period (LtD),http://vocab.getty.edu/aat/300019384,1040,HES-001462
+temporal_subjects,HES-000253,paleolit,Palaeolithic,http://vocab.getty.edu/aat/300019258,100,HES-000395
+temporal_subjects,HES-000282,miškovický typ,Míškovice Type,http://vocab.getty.edu/aat/300019262,134,HES-001467
+temporal_subjects,HES-000337,lužická kultura,Lusatian Culture,http://vocab.getty.edu/aat/300019362,741,HES-001483
+temporal_subjects,HES-000394,šárecký typ,Šárka Type,http://vocab.getty.edu/aat/300107826,412,HES-001473
+temporal_subjects,HES-000269,kultura s lineární keramikou,Linear Pottery Culture,http://vocab.getty.edu/aat/300107826,411,HES-001473
+temporal_subjects,HES-000305,oberlauterbašská skupina,Oberlauterbach Group,http://vocab.getty.edu/aat/300019270,414,HES-001473
+temporal_subjects,HES-000368,kultura nálevkovitých pohárů,Funnel Beaker Culture,http://vocab.getty.edu/aat/300019337,522,HES-001476
+temporal_subjects,HES-000336,starší doba římská,Early Roman Period,http://vocab.getty.edu/aat/300020533,1210,HES-001465
+temporal_subjects,HES-000272,přechod pozdní středověk/novověk,Late Middle Ages/Modern Transition,http://vocab.getty.edu/aat/300021141,1930,HES-000413
+temporal_subjects,HES-000289,pravěk,prehistory,http://vocab.getty.edu/aat/300417277,1700,HES-000411
+temporal_subjects,HES-000353,podolská kultura,Podolí Culture,http://vocab.getty.edu/aat/300019362,753,HES-001484
+temporal_subjects,HES-000351,kultura Kosihy-Čaka,Kosihy-Čaka Culture,http://vocab.getty.edu/aat/300106747,552,HES-001479
+temporal_subjects,HES-000262,aurignacien,Aurignacian,http://vocab.getty.edu/aat/300019292,133,HES-001467
+temporal_subjects,HES-000354,doba halštatská,Hallstatt Period,http://vocab.getty.edu/aat/300019368,800,HES-000402
+temporal_subjects,HES-000312,moustérien,Mousterian,http://vocab.getty.edu/aat/300019291,121,HES-001464
+temporal_subjects,HES-000290,mladší doba bronzová,Late Bronze Age,http://vocab.getty.edu/aat/300019278,740,HES-001483
+temporal_subjects,HES-000278,pozdní středohradištní období,Final Middle Hillfort Period,http://vocab.getty.edu/aat/300020764,1843,HES-001471
+temporal_subjects,HES-000285,eneolit,Eneolithic,http://vocab.getty.edu/aat/300106757,500,HES-000399
+temporal_subjects,HES-000279,kultura kulovitých amfor,Globular Amphora Culture,http://vocab.getty.edu/aat/300106753,534,HES-001477
+temporal_subjects,HES-000372,řivnáčská kultura,Řivnáč Culture,http://vocab.getty.edu/aat/300106753,533,HES-001477
+temporal_subjects,HES-000347,industriální období,Industrial Period,http://vocab.getty.edu/aat/300264736,2400,HES-000417
+temporal_subjects,HES-000310,mladší doba halštatská (HaD2–3),Late Hallstatt Period (HaD2–3),http://vocab.getty.edu/aat/300019368,830,HES-001487
+temporal_subjects,HES-000367,kultura Retz-Bajč-Křepice,Retz-Bajč-Křepice (Furchenstich) Culture,http://vocab.getty.edu/aat/300106751,521,HES-001476
+temporal_subjects,HES-000326,pozdněhradištní období,Final Hillfort Period,http://vocab.getty.edu/aat/300020766,1853,HES-001472
+temporal_subjects,HES-000350,novověk–industriální období,Modern–Industrial Period,http://vocab.getty.edu/aat/300021033,2500,HES-000420
+temporal_subjects,HES-000263,epigravettien,Epigravettian,http://vocab.getty.edu/aat/300019300,137,HES-001467
+temporal_subjects,HES-000311,gravettien,Gravettian,http://vocab.getty.edu/aat/300019297,135,HES-001467
+temporal_subjects,HES-000323,středodunajská mohylová kultura,Middle-Danubian Tumulus Culture,http://vocab.getty.edu/aat/300019360,721,HES-001481
+temporal_subjects,HES-000280,mladší eneolit,Late Eneolithic,http://vocab.getty.edu/aat/300106755,540,HES-001478
+temporal_subjects,HES-000288,doba laténská–římská,La Tène–Roman Period,http://vocab.getty.edu/aat/300019279,1300,HES-000407
+temporal_subjects,HES-000366,starší eneolit,Early Eneolithic,http://vocab.getty.edu/aat/300106751,520,HES-001476
+temporal_subjects,HES-000338,velatická kultura,Velatice Culture,http://vocab.getty.edu/aat/300019362,742,HES-001483
+temporal_subjects,HES-000264,pozdní paleolit,Epipalaeolithic,http://vocab.getty.edu/aat/300106730,140,HES-001468
+temporal_subjects,HES-000298,slezská kultura,Silesian Culture,http://vocab.getty.edu/aat/300019362,755,HES-001484
+temporal_subjects,HES-000256,kultura púchovská,Púchov Culture,http://vocab.getty.edu/aat/300019384,1031,HES-001461
+temporal_subjects,HES-000385,raný středověk,Early Middle Ages,http://vocab.getty.edu/aat/300020760,1800,HES-000412
+temporal_subjects,HES-000364,schusseriedská kultura,Schussenried Culture,http://vocab.getty.edu/aat/300106751,513,HES-001475
+temporal_subjects,HES-000348,industriální období 1,Industrial Period 1,http://vocab.getty.edu/aat/300404513,2410,HES-000417
+temporal_subjects,HES-000375,kultura se šňůrovou keramikou,Corded Ware Culture,http://vocab.getty.edu/aat/300106852,551,HES-001479
+temporal_subjects,HES-000303,vyspělé mladohradištní období,Advanced Late Hillfort Period,http://vocab.getty.edu/aat/300020766,1852,HES-001472
+temporal_subjects,HES-000345,mladší doba stěhování národů,Late Migration Period,http://vocab.getty.edu/aat/300106913,1420,HES-001470
+temporal_subjects,HES-000390,doba bronzová,Bronze Age,http://vocab.getty.edu/aat/300019275,700,HES-000401
+temporal_subjects,HES-000392,středověk–novověk,Middle Ages–Modern Period,http://vocab.getty.edu/aat/300020756,2300,HES-000416
+temporal_subjects,HES-000257,kultura przeworská,Przeworsk Culture,http://vocab.getty.edu/aat/300019384,1032,HES-001461
+temporal_subjects,HES-000304,zemědělský pravěk,farming prehistory,http://vocab.getty.edu/aat/300417277,1600,HES-000411
+temporal_subjects,HES-000314,krumlovien,Krumlovian,http://vocab.getty.edu/aat/300019261,124,HES-001464
+temporal_subjects,HES-000291,starší paleolit,Lower Palaeolithic,http://vocab.getty.edu/aat/300019260,110,HES-001463
+temporal_subjects,HES-000281,období popelnicových polí,Urnfield Period,http://vocab.getty.edu/aat/300019362,730,HES-001482
+temporal_subjects,HES-000267,neolit,Neolithic,http://vocab.getty.edu/aat/300019267,400,HES-000398
+temporal_subjects,HES-000378,slezskoplatěnická kultura (HaC–D),Silesian–Platěnice Culture (HaC–D),http://vocab.getty.edu/aat/300019368,816,HES-001485
+temporal_subjects,HES-000300,platěnická kultura,Platěnice Culture,http://vocab.getty.edu/aat/300019368,815,HES-001485
+temporal_subjects,HES-000293,knovízská kultura,Knovíz Culture,http://vocab.getty.edu/aat/300019278,744,HES-001483
+temporal_subjects,HES-000357,bošácká skupina,Bošáca Group,http://vocab.getty.edu/aat/300106755,542,HES-001478
+temporal_subjects,HES-000287,jordanovská kultura,Jordanów Culture,http://vocab.getty.edu/aat/300106751,512,HES-001475
+temporal_subjects,HES-000321,věteřovská kultura,Věteřov Culture,http://vocab.getty.edu/aat/300019276,715,HES-001480
+temporal_subjects,HES-000308,turnovský typ,Turnov type,http://vocab.getty.edu/aat/300019368,817,HES-001485
+temporal_subjects,HES-000334,doba halštatská–laténská,Hallstatt–La Tène Period,http://vocab.getty.edu/aat/300019279,1100,HES-000405
+temporal_subjects,HES-000265,epimagdalénien,Epimagdalenian,http://vocab.getty.edu/aat/300019305,141,HES-001468
+temporal_subjects,HES-000260,szeletien,Szeletian,http://vocab.getty.edu/aat/300106812,131,HES-001467
+temporal_subjects,HES-000331,bylanská kultura,Bylany Culture,http://vocab.getty.edu/aat/300019368,812,HES-001485
+temporal_subjects,HES-000381,novověk 1,Modern Period 1,http://vocab.getty.edu/aat/300021140,2110,HES-000415
+temporal_subjects,HES-000270,přechod raný/vrcholný středověk,Early/High Middle Ages Transition,http://vocab.getty.edu/aat/300020760,1860,HES-000413
+temporal_subjects,HES-000266,ostroměřská skupina,Ostroměř Group,http://vocab.getty.edu/aat/300106730,142,HES-001468
+temporal_subjects,HES-000352,kultura Chlopice-Veselé,Chlopice-Veselé Culture,http://vocab.getty.edu/aat/300106747,554,HES-001479
+temporal_subjects,HES-000383,pozdní doba bronzová,Final Bronze Age,http://vocab.getty.edu/aat/300019278,750,HES-001484
+temporal_subjects,HES-000327,vrcholný–pozdní středověk,High–Late Middle Ages,http://vocab.getty.edu/aat/300111307,1900,HES-000413
+temporal_subjects,HES-000333,střední doba laténská (LtB–C1),Middle La Tène Period (LtB–C1),http://vocab.getty.edu/aat/300019384,1020,HES-001459
+temporal_subjects,HES-000362,kultura s moravskou malovanou keramikou 1,Moravian Painted Ware Culture 1,http://vocab.getty.edu/aat/300019272,422,HES-001474
+temporal_subjects,HES-000307,horákovská kultura,Horákov Culture,http://vocab.getty.edu/aat/300019368,814,HES-001485
+temporal_subjects,HES-000369,ohrozimský typ,Ohrozim Type,http://vocab.getty.edu/aat/300106751,523,HES-001476
+temporal_subjects,HES-000329,podmokelská skupina,Podmokly Group,http://vocab.getty.edu/aat/300019384,1011,HES-001458
+temporal_subjects,HES-000292,micoquien,Micoquien,http://vocab.getty.edu/aat/300106810,123,HES-001464
+temporal_subjects,HES-000387,neolit–eneolit,Neolithic–Eneolithic,http://vocab.getty.edu/aat/300019332,600,HES-000400
+temporal_subjects,HES-000365,michelsberská kultura,Michelsberg Culture,http://vocab.getty.edu/aat/300106751,514,HES-001475
+temporal_subjects,HES-000340,želiezovská skupina,Želizovce Group,http://vocab.getty.edu/aat/300019270,413,HES-001473
+temporal_subjects,HES-000386,raný středověk 1,Early Middle Ages 1,http://vocab.getty.edu/aat/300019537,1810,HES-000412
+temporal_subjects,HES-000370,střední eneolit,Middle Eneolithic,http://vocab.getty.edu/aat/300106753,530,HES-001477
+temporal_subjects,HES-000275,mezolit,Mesolithic,http://vocab.getty.edu/aat/300019264,200,HES-000396
+temporal_subjects,HES-000255,mladší–pozdní doba laténská (LtC2–D),Late–Final La Tène Period (LtC2–D),http://vocab.getty.edu/aat/300019384,1030,HES-001461
+temporal_subjects,HES-000319,starší doba bronzová,Early Bronze Age,http://vocab.getty.edu/aat/300019276,710,HES-001480
+temporal_subjects,HES-000254,doba laténská,La Tène Period,http://vocab.getty.edu/aat/300019384,1000,HES-000404
+temporal_subjects,HES-000261,bohunicien,Bohunician,http://vocab.getty.edu/aat/300019262,132,HES-001467
+temporal_subjects,HES-000359,nitranská kultura,Nitra Culture,http://vocab.getty.edu/aat/300019276,713,HES-001480
+temporal_subjects,HES-000306,lengyelská kultura,Lengyel Culture,http://vocab.getty.edu/aat/300249387,423,HES-001474
+temporal_subjects,HES-000343,starší doba stěhování národů,Early Migration Period,http://vocab.getty.edu/aat/300106913,1410,HES-001469
+temporal_subjects,HES-000296,slezskoplatěnická kultura (HaB),Silesian-Platěnice Culture (HaB),http://vocab.getty.edu/aat/300019362,752,HES-001484
+temporal_subjects,HES-000376,starší doba halštatská (HaC–D1),Early Hallstatt Period (HaC–D1),http://vocab.getty.edu/aat/300019368,810,HES-001485
+temporal_subjects,HES-000355,časná doba laténská (LtA),Early La Tène Period (LtA),http://vocab.getty.edu/aat/300019384,1010,HES-001458
+temporal_subjects,HES-000356,rané mladohradištní období,Early Late Hillfort Period,http://vocab.getty.edu/aat/300020766,1851,HES-001472
+temporal_subjects,HES-000360,střední–mladší neolit,Middle–Late Neolithic,http://vocab.getty.edu/aat/300019272,420,HES-001474
+temporal_subjects,HES-000335,doba římská,Roman Period,http://vocab.getty.edu/aat/300020533,1200,HES-000406
+temporal_subjects,HES-000274,střední paleolit,Middle Palaeolithic,http://vocab.getty.edu/aat/300019261,120,HES-001464
+temporal_subjects,HES-000374,mladší/pozdní eneolit,Late/Final Eneolithic,http://vocab.getty.edu/aat/300106747,550,HES-001479
+temporal_subjects,HES-000315,mladší paleolit,Upper Palaeolithic,http://vocab.getty.edu/aat/300019262,130,HES-001467
+temporal_subjects,HES-000342,doba stěhování národů,Migration Period,http://vocab.getty.edu/aat/300106913,1400,HES-000408
+temporal_subjects,HES-000330,billendorfská kultura,Billendorf Culture,http://vocab.getty.edu/aat/300019278,757,HES-001484
+temporal_subjects,HES-001447,střední/mladší doba laténská (LtC1–2),Middle/Late La Tène Period (LtC1–2),http://vocab.getty.edu/aat/300019384,1025,HES-001460
+temporal_subjects,HES-000316,datace neurčena,unspecified dating,http://vocab.getty.edu/aat/300379012,2600,HES-000418

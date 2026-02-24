@@ -1,0 +1,18 @@
+uuid: 0725631f-4805-4fe4-b9ad-c8c3b6717934
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.relationship_type.research_group-group_membership
+id: group_relationship.research_group-group_membership.created
+field_name: created
+entity_type: group_relationship
+bundle: research_group-group_membership
+label: 'Created on'
+description: 'The time that the group relationship was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

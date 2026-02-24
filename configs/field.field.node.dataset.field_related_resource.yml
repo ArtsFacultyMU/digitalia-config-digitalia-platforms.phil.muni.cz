@@ -1,0 +1,29 @@
+uuid: 176d6dc7-05f5-4292-9644-d6d361bd0688
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.storage.node.field_related_resource
+    - node.type.dataset
+id: node.dataset.field_related_resource
+field_name: field_related_resource
+entity_type: node
+bundle: dataset
+label: 'Related Resource'
+description: 'Reference to the resource in any way related to the described dataset. For example, archaeological reports, research papers, data management plans, or related datasets.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digitalia_muni_entity'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

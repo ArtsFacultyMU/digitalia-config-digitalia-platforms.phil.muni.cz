@@ -1,0 +1,19 @@
+uuid: b146f2ce-f9ed-4071-ab51-9d9639e57c69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plain_text_long
+    - node.type.test_complex_type
+id: node.test_complex_type.field_plain_text_long
+field_name: field_plain_text_long
+entity_type: node
+bundle: test_complex_type
+label: plain_text_long
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

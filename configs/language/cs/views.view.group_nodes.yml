@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: Nadpis
+        status:
+          label: Stav
+      arguments:
+        gid:
+          exception:
+            title: Vše
+      filters:
+        type:
+          expose:
+            label: Typ

@@ -1,0 +1,20 @@
+uuid: 10a84997-47cd-4ddb-94a3-422a691ffb89
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_assessment_type
+field_name: field_assessment_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: c8142a62-c426-4d86-b243-267347c83ffb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_table_of_contents
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_table_of_contents
+field_name: field_table_of_contents
+entity_type: node
+bundle: dataset
+label: 'Table of Contents'
+description: 'A listing of the Table of Contents.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - plain_text
+field_type: text_long

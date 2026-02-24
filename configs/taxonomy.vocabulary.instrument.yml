@@ -1,0 +1,9 @@
+uuid: 8447e867-8c8c-4aac-8165-333838019b58
+langcode: en
+status: true
+dependencies: {  }
+name: Instrument
+vid: instrument
+description: null
+weight: 0
+new_revision: true

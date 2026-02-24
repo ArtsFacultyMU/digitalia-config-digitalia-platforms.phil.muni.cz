@@ -1,0 +1,19 @@
+uuid: 23049b5d-a60f-4474-a822-31842726234d
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.first_and_last_name
+    - field.storage.digitalia_muni_entity.field_first_names
+id: digitalia_muni_entity.first_and_last_name.field_first_names
+field_name: field_first_names
+entity_type: digitalia_muni_entity
+bundle: first_and_last_name
+label: 'First names'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

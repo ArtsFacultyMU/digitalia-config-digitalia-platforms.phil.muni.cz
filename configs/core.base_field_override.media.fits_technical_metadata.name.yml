@@ -1,0 +1,20 @@
+uuid: e9408358-25b5-4756-8ef7-72e4572498dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.fits_technical_metadata
+id: media.fits_technical_metadata.name
+field_name: name
+entity_type: media
+bundle: fits_technical_metadata
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

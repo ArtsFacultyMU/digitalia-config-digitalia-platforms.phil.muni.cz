@@ -1,0 +1,20 @@
+uuid: 634abb8f-e6af-4442-a390-b5948679ff0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.archaeodata
+  module:
+    - path
+id: media.archaeodata.path
+field_name: path
+entity_type: media
+bundle: archaeodata
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

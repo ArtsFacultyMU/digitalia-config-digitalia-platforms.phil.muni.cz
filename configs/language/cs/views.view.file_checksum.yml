@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      arguments:
+        fid:
+          exception:
+            title: Vše

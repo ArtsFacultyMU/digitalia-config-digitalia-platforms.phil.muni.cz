@@ -1,0 +1,161 @@
+uuid: 7ad335eb-610d-4ee8-8211-3412f3e0ddee
+langcode: en
+status: true
+dependencies:
+  config:
+    - eca.eca.process_ghfqwhi
+id: process_ghfqwhi
+label: 'Create handle on node creation'
+tags:
+  - untagged
+documentation: ''
+filename: ''
+modeldata: |
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:qa="http://some-company/schema/bpmn/qa" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+    <bpmn2:process id="Process_gHFqWHI" name="Create handle on node creation" isExecutable="true">
+      <bpmn2:startEvent id="Event_1lm92hx" name="Node is created" camunda:modelerTemplate="org.drupal.event.content_entity:insert">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="content_entity:insert" />
+          </camunda:properties>
+          <camunda:field name="type">
+            <camunda:string>node test_complex_type</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_1sh56ap</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:task id="Activity_0ne3jg0" name="AND" camunda:modelerTemplate="org.drupal.action.eca_void_and_condition">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_void_and_condition" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_15jrmdu</bpmn2:incoming>
+        <bpmn2:outgoing>Flow_0k0l6gy</bpmn2:outgoing>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_15jrmdu" name="Is published" camunda:modelerTemplate="org.drupal.condition.eca_entity_field_value" sourceRef="Gateway_07if4e9" targetRef="Activity_0ne3jg0">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_entity_field_value" />
+          </camunda:properties>
+          <camunda:field name="field_name">
+            <camunda:string>status</camunda:string>
+          </camunda:field>
+          <camunda:field name="operator">
+            <camunda:string>equal</camunda:string>
+          </camunda:field>
+          <camunda:field name="expected_value">
+            <camunda:string>1</camunda:string>
+          </camunda:field>
+          <camunda:field name="type">
+            <camunda:string>value</camunda:string>
+          </camunda:field>
+          <camunda:field name="case">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+          <camunda:field name="negate">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+          <camunda:field name="entity">
+            <camunda:string>node</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+      </bpmn2:sequenceFlow>
+      <bpmn2:task id="Activity_142z5k8" name="Create handle" camunda:modelerTemplate="org.drupal.action.hdl_mint_handle">
+        <bpmn2:extensionElements>
+          <camunda:field name="replace_tokens">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="hdl_mint_handle" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_0k0l6gy</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_0k0l6gy" name="Handle not present" camunda:modelerTemplate="org.drupal.condition.eca_entity_field_value_empty" sourceRef="Activity_0ne3jg0" targetRef="Activity_142z5k8">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_entity_field_value_empty" />
+          </camunda:properties>
+          <camunda:field name="field_name">
+            <camunda:string>field_handle</camunda:string>
+          </camunda:field>
+          <camunda:field name="negate">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+          <camunda:field name="entity">
+            <camunda:string>node</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+      </bpmn2:sequenceFlow>
+      <bpmn2:startEvent id="Event_03i82vz" name="Node is updated" camunda:modelerTemplate="org.drupal.event.content_entity:update">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="content_entity:update" />
+          </camunda:properties>
+          <camunda:field name="type">
+            <camunda:string>node test_complex_type</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_16h2l68</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:sequenceFlow id="Flow_16h2l68" sourceRef="Event_03i82vz" targetRef="Gateway_07if4e9" />
+      <bpmn2:exclusiveGateway id="Gateway_07if4e9">
+        <bpmn2:extensionElements />
+        <bpmn2:incoming>Flow_16h2l68</bpmn2:incoming>
+        <bpmn2:incoming>Flow_1sh56ap</bpmn2:incoming>
+        <bpmn2:outgoing>Flow_15jrmdu</bpmn2:outgoing>
+      </bpmn2:exclusiveGateway>
+      <bpmn2:sequenceFlow id="Flow_1sh56ap" sourceRef="Event_1lm92hx" targetRef="Gateway_07if4e9" />
+    </bpmn2:process>
+    <bpmndi:BPMNDiagram id="sid-9ceb7a11-3b40-474c-8722-4f548473873c">
+      <bpmndi:BPMNPlane id="sid-f170803d-abf1-4e54-b9d0-2d4b88ae7a3e" bpmnElement="Process_gHFqWHI">
+        <bpmndi:BPMNShape id="Event_1lm92hx_di" bpmnElement="Event_1lm92hx">
+          <dc:Bounds x="282" y="212" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="261" y="255" width="78" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_0ne3jg0_di" bpmnElement="Activity_0ne3jg0">
+          <dc:Bounds x="740" y="190" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_142z5k8_di" bpmnElement="Activity_142z5k8">
+          <dc:Bounds x="1070" y="190" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Event_03i82vz_di" bpmnElement="Event_03i82vz">
+          <dc:Bounds x="572" y="492" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="550" y="535" width="81" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Gateway_07if4e9_di" bpmnElement="Gateway_07if4e9" isMarkerVisible="true">
+          <dc:Bounds x="565" y="205" width="50" height="50" />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNEdge id="Flow_15jrmdu_di" bpmnElement="Flow_15jrmdu">
+          <di:waypoint x="615" y="230" />
+          <di:waypoint x="740" y="230" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="648" y="212" width="59" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNEdge id="Flow_0k0l6gy_di" bpmnElement="Flow_0k0l6gy">
+          <di:waypoint x="840" y="230" />
+          <di:waypoint x="1070" y="230" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="928" y="196" width="54" height="27" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNEdge id="Flow_16h2l68_di" bpmnElement="Flow_16h2l68">
+          <di:waypoint x="590" y="492" />
+          <di:waypoint x="590" y="255" />
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNEdge id="Flow_1sh56ap_di" bpmnElement="Flow_1sh56ap">
+          <di:waypoint x="318" y="230" />
+          <di:waypoint x="565" y="230" />
+        </bpmndi:BPMNEdge>
+      </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+  </bpmn2:definitions>

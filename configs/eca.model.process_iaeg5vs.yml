@@ -1,0 +1,74 @@
+uuid: 4e7cfbcc-2751-47ed-a57b-bc16d02e30d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eca.eca.process_iaeg5vs
+id: process_iaeg5vs
+label: 'Assign inside contributor'
+tags:
+  - ''
+documentation: ''
+filename: ''
+modeldata: |
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:qa="http://some-company/schema/bpmn/qa" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+    <bpmn2:process id="Process_iaeg5VS" name="Assign inside contributor" isExecutable="false">
+      <bpmn2:extensionElements />
+      <bpmn2:startEvent id="Event_0wa7jc4" name="Group state: draft -&#62; published" camunda:modelerTemplate="org.drupal.event.workflow:transition">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="workflow:transition" />
+          </camunda:properties>
+          <camunda:field name="type">
+            <camunda:string>group research_group</camunda:string>
+          </camunda:field>
+          <camunda:field name="from_state">
+            <camunda:string>draft</camunda:string>
+          </camunda:field>
+          <camunda:field name="to_state">
+            <camunda:string>published</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_1id5zko</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:task id="Activity_0xdqwv4" name="Assign inside contributor role" />
+      <bpmn2:task id="Activity_0drjr2r" name="Test message" camunda:modelerTemplate="org.drupal.action.action_message_action">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="action_message_action" />
+          </camunda:properties>
+          <camunda:field name="message">
+            <camunda:string>TEST</camunda:string>
+          </camunda:field>
+          <camunda:field name="replace_tokens">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_1id5zko</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_1id5zko" sourceRef="Event_0wa7jc4" targetRef="Activity_0drjr2r" />
+    </bpmn2:process>
+    <bpmndi:BPMNDiagram id="sid-01680429-9769-47a4-b492-8a93fe99942a">
+      <bpmndi:BPMNPlane id="sid-f2614656-cc44-4023-b9bd-a99feb8c7727" bpmnElement="Process_iaeg5VS">
+        <bpmndi:BPMNShape id="Event_0wa7jc4_di" bpmnElement="Event_0wa7jc4">
+          <dc:Bounds x="602" y="202" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="578" y="245" width="86" height="27" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_0drjr2r_di" bpmnElement="Activity_0drjr2r">
+          <dc:Bounds x="950" y="180" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_0xdqwv4_di" bpmnElement="Activity_0xdqwv4">
+          <dc:Bounds x="1300" y="180" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNEdge id="Flow_1id5zko_di" bpmnElement="Flow_1id5zko">
+          <di:waypoint x="638" y="220" />
+          <di:waypoint x="950" y="220" />
+        </bpmndi:BPMNEdge>
+      </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+  </bpmn2:definitions>

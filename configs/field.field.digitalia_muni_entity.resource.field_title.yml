@@ -1,0 +1,19 @@
+uuid: 7d61723c-198f-49c3-bc20-d5cf5977cb9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.storage.digitalia_muni_entity.field_title
+id: digitalia_muni_entity.resource.field_title
+field_name: field_title
+entity_type: digitalia_muni_entity
+bundle: resource
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

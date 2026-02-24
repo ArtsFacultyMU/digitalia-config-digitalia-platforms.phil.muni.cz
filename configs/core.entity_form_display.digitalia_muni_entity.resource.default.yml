@@ -1,0 +1,67 @@
+uuid: fe52c87e-e18c-477b-9229-3d481378da87
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.field.digitalia_muni_entity.resource.field_date_issued
+    - field.field.digitalia_muni_entity.resource.field_identifier
+    - field.field.digitalia_muni_entity.resource.field_resource_relation_type
+    - field.field.digitalia_muni_entity.resource.field_resource_type
+    - field.field.digitalia_muni_entity.resource.field_resource_url
+    - field.field.digitalia_muni_entity.resource.field_title
+  module:
+    - controlled_access_terms
+    - link
+id: digitalia_muni_entity.resource.default
+targetEntityType: digitalia_muni_entity
+bundle: resource
+mode: default
+content:
+  field_date_issued:
+    type: edtf_default
+    weight: 5
+    region: content
+    settings:
+      strict_dates: false
+      intervals: true
+      sets: false
+    third_party_settings: {  }
+  field_identifier:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_resource_relation_type:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_resource_type:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_resource_url:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

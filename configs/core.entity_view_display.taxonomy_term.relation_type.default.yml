@@ -1,0 +1,37 @@
+uuid: 5dd81e70-d621-4180-b068-d6c3641ced5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.relation_type.field_authority_link
+    - taxonomy.vocabulary.relation_type
+  module:
+    - controlled_access_terms
+    - text
+id: taxonomy_term.relation_type.default
+targetEntityType: taxonomy_term
+bundle: relation_type
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_authority_link:
+    type: authority_formatter_default
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,14 @@
+uuid: 36623960-11ae-4e69-ba5c-e8156fe690d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.data_curator
+  module:
+    - user
+id: user_remove_role_action.data_curator
+label: 'Remove the Data curator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: data_curator

@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            first: '« První'
+            last: 'Poslední »'
+      exposed_form:
+        options:
+          submit_button: Odeslat
+          reset_button_label: Resetovat
+          exposed_sorts_label: 'Řadit podle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      empty:
+        area:
+          content:
+            value: '<p>Nebyly nalezeny žádné výsledky. Zkuste upravit parametry vyhledávání.</p>'
+            format: basic_html
+      header:
+        result:
+          content: 'Zobrazeno @start - @end z @total výsledků'
+  search:
+    display_title: Vyhledávání
+    display_options:
+      menu:
+        title: Vyhledávání
+  search_top:
+    display_options:
+      title: Vyhledávání

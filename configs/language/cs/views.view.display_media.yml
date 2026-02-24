@@ -1,0 +1,11 @@
+display:
+  default:
+    display_options:
+      arguments:
+        field_media_of_target_id:
+          exception:
+            title: Vše
+  thumbnail:
+    display_title: Náhled
+    display_options:
+      title: Náhled

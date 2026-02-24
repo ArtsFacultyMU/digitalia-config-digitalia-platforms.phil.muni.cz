@@ -1,0 +1,15 @@
+uuid: 677177ce-0f55-4a0b-9e64-86063bbcea44
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+    - user.role.administrator
+id: research_group-admin_out
+label: Administrator
+weight: -6
+admin: true
+scope: outsider
+global_role: administrator
+group_type: research_group
+permissions: {  }

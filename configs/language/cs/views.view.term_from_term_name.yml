@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      arguments:
+        field_external_uri_uri:
+          exception:
+            title: Vše
+  rest_export_1:
+    display_options:
+      arguments:
+        name:
+          exception:
+            title: Vše
+        vid:
+          exception:
+            title: Vše

@@ -1,0 +1,14 @@
+uuid: 8eb87105-346d-4a9f-916f-c528562ff3fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - hdl.settings
+    - key.key.handle_private_key
+id: handle_private_key
+label: 'Handle private key'
+config_type: system.simple
+config_prefix: ''
+config_name: hdl.settings
+config_item: hdl_admin_private_key
+key_id: handle_private_key

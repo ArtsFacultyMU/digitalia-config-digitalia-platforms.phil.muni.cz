@@ -1,0 +1,18 @@
+uuid: 2d41072a-cb1c-4c27-871b-0cc57ec3bba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_access
+id: taxonomy_term.workbench_access.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: workbench_access
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

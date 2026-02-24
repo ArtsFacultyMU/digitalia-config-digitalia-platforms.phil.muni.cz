@@ -1,0 +1,21 @@
+uuid: 19425b13-db2d-4920-b499-96a0fa34de36
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.test
+    - field.storage.digitalia_muni_entity.field_test_collection_01
+  module:
+    - geolocation_geometry
+id: digitalia_muni_entity.test.field_test_collection_01
+field_name: field_test_collection_01
+entity_type: digitalia_muni_entity
+bundle: test
+label: test_collection_01
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation_geometry_geometrycollection

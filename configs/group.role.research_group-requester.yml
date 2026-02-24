@@ -1,0 +1,16 @@
+uuid: 3124bd23-99bc-4385-8a47-1fad24a9671d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+id: research_group-requester
+label: Requester
+weight: 106
+admin: false
+scope: individual
+global_role: null
+group_type: research_group
+permissions:
+  - 'view group'
+  - 'view own unpublished group'

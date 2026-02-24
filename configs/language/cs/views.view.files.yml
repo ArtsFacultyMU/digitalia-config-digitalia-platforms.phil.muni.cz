@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      fields:
+        status:
+          label: Stav
+        count:
+          format_plural_string: !!binary MSBwbGFjZQNAY291bnQgcGxhY2Vz
+      exposed_form:
+        options:
+          submit_button: Filtr
+      filters:
+        status:
+          expose:
+            label: Stav
+  page_2:
+    display_options:
+      arguments:
+        fid:
+          exception:
+            title: Vše

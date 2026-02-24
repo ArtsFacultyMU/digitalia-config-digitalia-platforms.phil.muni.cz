@@ -1,0 +1,25 @@
+uuid: e1088126-e31e-4b75-9068-a33f636a5289
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.test_hierarchy_group-9376111be95.group_roles
+    - group.relationship_type.test_hierarchy_group-9376111be95
+id: group_relationship.test_hierarchy_group-9376111be95.default
+targetEntityType: group_relationship
+bundle: test_hierarchy_group-9376111be95
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

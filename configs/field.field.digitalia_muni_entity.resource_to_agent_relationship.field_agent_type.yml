@@ -1,0 +1,23 @@
+uuid: 06c73993-e6ca-45c5-9de3-2c1f55e59d8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_agent_relationship
+    - field.storage.digitalia_muni_entity.field_agent_type
+  module:
+    - options
+id: digitalia_muni_entity.resource_to_agent_relationship.field_agent_type
+field_name: field_agent_type
+entity_type: digitalia_muni_entity
+bundle: resource_to_agent_relationship
+label: 'Agent type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: person
+default_value_callback: ''
+settings: {  }
+field_type: list_string

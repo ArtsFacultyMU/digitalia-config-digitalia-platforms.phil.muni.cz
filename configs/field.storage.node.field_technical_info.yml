@@ -1,0 +1,19 @@
+uuid: 42aee19c-ef61-4950-91b1-ed638d3441bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_technical_info
+field_name: field_technical_info
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

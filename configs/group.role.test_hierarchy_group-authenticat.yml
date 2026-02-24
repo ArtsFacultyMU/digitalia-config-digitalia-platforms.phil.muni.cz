@@ -1,0 +1,16 @@
+uuid: b650ae4a-aad8-453f-845e-ef11ce511bd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+    - user.role.authenticated
+id: test_hierarchy_group-authenticat
+label: 'Authenticated user'
+weight: 105
+admin: false
+scope: outsider
+global_role: authenticated
+group_type: test_hierarchy_group
+permissions:
+  - 'view group_node:islandora_object entity'

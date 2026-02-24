@@ -1,0 +1,21 @@
+uuid: 6d05db73-781a-4e97-8133-60eecc318024
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workbench_access
+  module:
+    - text
+id: taxonomy_term.workbench_access.description
+field_name: description
+entity_type: taxonomy_term
+bundle: workbench_access
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

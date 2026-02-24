@@ -1,0 +1,26 @@
+uuid: d3e0dedb-a1ef-4fba-8825-3d9114979a6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - media.type.document
+  module:
+    - text
+id: media.document.field_description
+field_name: field_description
+entity_type: media
+bundle: document
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - restricted_html
+    - plain_text
+field_type: text_long

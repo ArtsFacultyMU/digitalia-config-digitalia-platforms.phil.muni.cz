@@ -1,0 +1,34 @@
+uuid: 3e030008-7631-4d70-abdd-9e882222fc08
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dataset
+    - workflows.workflow.dataset_workflow
+    - workflows.workflow.research_group_workflow
+  module:
+    - content_moderation
+    - group
+    - node
+    - system
+    - toolbar
+id: contributor
+label: Contributor
+weight: 6
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access group overview'
+  - 'access toolbar'
+  - 'create dataset content'
+  - 'create research_group group'
+  - 'delete own dataset content'
+  - 'edit own dataset content'
+  - 'revert dataset revisions'
+  - 'use dataset_workflow transition create_new_draft'
+  - 'use dataset_workflow transition submit_to_review'
+  - 'use research_group_workflow transition edit_request'
+  - 'use research_group_workflow transition publish'
+  - 'use research_group_workflow transition unpublish'
+  - 'view own unpublished content'
+  - 'view the administration theme'

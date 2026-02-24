@@ -1,0 +1,19 @@
+uuid: 03bcee0a-999b-4fd1-a62b-d5f8d0135362
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.funding_reference
+    - field.storage.digitalia_muni_entity.field_local_identifier
+id: digitalia_muni_entity.funding_reference.field_local_identifier
+field_name: field_local_identifier
+entity_type: digitalia_muni_entity
+bundle: funding_reference
+label: 'Local identifier'
+description: 'In case the award or grant has an ID or DOI, the full URL shall be included.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

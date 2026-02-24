@@ -1,0 +1,33 @@
+uuid: 6650722f-f262-4498-83f1-0d9884fc9588
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - options
+id: digitalia_muni_entity.field_location_relation
+field_name: field_location_relation
+entity_type: digitalia_muni_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: refers
+      label: 'Refers to the location'
+    -
+      value: collected
+      label: 'Collected in'
+    -
+      value: processed
+      label: 'Processed at location'
+    -
+      value: stored
+      label: 'Stored at location'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

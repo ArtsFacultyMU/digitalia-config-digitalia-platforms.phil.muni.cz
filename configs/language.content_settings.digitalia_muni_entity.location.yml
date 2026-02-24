@@ -1,0 +1,18 @@
+uuid: 08201ff7-34e1-46c9-a9c4-83ab8434cfa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.location
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: digitalia_muni_entity.location
+target_entity_type_id: digitalia_muni_entity
+target_bundle: location
+default_langcode: site_default
+language_alterable: false

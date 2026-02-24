@@ -1,0 +1,26 @@
+uuid: 4dd2b0a2-ab92-4b55-9f89-4dd3817104fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - media.type.3d_model
+  module:
+    - text
+id: media.3d_model.field_description
+field_name: field_description
+entity_type: media
+bundle: 3d_model
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - restricted_html
+    - plain_text
+field_type: text_long

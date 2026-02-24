@@ -1,0 +1,19 @@
+uuid: 5a13fb97-05fb-44d0-aa5f-14653e0077b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+    - user.role.contributor
+id: research_group-outside_contribut
+label: 'Outside contributor'
+weight: -2
+admin: false
+scope: outsider
+global_role: contributor
+group_type: research_group
+permissions:
+  - 'request group membership'
+  - 'view group'
+  - 'view own group_membership_request relationship'
+  - 'view own unpublished group'

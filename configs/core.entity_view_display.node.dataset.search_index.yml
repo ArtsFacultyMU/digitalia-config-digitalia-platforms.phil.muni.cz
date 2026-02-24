@@ -1,0 +1,388 @@
+uuid: 6b23e407-462f-4b82-9f9b-25361431b430
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.dataset.body
+    - field.field.node.dataset.field_abstract
+    - field.field.node.dataset.field_agent_relationship
+    - field.field.node.dataset.field_alternative_title
+    - field.field.node.dataset.field_assessment_type
+    - field.field.node.dataset.field_data_service
+    - field.field.node.dataset.field_date_accepted
+    - field.field.node.dataset.field_date_available
+    - field.field.node.dataset.field_date_issued
+    - field.field.node.dataset.field_date_submitted
+    - field.field.node.dataset.field_date_updated
+    - field.field.node.dataset.field_date_valid
+    - field.field.node.dataset.field_date_withdrawn
+    - field.field.node.dataset.field_doi
+    - field.field.node.dataset.field_edtf_date_collected
+    - field.field.node.dataset.field_edtf_date_coverage
+    - field.field.node.dataset.field_edtf_date_created
+    - field.field.node.dataset.field_feature_specification
+    - field.field.node.dataset.field_feature_type
+    - field.field.node.dataset.field_funding_reference
+    - field.field.node.dataset.field_instrument
+    - field.field.node.dataset.field_language
+    - field.field.node.dataset.field_license
+    - field.field.node.dataset.field_member_of
+    - field.field.node.dataset.field_methods
+    - field.field.node.dataset.field_model
+    - field.field.node.dataset.field_object_specification
+    - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_related_resource
+    - field.field.node.dataset.field_resource_type
+    - field.field.node.dataset.field_series_information
+    - field.field.node.dataset.field_subtitle
+    - field.field.node.dataset.field_table_of_contents
+    - field.field.node.dataset.field_tags
+    - field.field.node.dataset.field_technical_info
+    - field.field.node.dataset.field_temporal_subject
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+    - datetime
+    - link
+    - text
+    - user
+id: node.dataset.search_index
+targetEntityType: node
+bundle: dataset
+mode: search_index
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_abstract:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_alternative_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_assessment_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_data_service:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_date_accepted:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_date_available:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_date_issued:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_date_submitted:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_date_updated:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_date_valid:
+    type: edtf_default
+    label: hidden
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_date_withdrawn:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_doi:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_edtf_date_collected:
+    type: edtf_default
+    label: hidden
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_edtf_date_coverage:
+    type: edtf_default
+    label: hidden
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_edtf_date_created:
+    type: edtf_default
+    label: hidden
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_feature_specification:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_feature_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_language:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_license:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_member_of:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_methods:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_model:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_object_specification:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  field_object_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_related_resource:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  field_resource_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_series_information:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_table_of_contents:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_technical_info:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_temporal_subject:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  content_moderation_control: true
+  did_image: true
+  field_agent_relationship: true
+  field_funding_reference: true
+  field_gemini_uri: true
+  field_instrument: true
+  islandora_fits_checksum: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: 49b8d726-b4ae-43b9-af4f-fa4ca61e9c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.archaeodata
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.archaeodata
+target_entity_type_id: media
+target_bundle: archaeodata
+default_langcode: site_default
+language_alterable: false

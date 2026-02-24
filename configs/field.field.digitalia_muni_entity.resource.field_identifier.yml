@@ -1,0 +1,19 @@
+uuid: 4c31a71c-22bf-4d8b-bfa3-322a082214ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+    - field.storage.digitalia_muni_entity.field_identifier
+id: digitalia_muni_entity.resource.field_identifier
+field_name: field_identifier
+entity_type: digitalia_muni_entity
+bundle: resource
+label: Identifier
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 52dee3ef-4e7d-4245-bff6-3975f71324c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_coverage
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_coverage
+field_name: field_edtf_date_coverage
+entity_type: node
+bundle: dataset
+label: 'Date Coverage'
+description: 'The date or date range that the resource content applies to, describes, or covers. To indicate the temporal coverage of the resource, use Coverage. This may be different from Collected.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

@@ -1,0 +1,37 @@
+uuid: f0211f51-0b72-466f-8c95-fd00d445167f
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.first_and_last_name
+    - field.field.digitalia_muni_entity.first_and_last_name.field_first_names
+    - field.field.digitalia_muni_entity.first_and_last_name.field_last_names
+id: digitalia_muni_entity.first_and_last_name.default
+targetEntityType: digitalia_muni_entity
+bundle: first_and_last_name
+mode: default
+content:
+  field_first_names:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_names:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

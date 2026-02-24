@@ -1,0 +1,20 @@
+uuid: c2385ed9-8ae2-44d0-bcf6-88baa9c8305e
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.archaeodata
+id: media.archaeodata.name
+field_name: name
+entity_type: media
+bundle: archaeodata
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

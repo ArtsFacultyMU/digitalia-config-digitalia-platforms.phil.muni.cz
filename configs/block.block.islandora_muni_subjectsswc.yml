@@ -1,0 +1,40 @@
+uuid: 0773df63-f2b4-4aac-92f0-248d01a45764
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.subjects
+  module:
+    - context
+    - facets
+  theme:
+    - islandora_muni
+id: islandora_muni_subjectsswc
+theme: islandora_muni
+region: header
+weight: -11
+provider: null
+plugin: 'facet_block:subjects'
+settings:
+  id: 'facet_block:subjects'
+  label: Subject
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: subjectsswc
+visibility:
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: collection

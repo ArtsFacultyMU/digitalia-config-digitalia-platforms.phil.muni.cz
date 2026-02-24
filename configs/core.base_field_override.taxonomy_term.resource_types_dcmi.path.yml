@@ -1,0 +1,20 @@
+uuid: e1f24c82-e282-48b5-aeab-4cafe615d959
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_types_dcmi
+  module:
+    - path
+id: taxonomy_term.resource_types_dcmi.path
+field_name: path
+entity_type: taxonomy_term
+bundle: resource_types_dcmi
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

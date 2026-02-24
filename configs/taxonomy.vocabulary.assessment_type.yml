@@ -1,0 +1,9 @@
+uuid: 598100c7-e42d-4275-b2a5-cadc41ec28fb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Assessment Type'
+vid: assessment_type
+description: 'AIS CR vocabulary "posudek_typ"'
+weight: 0
+new_revision: true

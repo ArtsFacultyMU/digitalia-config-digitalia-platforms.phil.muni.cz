@@ -1,0 +1,29 @@
+uuid: f232ba4c-4767-42f4-a2c3-17b9b4d02f5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publisher_swc
+  module:
+    - context
+    - facets
+  theme:
+    - islandora_muni
+id: islandora_muni_publisherswc
+theme: islandora_muni
+region: header
+weight: -15
+provider: null
+plugin: 'facet_block:publisher_swc'
+settings:
+  id: 'facet_block:publisher_swc'
+  label: Publisher
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_publisherswc
+visibility:
+  context_all:
+    id: context_all
+    negate: false
+    values: collection

@@ -1,0 +1,166 @@
+vid,id,name,name_en,external_uri,weight,parent
+feature_type,HES-000571,budova/stavba,building/structure,http://vocab.getty.edu/aat/300004792,100,
+feature_type,HES-000572,zahloubený objekt,sunken feature,http://vocab.getty.edu/aat/300008020,200,
+feature_type,HES-000573,konstrukční prvek,architectural element,http://vocab.getty.edu/aat/300000885,300,
+feature_type,HES-000574,vrstva/souvrství,layer/layer sequence,http://vocab.getty.edu/aat/300226788,400,
+feature_type,HES-000575,inženýrské sítě,utilities,http://vocab.getty.edu/aat/300152723,500,
+feature_type,HES-000576,komunikace,transportation structure,http://vocab.getty.edu/aat/300120693,600,
+feature_type,HES-000577,kultovní/sakrální objekt,ritual/sacral feature,http://vocab.getty.edu/aat/300263489,700,
+feature_type,HES-000578,objekt/stopa výroby,production feature/trace,http://vocab.getty.edu/aat/300164121,800,
+feature_type,HES-000579,ohrazení/fortifikace,enclosure/fortification,http://vocab.getty.edu/aat/300424383,900,
+feature_type,HES-000580,otopné zařízení,heating equipment,http://vocab.getty.edu/aat/300163292,1000,
+feature_type,HES-000581,pohřební objekt,funerary structure,http://vocab.getty.edu/aat/300122208,1100,
+feature_type,HES-000582,přírodní útvar,natural landform,http://vocab.getty.edu/aat/300266060,1200,
+feature_type,HES-000583,pyrotechnologické zařízení,pyrotechnological device,http://vocab.getty.edu/aat/300022798,1300,
+feature_type,HES-000584,těžební objekt,mining feature,http://vocab.getty.edu/aat/300000388,1400,
+feature_type,HES-000585,nespecifikovaný reliéfní útvar,unspecified terrain feature,http://vocab.getty.edu/aat/300387704,1600,
+feature_type,HES-000421,otopné zařízení,heating equipment,http://vocab.getty.edu/aat/300163292,1000,HES-000580
+feature_type,HES-000422,kamna,stove,http://vocab.getty.edu/aat/300052201,1001,HES-000580
+feature_type,HES-000423,ohniště,fireplace,http://vocab.getty.edu/aat/300052267,1002,HES-000580
+feature_type,HES-000424,otopná pec,oven,http://vocab.getty.edu/aat/300003650,1003,HES-000580
+feature_type,HES-000425,topný kanál,heating channel,http://vocab.getty.edu/aat/300051531,1004,HES-000580
+feature_type,HES-000426,pohřební objekt,funerary structure,http://vocab.getty.edu/aat/300122208,1100,HES-000581
+feature_type,HES-000427,hrob,grave,http://vocab.getty.edu/aat/300005907,1101,HES-000581
+feature_type,HES-000428,hrob komorový,chamber grave,http://vocab.getty.edu/aat/300005935,1102,HES-000581
+feature_type,HES-000429,hrob skříňkový,cist grave,http://vocab.getty.edu/aat/300005941,1103,HES-000581
+feature_type,HES-000430,hrobka,tomb,http://vocab.getty.edu/aat/300005926,1104,HES-000581
+feature_type,HES-000431,mohyla,burial mound,http://vocab.getty.edu/aat/300005903,1105,HES-000581
+feature_type,HES-000432,kostnice,ossuary,http://vocab.getty.edu/aat/300005897,1106,HES-000581
+feature_type,HES-000433,náhrobek/náhrobní kámen,gravestone,http://vocab.getty.edu/aat/300005923,1107,HES-000581
+feature_type,HES-000434,pohřeb kostrový,inhumation burial,http://vocab.getty.edu/aat/300379896,1108,HES-000581
+feature_type,HES-000435,pohřeb žárový,cremation burial,http://vocab.getty.edu/aat/300266358,1109,HES-000581
+feature_type,HES-000436,pohřeb zvířete,animal burial,http://vocab.getty.edu/aat/300251797,1110,HES-000581
+feature_type,HES-000437,pohřeb v sídlištním objektu,burial in settlement context,http://vocab.getty.edu/aat/300387004,1111,HES-000581
+feature_type,HES-000438,budova/stavba,building/structure,http://vocab.getty.edu/aat/300004792,100,HES-000571
+feature_type,HES-000439,budova obytná,residential building,http://vocab.getty.edu/aat/300257729,101,HES-000571
+feature_type,HES-000440,budova hospodářská,non-residential building,http://vocab.getty.edu/aat/300008001,102,HES-000571
+feature_type,HES-000441,jáma,pit,http://vocab.getty.edu/aat/300008027,201,HES-000572
+feature_type,HES-000442,jáma kůlová/sloupová,stakehole/posthole,http://vocab.getty.edu/aat/300400666,202,HES-000572
+feature_type,HES-000443,jáma stavební,construction pit,http://vocab.getty.edu/aat/300108265,204,HES-000572
+feature_type,HES-000444,jáma zásobní,storage pit,http://vocab.getty.edu/aat/300005018,205,HES-000572
+feature_type,HES-000445,cisterna,cistern,http://vocab.getty.edu/aat/300052558,206,HES-000572
+feature_type,HES-000446,jáma odpadní/jímka,waste pit/cesspit,http://vocab.getty.edu/aat/300052556,203,HES-000572
+feature_type,HES-000447,kůl/sloup,stake/post,http://vocab.getty.edu/aat/300001609,305,HES-000573
+feature_type,HES-000448,nika,niche,http://vocab.getty.edu/aat/300002704,306,HES-000573
+feature_type,HES-000449,pilíř,pillar,http://vocab.getty.edu/aat/300264605,307,HES-000573
+feature_type,HES-000450,pilota,pier,http://vocab.getty.edu/aat/300000953,308,HES-000573
+feature_type,HES-000451,podlaha (konstrukce),floor (construction),http://vocab.getty.edu/aat/300002060,309,HES-000573
+feature_type,HES-000452,schodiště,staircase,http://vocab.getty.edu/aat/300003228,310,HES-000573
+feature_type,HES-000453,vrstva/souvrství,layer/layer sequence,http://vocab.getty.edu/aat/300226788,400,HES-000574
+feature_type,HES-000454,destrukční vrstva/souvrství,destruction layer/sequence,http://vocab.getty.edu/aat/300053087,401,HES-000574
+feature_type,HES-000455,geologická/přirozená vrstva,natural/geological layer,http://vocab.getty.edu/aat/300387100,402,HES-000574
+feature_type,HES-000456,násep,bank,http://vocab.getty.edu/aat/300008024,403,HES-000574
+feature_type,HES-000457,navážka,backfill,http://vocab.getty.edu/aat/300008024,404,HES-000574
+feature_type,HES-000458,odpadní vrstva/souvrství,waste layer/sequence,http://vocab.getty.edu/aat/300055241,405,HES-000574
+feature_type,HES-000459,podlaha (vrstva/souvrství),floor layer/sequence,http://vocab.getty.edu/aat/300002060,406,HES-000574
+feature_type,HES-000460,sídlištní vrstva/souvrství,settlement layer/sequence,http://vocab.getty.edu/aat/300387242,407,HES-000574
+feature_type,HES-000461,splach/naplavenina,colluvial/alluvial layer,http://vocab.getty.edu/aat/300132328,408,HES-000574
+feature_type,HES-000462,výplň/zásyp,fill/deposit,http://vocab.getty.edu/aat/300015132,409,HES-000574
+feature_type,HES-000463,žároviště,burned layer,http://vocab.getty.edu/aat/300068986,410,HES-000574
+feature_type,HES-000464,kanalizace,sewer,http://vocab.getty.edu/aat/300006122,501,HES-000575
+feature_type,HES-000465,kostel,church,http://vocab.getty.edu/aat/300007466,702,HES-000577
+feature_type,HES-000466,zemědělský objekt,agricultural structure,http://vocab.getty.edu/aat/300004895,806,HES-000578
+feature_type,HES-000467,stopy orby,plough marks,http://vocab.getty.edu/aat/300008649,810,HES-000578
+feature_type,HES-000468,bastion/reduta,bastion/redoubt,http://vocab.getty.edu/aat/300006913,901,HES-000579
+feature_type,HES-000469,stéla,stela,http://vocab.getty.edu/aat/300007023,1112,HES-000581
+feature_type,HES-000470,přírodní útvar,natural landform,http://vocab.getty.edu/aat/300266060,1200,HES-000582
+feature_type,HES-000471,erozní rýha,gully/ravine,http://vocab.getty.edu/aat/300008769,1201,HES-000582
+feature_type,HES-000472,jeskyně/skalní prostor,cave/abri,http://vocab.getty.edu/aat/300008746,1202,HES-000582
+feature_type,HES-000473,pramen,spring,http://vocab.getty.edu/aat/300008697,1203,HES-000582
+feature_type,HES-000474,vodoteč,riverine water bodies,http://vocab.getty.edu/aat/300132312,1204,HES-000582
+feature_type,HES-000475,vývrat,windthrow,http://vocab.getty.edu/aat/300132410,1205,HES-000582
+feature_type,HES-000476,pyrotechnologické zařízení,pyrotechnological device,http://vocab.getty.edu/aat/300163292,1300,HES-000583
+feature_type,HES-000477,pec,kiln,http://vocab.getty.edu/aat/300022798,1302,HES-000583
+feature_type,HES-000478,haltýř,spring house,http://vocab.getty.edu/aat/300008017,104,HES-000571
+feature_type,HES-000479,kašna,fountain,http://vocab.getty.edu/aat/300006179,105,HES-000571
+feature_type,HES-000480,mlýn,mill,http://vocab.getty.edu/aat/300264626,106,HES-000571
+feature_type,HES-000481,palác,palace,http://vocab.getty.edu/aat/300005734,107,HES-000571
+feature_type,HES-000482,stáj/chlév,stable/cowshed,http://vocab.getty.edu/aat/300005015,108,HES-000571
+feature_type,HES-000483,stodola,barn,http://vocab.getty.edu/aat/300004900,109,HES-000571
+feature_type,HES-000484,sýpka/špýchar,granary/storehouse,http://vocab.getty.edu/aat/300004929,110,HES-000571
+feature_type,HES-000485,zvonice,bell tower,http://vocab.getty.edu/aat/300004848,112,HES-000571
+feature_type,HES-000486,zahloubený objekt,sunken feature,http://vocab.getty.edu/aat/300008020,200,HES-000572
+feature_type,HES-000487,loch,larder (cellar),http://vocab.getty.edu/aat/300004498,208,HES-000572
+feature_type,HES-000488,sklep,cellar,http://vocab.getty.edu/aat/300004759,210,HES-000572
+feature_type,HES-000489,výkop,cut,http://vocab.getty.edu/aat/300008021,212,HES-000572
+feature_type,HES-000490,žlab,ditch,http://vocab.getty.edu/aat/300006178,213,HES-000572
+feature_type,HES-000491,konstrukční prvek,architectural element,http://vocab.getty.edu/aat/300000885,300,HES-000573
+feature_type,HES-000492,dláždění,pavement,http://vocab.getty.edu/aat/300002088,301,HES-000573
+feature_type,HES-000493,hráz,embankment/dam,http://vocab.getty.edu/aat/300008023,302,HES-000573
+feature_type,HES-000494,chodba,corridor,http://vocab.getty.edu/aat/300004294,303,HES-000573
+feature_type,HES-000495,klenba,vaults,http://vocab.getty.edu/aat/300001324,304,HES-000573
+feature_type,HES-000496,kaple,chapel,http://vocab.getty.edu/aat/300004590,701,HES-000577
+feature_type,HES-000497,(polo)zemnice,pit house,http://vocab.getty.edu/aat/300137527,103,HES-000571
+feature_type,HES-000498,základy,foundations,http://vocab.getty.edu/aat/300000919,311,HES-000573
+feature_type,HES-000499,křtitelnice,baptismal font,http://vocab.getty.edu/aat/300080617,703,HES-000577
+feature_type,HES-000500,menhir,menhir,http://vocab.getty.edu/aat/300006985,705,HES-000577
+feature_type,HES-000501,oltář,altar,http://vocab.getty.edu/aat/300003725,706,HES-000577
+feature_type,HES-000502,smírčí kříž,wayside cross,http://vocab.getty.edu/aat/300006969,708,HES-000577
+feature_type,HES-000503,mezní pás,field boundary,http://vocab.getty.edu/aat/300004182,807,HES-000578
+feature_type,HES-000504,plužina,field system,http://vocab.getty.edu/aat/300008632,808,HES-000578
+feature_type,HES-000505,rybník/nádrž,pond/water tank,http://vocab.getty.edu/aat/300008688,809,HES-000578
+feature_type,HES-000506,palebné postavení,gun emplacement,http://vocab.getty.edu/aat/300002501,907,HES-000579
+feature_type,HES-000507,palisáda,palisade,http://vocab.getty.edu/aat/300003717,908,HES-000579
+feature_type,HES-000508,příkop,moat,http://vocab.getty.edu/aat/300003716,910,HES-000579
+feature_type,HES-000509,věž,tower,http://vocab.getty.edu/aat/300004862,912,HES-000579
+feature_type,HES-000510,věžice,half tower,http://vocab.getty.edu/aat/300411504,913,HES-000579
+feature_type,HES-000511,šibenice,gallows,http://vocab.getty.edu/aat/300266883,111,HES-000571
+feature_type,HES-000512,hliník,clay pit,http://vocab.getty.edu/aat/300000389,207,HES-000572
+feature_type,HES-000513,náhon,millrace,http://vocab.getty.edu/aat/300006080,209,HES-000572
+feature_type,HES-000514,studna,water well,http://vocab.getty.edu/aat/300152327,211,HES-000572
+feature_type,HES-000515,inženýrské sítě,utilities,http://vocab.getty.edu/aat/300152723,500,HES-000575
+feature_type,HES-000516,kolektor,collector,http://vocab.getty.edu/aat/300152723,502,HES-000575
+feature_type,HES-000517,trativod,drainage,http://vocab.getty.edu/aat/300164058,503,HES-000575
+feature_type,HES-000518,vodovod,water supply pipe,http://vocab.getty.edu/aat/300432673,504,HES-000575
+feature_type,HES-000519,součást komunikace,transportation structure,http://vocab.getty.edu/aat/300120693,600,HES-000576
+feature_type,HES-000520,cesta,path/road,http://vocab.getty.edu/aat/300008217,601,HES-000576
+feature_type,HES-000521,hať,corduroy road,http://vocab.getty.edu/aat/300404854,602,HES-000576
+feature_type,HES-000522,mezník/patník,milestone/boundary stone,http://vocab.getty.edu/aat/300006961,603,HES-000576
+feature_type,HES-000523,most,bridge,http://vocab.getty.edu/aat/300007836,604,HES-000576
+feature_type,HES-000524,úvoz,hollow way,http://vocab.getty.edu/aat/300008295,605,HES-000576
+feature_type,HES-000525,kultovní/sakrální objekt,ritual/sacral feature,http://vocab.getty.edu/aat/300263489,700,HES-000577
+feature_type,HES-000526,zahrada,garden,http://vocab.getty.edu/aat/300008090,811,HES-000578
+feature_type,HES-000527,ohrazení/fortifikace,enclosure/fortification,http://vocab.getty.edu/aat/300424383,900,HES-000579
+feature_type,HES-000528,bašta,wall tower,http://vocab.getty.edu/aat/300002495,902,HES-000579
+feature_type,HES-000529,brána,gate,http://vocab.getty.edu/aat/300002916,903,HES-000579
+feature_type,HES-000530,hradba,defensive wall,http://vocab.getty.edu/aat/300002485,904,HES-000579
+feature_type,HES-000531,motte,motte,http://vocab.getty.edu/aat/300175482,905,HES-000579
+feature_type,HES-000532,ohradní zeď/plot,wall/fence,http://vocab.getty.edu/aat/300005044,906,HES-000579
+feature_type,HES-000533,parkánová hradba,zwinger wall,http://vocab.getty.edu/aat/300002563,909,HES-000579
+feature_type,HES-000534,val,rampart,http://vocab.getty.edu/aat/300002505,911,HES-000579
+feature_type,HES-000535,zákop,trench,http://vocab.getty.edu/aat/300006951,914,HES-000579
+feature_type,HES-000536,převýšená plocha,mound,http://vocab.getty.edu/aat/300008024,1601,HES-000585
+feature_type,HES-000537,zahloubená plocha,depression,http://vocab.getty.edu/aat/300008021,1602,HES-000585
+feature_type,HES-000538,lineární převýšený útvar,linear mound,http://vocab.getty.edu/aat/300428241,1603,HES-000585
+feature_type,HES-000539,lineární zahloubený útvar,linear depression,http://vocab.getty.edu/aat/300008021,1604,HES-000585
+feature_type,HES-000540,malba/freska,painting/fresco,http://vocab.getty.edu/aat/300177433,704,HES-000577
+feature_type,HES-000541,skalní rytina,rock carving,http://vocab.getty.edu/aat/300080131,707,HES-000577
+feature_type,HES-000542,výrobní objekt,production feature,http://vocab.getty.edu/aat/300164121,800,HES-000578
+feature_type,HES-000543,místo zpracování,processing place,http://vocab.getty.edu/aat/300004531,801,HES-000578
+feature_type,HES-000544,místo výroby,production place,http://vocab.getty.edu/aat/300004531,802,HES-000578
+feature_type,HES-000545,hamr,hammer mill,http://vocab.getty.edu/aat/300426925,803,HES-000578
+feature_type,HES-000546,kovárna,blacksmith,http://vocab.getty.edu/aat/300025313,804,HES-000578
+feature_type,HES-000547,vápenická jáma,lime pit,http://vocab.getty.edu/aat/300255747,805,HES-000578
+feature_type,HES-000548,pec cihlářská,brick oven,http://vocab.getty.edu/aat/300022989,1303,HES-000583
+feature_type,HES-000549,pec dehtářská,tar pit,http://vocab.getty.edu/aat/300022798,1304,HES-000583
+feature_type,HES-000550,pec hrnčířská,pottery kiln,http://vocab.getty.edu/aat/300430673,1305,HES-000583
+feature_type,HES-000551,pec hutnická,iron-smelting furnace,http://vocab.getty.edu/aat/300427425,1306,HES-000583
+feature_type,HES-000552,pec chlebová,bake oven,http://vocab.getty.edu/aat/300195511,1307,HES-000583
+feature_type,HES-000553,pec kovolitecká,foundry,http://vocab.getty.edu/aat/300103997,1308,HES-000583
+feature_type,HES-000554,milíř,charcoal kiln,http://vocab.getty.edu/aat/300022798,1301,HES-000583
+feature_type,HES-000555,pec sklářská,glass furnace,http://vocab.getty.edu/aat/300424940,1309,HES-000583
+feature_type,HES-000556,pec vápenická,lime kiln,http://vocab.getty.edu/aat/300006404,1310,HES-000583
+feature_type,HES-000557,kovářská výheň,forge,http://vocab.getty.edu/aat/300023137,1311,HES-000583
+feature_type,HES-000558,těžební objekt,mining feature,http://vocab.getty.edu/aat/300000388,1400,HES-000584
+feature_type,HES-000559,místo těžby,extracting place,http://vocab.getty.edu/aat/300000388,1401,HES-000584
+feature_type,HES-000560,lom,quarry,http://vocab.getty.edu/aat/300000402,1402,HES-000584
+feature_type,HES-000561,obval,spoil bank,http://vocab.getty.edu/aat/300000821,1403,HES-000584
+feature_type,HES-000562,pinka,binge,http://vocab.getty.edu/aat/300443505,1404,HES-000584
+feature_type,HES-000563,sejp/halda,spoil heap,http://vocab.getty.edu/aat/300000821,1405,HES-000584
+feature_type,HES-000564,šachta,shaft,http://vocab.getty.edu/aat/300006425,1406,HES-000584
+feature_type,HES-000565,štola,adit,http://vocab.getty.edu/aat/300006425,1407,HES-000584
+feature_type,HES-000566,těžební jáma,mining pit,http://vocab.getty.edu/aat/300000389,1408,HES-000584
+feature_type,HES-000567,nespecifikovaný reliéfní útvar,unspecified terrain feature,http://vocab.getty.edu/aat/300387704,1600,HES-000585
+feature_type,HES-000568,neklidný terén,uneven surface,http://vocab.getty.edu/aat/300387704,1605,HES-000585
+feature_type,HES-000569,plošina,platform,http://vocab.getty.edu/aat/300393219,1606,HES-000585
+feature_type,HES-000570,terénní hrana,terrain edge,http://vocab.getty.edu/aat/300004182,1607,HES-000585

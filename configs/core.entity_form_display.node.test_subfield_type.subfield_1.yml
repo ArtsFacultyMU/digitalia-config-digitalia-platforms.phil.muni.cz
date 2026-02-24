@@ -1,0 +1,44 @@
+uuid: 4f0d2ae4-412a-4a24-91f4-697a0b717ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.subfield_1
+    - field.field.node.test_subfield_type.field_integer
+    - field.field.node.test_subfield_type.field_test_taxonomy
+    - node.type.test_subfield_type
+id: node.test_subfield_type.subfield_1
+targetEntityType: node
+bundle: test_subfield_type
+mode: subfield_1
+content:
+  field_integer:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_test_taxonomy:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

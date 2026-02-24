@@ -1,0 +1,29 @@
+uuid: 55da7486-e170-4a9f-ad7a-4f482be890c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_specification
+    - node.type.dataset
+    - taxonomy.vocabulary.feature_specification
+id: node.dataset.field_feature_specification
+field_name: field_feature_specification
+entity_type: node
+bundle: dataset
+label: 'Feature Specification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      feature_specification: feature_specification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

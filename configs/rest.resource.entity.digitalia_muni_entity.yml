@@ -1,0 +1,38 @@
+uuid: 05c25b65-510c-4797-9edb-5e6e1fb5e5c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - serialization
+    - user
+_core:
+  default_config_hash: tB1h6uCUU2H-nylEPszDbzA_o5YZ0VU-ZPYFyjimJrY
+id: entity.digitalia_muni_entity
+plugin_id: 'entity:digitalia_muni_entity'
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  POST:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  DELETE:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  PATCH:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie

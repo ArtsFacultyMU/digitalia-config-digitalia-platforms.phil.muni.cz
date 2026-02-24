@@ -1,0 +1,27 @@
+uuid: ce51318f-199a-440f-9061-be2a5e9fc333
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.test_subfield_type.field_integer
+    - field.field.node.test_subfield_type.field_test_taxonomy
+    - node.type.test_subfield_type
+  module:
+    - user
+id: node.test_subfield_type.teaser
+targetEntityType: node
+bundle: test_subfield_type
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  did_image: true
+  field_integer: true
+  field_test_taxonomy: true
+  langcode: true
+  search_api_excerpt: true

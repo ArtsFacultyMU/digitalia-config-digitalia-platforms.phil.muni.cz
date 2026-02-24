@@ -1,0 +1,19 @@
+uuid: 1059983f-e460-4c58-b82e-3caffa696b8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doi
+    - node.type.dataset
+id: node.dataset.field_doi
+field_name: field_doi
+entity_type: node
+bundle: dataset
+label: DOI
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

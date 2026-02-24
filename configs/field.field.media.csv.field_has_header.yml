@@ -1,0 +1,21 @@
+uuid: 81b120f7-1a69-421f-8fda-9c729d902c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_has_header
+    - media.type.csv
+id: media.csv.field_has_header
+field_name: field_has_header
+entity_type: media
+bundle: csv
+label: 'has header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

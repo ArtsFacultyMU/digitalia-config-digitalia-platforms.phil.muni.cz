@@ -1,0 +1,19 @@
+uuid: 92d4b84a-767e-40df-aee6-ed71a17d3623
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternative_title
+    - node.type.dataset
+id: node.dataset.field_alternative_title
+field_name: field_alternative_title
+entity_type: node
+bundle: dataset
+label: 'Alternative Title'
+description: 'Alternative dataset title - could be abbreviations, transcribing numerical values, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,14 @@
+uuid: 8485c338-f6a8-4d3d-bb03-10cf0a0d7009
+langcode: en
+status: false
+dependencies: {  }
+id: 3d_model
+label: '3D Model'
+description: 'A 3D model file.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

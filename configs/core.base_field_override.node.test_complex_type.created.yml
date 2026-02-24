@@ -1,0 +1,18 @@
+uuid: 73e08a35-2b97-482a-bde5-1bb07cb65c56
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.test_complex_type
+id: node.test_complex_type.created
+field_name: created
+entity_type: node
+bundle: test_complex_type
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

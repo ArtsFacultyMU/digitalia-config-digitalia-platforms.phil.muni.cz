@@ -1,0 +1,21 @@
+uuid: 070ac404-a2fe-4c7c-8cdf-eb7c3431d85c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_collected
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_collected
+field_name: field_edtf_date_collected
+entity_type: node
+bundle: dataset
+label: 'Date Collected'
+description: 'The date or date range in which the resource content was collected. To indicate precise or particular timeframes in which research was conducted. Use EDTF https://www.loc.gov/standards/datetime/'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

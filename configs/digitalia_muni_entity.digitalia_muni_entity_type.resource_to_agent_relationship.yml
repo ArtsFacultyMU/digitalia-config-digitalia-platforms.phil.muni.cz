@@ -1,0 +1,6 @@
+uuid: 4eac18a2-356c-4afd-b579-72aa82100b78
+langcode: en
+status: true
+dependencies: {  }
+id: resource_to_agent_relationship
+label: 'Resource to agent relationship'

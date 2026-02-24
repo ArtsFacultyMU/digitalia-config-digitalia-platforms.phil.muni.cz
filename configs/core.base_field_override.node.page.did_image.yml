@@ -1,0 +1,22 @@
+uuid: 323344b6-d890-458f-8ef7-86000964f6d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - dgi_image_discovery
+id: node.page.did_image
+field_name: did_image
+entity_type: node
+bundle: page
+label: 'DGI Image Discovery Discovered Image'
+description: 'Image to represent the given node.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: did_image

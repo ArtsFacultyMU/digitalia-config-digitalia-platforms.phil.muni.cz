@@ -1,0 +1,73 @@
+vid,id,name,name_en,external_uri,weight,parent
+feature_specification,HES-000963,způsob provedení,construction type,http://vocab.getty.edu/aat/300054608,100,
+feature_specification,HES-000964,těžený/zpracovávaný materiál,extracted/processed material,http://vocab.getty.edu/aat/300379769,400,
+feature_specification,HES-000893,konstrukce zděná,masonry construction,http://vocab.getty.edu/aat/300404383,100,HES-000963
+feature_specification,HES-000894,konstrukce cihlová,brick structure,http://vocab.getty.edu/aat/300010534,101,HES-000963
+feature_specification,HES-000895,konstrukce dlaždicová,tiled structure,http://vocab.getty.edu/aat/300053688,102,HES-000963
+feature_specification,HES-000896,konstrukce kamenná,stonework,http://vocab.getty.edu/aat/300015334,103,HES-000963
+feature_specification,HES-000897,konstrukce dřevěná,wooden structure,http://vocab.getty.edu/aat/300011914,104,HES-000963
+feature_specification,HES-000898,konstrukce kůlová/sloupová,post-and-beam structure,http://vocab.getty.edu/aat/300001484,105,HES-000963
+feature_specification,HES-000899,konstrukce roubená,log construction,http://vocab.getty.edu/aat/300164026,106,HES-000963
+feature_specification,HES-000900,konstrukce hrázděná,half-timber construction,http://vocab.getty.edu/aat/300125479,107,HES-000963
+feature_specification,HES-000901,konstrukce sypaná/vršená,earth construction,http://vocab.getty.edu/aat/300404382,109,HES-000963
+feature_specification,HES-000902,konstrukce zahloubená,sunken structure,http://vocab.getty.edu/aat/300008020,110,HES-000963
+feature_specification,HES-000903,barvivo,colourant,http://vocab.getty.edu/aat/300013026,400,HES-000964
+feature_specification,HES-000904,bronz,bronze,http://vocab.getty.edu/aat/300010957,401,HES-000964
+feature_specification,HES-000905,kost lidská,human bone,http://vocab.getty.edu/aat/300451454,421,HES-000964
+feature_specification,HES-000906,kost zvířecí,animal bone,http://vocab.getty.edu/aat/300011798,422,HES-000964
+feature_specification,HES-000907,kov,metal,http://vocab.getty.edu/aat/300010900,423,HES-000964
+feature_specification,HES-000908,kov barevný,nonferrous metal,http://vocab.getty.edu/aat/300011014,424,HES-000964
+feature_specification,HES-000909,kůže,leather,http://vocab.getty.edu/aat/300011845,426,HES-000964
+feature_specification,HES-000910,malta,mortar,http://vocab.getty.edu/aat/300014741,427,HES-000964
+feature_specification,HES-000911,mazanice,daub,http://vocab.getty.edu/aat/300163933,428,HES-000964
+feature_specification,HES-000912,měď,copper,http://vocab.getty.edu/aat/300011020,429,HES-000964
+feature_specification,HES-000913,mosaz,brass,http://vocab.getty.edu/aat/300010946,430,HES-000964
+feature_specification,HES-000914,obilky/semena,caryopses/seeds,http://vocab.getty.edu/aat/300011902,431,HES-000964
+feature_specification,HES-000915,olovo,lead,http://vocab.getty.edu/aat/300011022,432,HES-000964
+feature_specification,HES-000916,omítka,plaster,http://vocab.getty.edu/aat/300014922,433,HES-000964
+feature_specification,HES-000917,papír,paper,http://vocab.getty.edu/aat/300014109,434,HES-000964
+feature_specification,HES-000918,paroh,antler,http://vocab.getty.edu/aat/300011796,435,HES-000964
+feature_specification,HES-000919,pecka,fruit stone,http://vocab.getty.edu/aat/300011868,436,HES-000964
+feature_specification,HES-000920,perla,pearl,http://vocab.getty.edu/aat/300011827,437,HES-000964
+feature_specification,HES-000921,cín,tin,http://vocab.getty.edu/aat/300133748,402,HES-000964
+feature_specification,HES-000922,dehet,tar,http://vocab.getty.edu/aat/300012991,403,HES-000964
+feature_specification,HES-000923,dřevo,wood,http://vocab.getty.edu/aat/300011914,404,HES-000964
+feature_specification,HES-000924,grafit,graphite,http://vocab.getty.edu/aat/300011098,405,HES-000964
+feature_specification,HES-000925,hlína,clay,http://vocab.getty.edu/aat/300010439,406,HES-000964
+feature_specification,HES-000926,jantar,amber,http://vocab.getty.edu/aat/300012934,407,HES-000964
+feature_specification,HES-000927,kámen,stone,http://vocab.getty.edu/aat/300011176,408,HES-000964
+feature_specification,HES-000928,kámen broušený,polished stone,http://vocab.getty.edu/aat/300011176,409,HES-000964
+feature_specification,HES-000929,kámen drahý,gemstone,http://vocab.getty.edu/aat/300201964,410,HES-000964
+feature_specification,HES-000930,kámen drtidlo/žernov,grinding stone,http://vocab.getty.edu/aat/300263933,411,HES-000964
+feature_specification,HES-000931,kámen stavební,building stone,http://vocab.getty.edu/aat/300011700,412,HES-000964
+feature_specification,HES-000932,kámen štípaný,lithics,http://vocab.getty.edu/aat/300379567,413,HES-000964
+feature_specification,HES-000933,keramika,ceramic,http://vocab.getty.edu/aat/300235507,414,HES-000964
+feature_specification,HES-000934,keramika fajáns/majolika,faience/maiolica,http://vocab.getty.edu/aat/300010668,415,HES-000964
+feature_specification,HES-000935,keramika kamenina,stoneware,http://vocab.getty.edu/aat/300010672,416,HES-000964
+feature_specification,HES-000936,keramika porcelán,porcelain,http://vocab.getty.edu/aat/300010662,417,HES-000964
+feature_specification,HES-000937,keramika terra sigillata,terra sigillata ware,http://vocab.getty.edu/aat/300387395,418,HES-000964
+feature_specification,HES-000938,korál,coral,http://vocab.getty.edu/aat/300011800,419,HES-000964
+feature_specification,HES-000939,kost,bone,http://vocab.getty.edu/aat/300011798,420,HES-000964
+feature_specification,HES-000940,kůra,bark,http://vocab.getty.edu/aat/300011860,425,HES-000964
+feature_specification,HES-000941,perleť/mušle,nacre/shell,http://vocab.getty.edu/aat/300310135,438,HES-000964
+feature_specification,HES-000942,plast,plastic,http://vocab.getty.edu/aat/300014570,439,HES-000964
+feature_specification,HES-000943,proutí,wattle,http://vocab.getty.edu/aat/300011888,440,HES-000964
+feature_specification,HES-000944,pryskyřice,resin,http://vocab.getty.edu/aat/300012882,441,HES-000964
+feature_specification,HES-000945,roh,horn,http://vocab.getty.edu/aat/300011826,442,HES-000964
+feature_specification,HES-000946,schránky měkkýšů,mollusc shell,http://vocab.getty.edu/aat/300011829,443,HES-000964
+feature_specification,HES-000947,sklo,glass,http://vocab.getty.edu/aat/300010797,444,HES-000964
+feature_specification,HES-000948,slonovina/mamutovina,ivory,http://vocab.getty.edu/aat/300011857,445,HES-000964
+feature_specification,HES-000949,spondylus,spondylus,http://vocab.getty.edu/aat/300417382,446,HES-000964
+feature_specification,HES-000950,stříbro,silver,http://vocab.getty.edu/aat/300011029,447,HES-000964
+feature_specification,HES-000951,švartna,sapropel,http://vocab.getty.edu/aat/300380558,448,HES-000964
+feature_specification,HES-000952,textil,textile,http://vocab.getty.edu/aat/300231565,449,HES-000964
+feature_specification,HES-000953,uhlí,coal,http://vocab.getty.edu/aat/300015149,450,HES-000964
+feature_specification,HES-000954,uhlí dřevěné,charcoal,http://vocab.getty.edu/aat/300012862,451,HES-000964
+feature_specification,HES-000955,vápno,quicklime,http://vocab.getty.edu/aat/300011740,452,HES-000964
+feature_specification,HES-000956,vejce,egg,http://vocab.getty.edu/aat/300011801,453,HES-000964
+feature_specification,HES-000957,vosk,wax,http://vocab.getty.edu/aat/300014585,454,HES-000964
+feature_specification,HES-000958,zlato,gold,http://vocab.getty.edu/aat/300011021,455,HES-000964
+feature_specification,HES-000959,zub,tooth,http://vocab.getty.edu/aat/300011855,456,HES-000964
+feature_specification,HES-000960,zub lidský,human tooth,http://vocab.getty.edu/aat/300011855,457,HES-000964
+feature_specification,HES-000961,zub zvířecí,animal tooth,http://vocab.getty.edu/aat/300011855,458,HES-000964
+feature_specification,HES-000962,železo,iron,http://vocab.getty.edu/aat/300011002,459,HES-000964

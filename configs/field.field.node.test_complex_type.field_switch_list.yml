@@ -1,0 +1,21 @@
+uuid: 8adad2d3-a89c-4d9c-84a2-e82c302129ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_switch_list
+    - node.type.test_complex_type
+  module:
+    - options
+id: node.test_complex_type.field_switch_list
+field_name: field_switch_list
+entity_type: node
+bundle: test_complex_type
+label: 'Switch list'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

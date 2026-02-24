@@ -1,0 +1,21 @@
+uuid: 3b2c22eb-0375-4b32-ac6a-4cae8fe12546
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.location
+    - field.storage.digitalia_muni_entity.field_geofield_multipolygon
+  module:
+    - geofield
+id: digitalia_muni_entity.location.field_geofield_multipolygon
+field_name: field_geofield_multipolygon
+entity_type: digitalia_muni_entity
+bundle: location
+label: geofield_multipolygon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

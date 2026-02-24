@@ -1,0 +1,37 @@
+uuid: a8f23cf6-39a7-4668-8a1d-29eafce3fb9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test_subfield_type.field_integer
+    - field.field.node.test_subfield_type.field_test_taxonomy
+    - node.type.test_subfield_type
+  module:
+    - user
+id: node.test_subfield_type.default
+targetEntityType: node
+bundle: test_subfield_type
+mode: default
+content:
+  field_integer:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_test_taxonomy:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  did_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

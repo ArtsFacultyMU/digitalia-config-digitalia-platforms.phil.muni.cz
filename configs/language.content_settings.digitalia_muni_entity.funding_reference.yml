@@ -1,0 +1,18 @@
+uuid: b2e66327-470b-455c-8d83-d5c20d70048f
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.funding_reference
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: digitalia_muni_entity.funding_reference
+target_entity_type_id: digitalia_muni_entity
+target_bundle: funding_reference
+default_langcode: site_default
+language_alterable: false

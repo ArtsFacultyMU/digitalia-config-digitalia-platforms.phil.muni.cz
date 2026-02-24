@@ -1,0 +1,21 @@
+uuid: d0f8ba2c-5ae6-495f-a428-131cdc5a34cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+id: digitalia_muni_entity.field_award_title
+field_name: field_award_title
+entity_type: digitalia_muni_entity
+type: string
+settings:
+  max_length: 500
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,130 @@
+uuid: 1af36a2f-3f06-4496-85de-9371bc137a2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eca.eca.process_xhnvfnk
+id: process_xhnvfnk
+label: 'Request group'
+tags:
+  - untagged
+documentation: ''
+filename: ''
+modeldata: |
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:qa="http://some-company/schema/bpmn/qa" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+    <bpmn2:process id="Process_xhNVFNK" name="Request group" isExecutable="true">
+      <bpmn2:startEvent id="Event_0cnm0ii" name="Group created" camunda:modelerTemplate="org.drupal.event.content_entity:insert">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="content_entity:insert" />
+          </camunda:properties>
+          <camunda:field name="type">
+            <camunda:string>group research_group</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_0etcrjh</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:task id="Activity_1saqs95" name="Switch user to admin" camunda:modelerTemplate="org.drupal.action.eca_switch_account">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_switch_account" />
+          </camunda:properties>
+          <camunda:field name="user_id">
+            <camunda:string>1</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_0etcrjh</bpmn2:incoming>
+        <bpmn2:outgoing>Flow_10yhdc2</bpmn2:outgoing>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_0etcrjh" name="by Contributor" camunda:modelerTemplate="org.drupal.condition.eca_current_user_role" sourceRef="Event_0cnm0ii" targetRef="Activity_1saqs95">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_current_user_role" />
+          </camunda:properties>
+          <camunda:field name="role">
+            <camunda:string>contributor</camunda:string>
+          </camunda:field>
+          <camunda:field name="negate">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+      </bpmn2:sequenceFlow>
+      <bpmn2:task id="Activity_1gxw9dk" name="Unpublish group" camunda:modelerTemplate="org.drupal.action.entity:unpublish_action:group">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="entity:unpublish_action:group" />
+          </camunda:properties>
+          <camunda:field name="object">
+            <camunda:string>group</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_10yhdc2</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_10yhdc2" sourceRef="Activity_1saqs95" targetRef="Activity_1gxw9dk" />
+      <bpmn2:task id="Activity_103vx1i" name="Send notification" camunda:modelerTemplate="org.drupal.action.action_send_email_action">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="action_send_email_action" />
+          </camunda:properties>
+          <camunda:field name="recipient">
+            <camunda:string>adler@phil.muni.cz</camunda:string>
+          </camunda:field>
+          <camunda:field name="subject">
+            <camunda:string>A research group was created by Contributor</camunda:string>
+          </camunda:field>
+          <camunda:field name="message">
+            <camunda:string>Message!</camunda:string>
+          </camunda:field>
+          <camunda:field name="replace_tokens">
+            <camunda:string>no</camunda:string>
+          </camunda:field>
+        </bpmn2:extensionElements>
+      </bpmn2:task>
+      <bpmn2:textAnnotation id="TextAnnotation_0hq5g0l">
+        <bpmn2:text>disabled until sending e-mail is configured</bpmn2:text>
+      </bpmn2:textAnnotation>
+      <bpmn2:association id="Association_14odbzd" associationDirection="None" sourceRef="Activity_103vx1i" targetRef="TextAnnotation_0hq5g0l" />
+    </bpmn2:process>
+    <bpmndi:BPMNDiagram id="sid-1b964736-270b-4acc-bd76-75ef311ad681">
+      <bpmndi:BPMNPlane id="sid-dd11f168-5469-4214-9735-3ff13f0d0574" bpmnElement="Process_xhNVFNK">
+        <bpmndi:BPMNShape id="Event_0cnm0ii_di" bpmnElement="Event_0cnm0ii">
+          <dc:Bounds x="522" y="172" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="505" y="215" width="71" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_1saqs95_di" bpmnElement="Activity_1saqs95">
+          <dc:Bounds x="830" y="150" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_1gxw9dk_di" bpmnElement="Activity_1gxw9dk">
+          <dc:Bounds x="1120" y="150" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_103vx1i_di" bpmnElement="Activity_103vx1i">
+          <dc:Bounds x="1520" y="150" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNEdge id="Association_14odbzd_di" bpmnElement="Association_14odbzd">
+          <di:waypoint x="1608" y="150" />
+          <di:waypoint x="1632" y="125" />
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNEdge id="Flow_0etcrjh_di" bpmnElement="Flow_0etcrjh">
+          <di:waypoint x="558" y="190" />
+          <di:waypoint x="830" y="190" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="659" y="172" width="70" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNEdge id="Flow_10yhdc2_di" bpmnElement="Flow_10yhdc2">
+          <di:waypoint x="930" y="190" />
+          <di:waypoint x="1120" y="190" />
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNShape id="TextAnnotation_0hq5g0l_di" bpmnElement="TextAnnotation_0hq5g0l">
+          <dc:Bounds x="1620" y="70" width="100" height="55" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+      </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+  </bpmn2:definitions>

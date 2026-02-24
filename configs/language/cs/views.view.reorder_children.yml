@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: Nadpis
+      arguments:
+        field_member_of_target_id:
+          exception:
+            title: Vše

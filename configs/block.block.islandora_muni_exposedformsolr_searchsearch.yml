@@ -1,0 +1,28 @@
+uuid: aac24b16-23bf-4c85-97e9-6f9f89c27610
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search
+  module:
+    - system
+    - views
+  theme:
+    - islandora_muni
+id: islandora_muni_exposedformsolr_searchsearch
+theme: islandora_muni
+region: sidebar_first
+weight: -22
+provider: null
+plugin: 'views_exposed_filter_block:solr_search-search'
+settings:
+  id: 'views_exposed_filter_block:solr_search-search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search

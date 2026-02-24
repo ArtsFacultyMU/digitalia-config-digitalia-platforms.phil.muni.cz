@@ -1,0 +1,23 @@
+uuid: e0fe08e6-11b9-4e1d-bf73-6d82e5776eb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - media
+id: media.field_fits_file
+field_name: field_fits_file
+entity_type: media
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: fedora
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

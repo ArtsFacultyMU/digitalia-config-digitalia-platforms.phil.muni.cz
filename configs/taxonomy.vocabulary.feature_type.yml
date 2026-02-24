@@ -1,0 +1,9 @@
+uuid: 32950814-5ce0-4dfc-ae95-6319a95131d8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Feature Type'
+vid: feature_type
+description: 'AIS CR vocabulary "objekt_druh"'
+weight: 0
+new_revision: true

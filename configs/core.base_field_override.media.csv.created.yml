@@ -1,0 +1,18 @@
+uuid: 74e2aca1-08e1-4b26-b6a0-da29290611a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.csv
+id: media.csv.created
+field_name: created
+entity_type: media
+bundle: csv
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

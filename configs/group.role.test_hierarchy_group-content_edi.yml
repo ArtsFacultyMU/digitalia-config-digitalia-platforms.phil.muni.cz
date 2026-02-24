@@ -1,0 +1,38 @@
+uuid: d4e3ae0f-e7a9-4f3a-b58a-431b50d76abf
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+id: test_hierarchy_group-content_edi
+label: 'Content editor'
+weight: 103
+admin: false
+scope: individual
+global_role: null
+group_type: test_hierarchy_group
+permissions:
+  - 'access content overview'
+  - 'access group_node overview'
+  - 'administer members'
+  - 'create group_node:islandora_object entity'
+  - 'create group_node:islandora_object relationship'
+  - 'delete any group_node:islandora_object entity'
+  - 'delete any group_node:islandora_object relationship'
+  - 'delete own group_node:islandora_object entity'
+  - 'delete own group_node:islandora_object relationship'
+  - 'update any group_node:islandora_object entity'
+  - 'update any group_node:islandora_object relationship'
+  - 'update own group_node:islandora_object entity'
+  - 'update own group_node:islandora_object relationship'
+  - 'view all group revisions'
+  - 'view any unpublished group'
+  - 'view group'
+  - 'view group revisions'
+  - 'view group_membership relationship'
+  - 'view group_node:islandora_object entity'
+  - 'view group_node:islandora_object relationship'
+  - 'view latest group version'
+  - 'view own unpublished group'
+  - 'view own unpublished group_node:islandora_object entity'
+  - 'view unpublished group_node:islandora_object entity'

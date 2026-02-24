@@ -1,0 +1,20 @@
+uuid: 887063b9-7890-4dca-ab54-6e94e6cfd2dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eca.eca.process_hlgcwbr
+id: process_hlgcwbr
+label: 'Membership request'
+tags:
+  - untagged
+documentation: ''
+filename: ''
+modeldata: |
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:qa="http://some-company/schema/bpmn/qa" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+    <bpmn2:process id="Process_hlGcwbR" name="Membership request" isExecutable="true" />
+    <bpmndi:BPMNDiagram id="sid-707ee4de-5de9-4f18-993e-70d2059b5fd0">
+      <bpmndi:BPMNPlane id="sid-aa71dda7-361c-41eb-8928-005eb0ce6e0b" bpmnElement="Process_hlGcwbR" />
+    </bpmndi:BPMNDiagram>
+  </bpmn2:definitions>

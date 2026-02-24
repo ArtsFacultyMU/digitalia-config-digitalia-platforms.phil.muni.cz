@@ -1,0 +1,22 @@
+uuid: 23c8dc32-ea1f-4935-a676-b4022d12f046
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.csv
+id: media.csv.status
+field_name: status
+entity_type: media
+bundle: csv
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

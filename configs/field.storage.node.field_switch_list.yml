@@ -1,0 +1,30 @@
+uuid: 0e1edf54-c5cf-4545-9fec-f0730d61c930
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_switch_list
+field_name: field_switch_list
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: case_1
+      label: 'case 1'
+    -
+      value: case_2
+      label: 'case 2'
+    -
+      value: case_3
+      label: 'case 3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 6c950bdf-54a2-4f59-8399-60c6e83427db
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+id: research_group-contributor
+label: Contributor
+weight: 106
+admin: false
+scope: individual
+global_role: null
+group_type: research_group
+permissions:
+  - 'access group_node overview'
+  - 'create group_node:dataset entity'
+  - 'create group_node:dataset relationship'
+  - 'delete own group_node:dataset entity'
+  - 'leave group'
+  - 'update any group_node:dataset entity'
+  - 'update own group_node:dataset entity'
+  - 'view group'
+  - 'view group_membership relationship'
+  - 'view group_node:dataset entity'
+  - 'view latest group version'
+  - 'view own unpublished group'
+  - 'view own unpublished group_node:dataset entity'
+  - 'view unpublished group_node:dataset entity'

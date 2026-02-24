@@ -1,0 +1,15 @@
+uuid: 6cf265ee-30da-42d0-944f-95eabac86159
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.test_hierarchy_group
+    - user.role.administrator
+id: test_hierarchy_group-admin_in
+label: Administrator
+weight: 102
+admin: true
+scope: insider
+global_role: administrator
+group_type: test_hierarchy_group
+permissions: {  }

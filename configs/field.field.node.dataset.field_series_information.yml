@@ -1,0 +1,28 @@
+uuid: e973214c-9524-467e-a56c-7d9b6ea60e2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_series_information
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_series_information
+field_name: field_series_information
+entity_type: node
+bundle: dataset
+label: 'Series Information'
+description: 'Information about a repeating series, such as volume, issue, number.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - plain_text
+field_type: text_long

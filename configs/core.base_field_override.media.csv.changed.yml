@@ -1,0 +1,18 @@
+uuid: e38e9d99-bb70-4939-a9d6-33d53eb9f819
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.csv
+id: media.csv.changed
+field_name: changed
+entity_type: media
+bundle: csv
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

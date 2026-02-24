@@ -1,0 +1,13 @@
+uuid: dbc0b794-94d4-4c53-813a-371857210cca
+langcode: en
+status: true
+dependencies: {  }
+id: process_hlgcwbr
+modeller: bpmn_io
+label: 'Membership request'
+version: ''
+weight: null
+events: {  }
+conditions: {  }
+gateways: {  }
+actions: {  }

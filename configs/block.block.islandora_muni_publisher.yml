@@ -1,0 +1,30 @@
+uuid: cb383e33-db5b-452b-90ba-2552f245bf52
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publisher
+  module:
+    - context
+    - facets
+  theme:
+    - islandora_muni
+id: islandora_muni_publisher
+theme: islandora_muni
+region: header
+weight: -16
+provider: null
+plugin: 'facet_block:publisher'
+settings:
+  id: 'facet_block:publisher'
+  label: Publisher
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_publisher
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-solr_search_content-page_1: view-solr_search_content-page_1

@@ -1,0 +1,9 @@
+uuid: d7d68f07-0ef9-4fcb-82a8-720668d4fc2a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ingest state'
+vid: ingest_state
+description: null
+weight: 0
+new_revision: false

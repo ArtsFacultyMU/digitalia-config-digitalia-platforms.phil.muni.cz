@@ -1,0 +1,38 @@
+uuid: fd060383-21bc-4e93-b1b1-a9963fdd5a45
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - user
+  theme:
+    - islandora_muni
+id: islandora_muni_groupoperations
+theme: islandora_muni
+region: sidebar_second
+weight: 0
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  label_display: visible
+  provider: group
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility:
+  group_type:
+    id: group_type
+    group_types:
+      research_group: research_group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      data_curator: data_curator
+      contributor: contributor

@@ -1,0 +1,26 @@
+uuid: f37d44da-e95e-408d-af00-9a638221bafc
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+  theme:
+    - islandora_muni
+id: islandora_muni_exposedformsolr_searchmain
+theme: islandora_muni
+region: sidebar_first
+weight: -21
+provider: null
+plugin: 'views_exposed_filter_block:solr_search-main'
+settings:
+  id: 'views_exposed_filter_block:solr_search-main'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-solr_search-main: view-solr_search-main

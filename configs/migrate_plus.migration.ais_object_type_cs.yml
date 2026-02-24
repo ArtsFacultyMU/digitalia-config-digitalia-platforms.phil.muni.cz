@@ -1,0 +1,40 @@
+uuid: c67021f0-830e-4448-b044-4dc182c855f4
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_core_feature
+_core:
+  default_config_hash: yZv_uq0keKLQ-7vf3ngJIA00vS7I-CZAbPh7J-pBL5o
+id: ais_object_type_cs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: digitalia
+label: 'AIS Object type CS'
+source:
+  plugin: csv
+  path: ../data/ais_object_type.csv
+  header_row_count: 1
+  constants:
+    langcode: cs
+  ids:
+    - id
+process:
+  tid:
+    plugin: migration_lookup
+    migration: ais_object_type
+    source: id
+  name: name
+  langcode: constants/langcode
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+idMap: {  }
+migration_dependencies:
+  required:
+    - ais_object_type
+  optional: {  }
+include: null

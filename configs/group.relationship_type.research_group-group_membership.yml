@@ -1,0 +1,15 @@
+uuid: 537e44b4-b300-40ee-b114-1afc828d56ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.research_group
+  module:
+    - user
+id: research_group-group_membership
+group_type: research_group
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

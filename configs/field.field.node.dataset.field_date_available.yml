@@ -1,0 +1,21 @@
+uuid: 57e95ee4-36a5-488a-8cd9-3b0bc8e5b3d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_available
+    - node.type.dataset
+  module:
+    - datetime
+id: node.dataset.field_date_available
+field_name: field_date_available
+entity_type: node
+bundle: dataset
+label: 'Date Available'
+description: 'The date the resource is made publicly available. To indicate the end of an embargo period, use Available.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

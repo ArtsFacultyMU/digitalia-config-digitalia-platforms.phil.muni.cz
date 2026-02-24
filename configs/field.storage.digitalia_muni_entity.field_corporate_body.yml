@@ -1,0 +1,20 @@
+uuid: 5462e46b-a6e0-47a4-b556-4ef4245b4ea6
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - taxonomy
+id: digitalia_muni_entity.field_corporate_body
+field_name: field_corporate_body
+entity_type: digitalia_muni_entity
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
