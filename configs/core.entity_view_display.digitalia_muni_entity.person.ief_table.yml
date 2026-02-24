@@ -1,0 +1,62 @@
+uuid: d3e75e7a-6af7-4feb-bdb4-e0686c38a6c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.digitalia_muni_entity.ief_table
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
+    - field.field.digitalia_muni_entity.person.field_affiliation
+    - field.field.digitalia_muni_entity.person.field_corporate_body_name
+    - field.field.digitalia_muni_entity.person.field_first_names
+    - field.field.digitalia_muni_entity.person.field_last_names
+    - field.field.digitalia_muni_entity.person.field_orcid
+    - field.field.digitalia_muni_entity.person.field_ror
+id: digitalia_muni_entity.person.ief_table
+targetEntityType: digitalia_muni_entity
+bundle: person
+mode: ief_table
+content:
+  field_corporate_body_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_first_names:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_last_names:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_orcid:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_ror:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_affiliation: true
+  langcode: true
+  search_api_excerpt: true

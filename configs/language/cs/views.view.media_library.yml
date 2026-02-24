@@ -5,6 +5,10 @@ display:
       fields:
         media_bulk_form:
           action_title: Akce
+      filters:
+        name:
+          expose:
+            label: Název
   page:
     display_options:
       fields:
@@ -18,12 +22,22 @@ display:
         bundle:
           exception:
             title: Vše
+      filters:
+        name:
+          expose:
+            label: Název
   widget_table:
     display_options:
       fields:
         thumbnail__target_id:
           label: Náhled
+        name:
+          label: Název
       arguments:
         bundle:
           exception:
             title: Vše
+      filters:
+        name:
+          expose:
+            label: Název

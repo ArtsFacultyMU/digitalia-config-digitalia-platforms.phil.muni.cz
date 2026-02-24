@@ -8,6 +8,7 @@ dependencies:
     - field.field.media.file.field_file_size
     - field.field.media.file.field_fits_file
     - field.field.media.file.field_height
+    - field.field.media.file.field_is_derived_from
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_of
     - field.field.media.file.field_media_use
@@ -126,6 +127,7 @@ content:
 hidden:
   created: true
   field_fits_file: true
+  field_is_derived_from: true
   langcode: true
   search_api_excerpt: true
   thumbnail: true

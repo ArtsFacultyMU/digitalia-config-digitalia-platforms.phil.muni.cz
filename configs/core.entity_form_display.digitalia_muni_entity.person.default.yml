@@ -1,0 +1,60 @@
+uuid: a3a278a6-dabb-40da-bae5-1cfd4a419f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
+    - field.field.digitalia_muni_entity.person.field_affiliation
+    - field.field.digitalia_muni_entity.person.field_corporate_body_name
+    - field.field.digitalia_muni_entity.person.field_first_names
+    - field.field.digitalia_muni_entity.person.field_last_names
+    - field.field.digitalia_muni_entity.person.field_orcid
+    - field.field.digitalia_muni_entity.person.field_ror
+id: digitalia_muni_entity.person.default
+targetEntityType: digitalia_muni_entity
+bundle: person
+mode: default
+content:
+  field_corporate_body_name:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_first_names:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_names:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_orcid:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ror:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_affiliation: true
+  langcode: true

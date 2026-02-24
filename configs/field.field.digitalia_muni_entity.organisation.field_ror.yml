@@ -1,0 +1,19 @@
+uuid: ed83dd2c-3f74-40cf-9e6e-66472fb25068
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - field.storage.digitalia_muni_entity.field_ror
+id: digitalia_muni_entity.organisation.field_ror
+field_name: field_ror
+entity_type: digitalia_muni_entity
+bundle: organisation
+label: ROR
+description: 'ID from https://ror.org/search'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

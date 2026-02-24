@@ -11,7 +11,7 @@ id: digitalia_muni_entity.funding_reference.field_funding_program
 field_name: field_funding_program
 entity_type: digitalia_muni_entity
 bundle: funding_reference
-label: 'Funding program'
+label: 'Link to funding program'
 description: 'URI reference to the specific funding program.'
 required: false
 translatable: false

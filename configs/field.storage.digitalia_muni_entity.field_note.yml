@@ -1,0 +1,21 @@
+uuid: 44f6d34d-35de-490e-bd62-ee2592450a91
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+id: digitalia_muni_entity.field_note
+field_name: field_note
+entity_type: digitalia_muni_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

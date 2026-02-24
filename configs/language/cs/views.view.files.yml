@@ -2,6 +2,8 @@ display:
   default:
     display_options:
       fields:
+        filename:
+          label: Název
         status:
           label: Stav
         count:

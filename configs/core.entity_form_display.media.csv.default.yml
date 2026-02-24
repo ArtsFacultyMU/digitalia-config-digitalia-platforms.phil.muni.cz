@@ -6,13 +6,16 @@ dependencies:
     - field.field.media.csv.field_enclosure
     - field.field.media.csv.field_file_size
     - field.field.media.csv.field_has_header
+    - field.field.media.csv.field_is_derived_from
     - field.field.media.csv.field_media_file
     - field.field.media.csv.field_media_of
+    - field.field.media.csv.field_media_use
     - field.field.media.csv.field_mime_type
     - field.field.media.csv.field_separator
     - media.type.csv
   module:
     - file
+    - media_library
     - path
 id: media.csv.default
 targetEntityType: media
@@ -47,6 +50,13 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  field_is_derived_from:
+    type: media_library_widget
+    weight: 106
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_media_file:
     type: file_generic
     weight: 0
@@ -63,6 +73,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_media_use:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_mime_type:
     type: string_textfield

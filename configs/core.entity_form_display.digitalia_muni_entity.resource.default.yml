@@ -6,6 +6,7 @@ dependencies:
     - digitalia_muni_entity.digitalia_muni_entity_type.resource
     - field.field.digitalia_muni_entity.resource.field_date_issued
     - field.field.digitalia_muni_entity.resource.field_identifier
+    - field.field.digitalia_muni_entity.resource.field_note
     - field.field.digitalia_muni_entity.resource.field_resource_relation_type
     - field.field.digitalia_muni_entity.resource.field_resource_type
     - field.field.digitalia_muni_entity.resource.field_resource_url
@@ -30,6 +31,14 @@ content:
   field_identifier:
     type: string_textfield
     weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_note:
+    type: string_textfield
+    weight: 26
     region: content
     settings:
       size: 60

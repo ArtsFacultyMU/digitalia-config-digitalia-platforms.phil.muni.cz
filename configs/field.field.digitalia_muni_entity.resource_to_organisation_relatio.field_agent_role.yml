@@ -1,0 +1,33 @@
+uuid: 8db3383b-a6f8-4990-986f-cafa21e6cbd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_organisation_relatio
+    - field.storage.digitalia_muni_entity.field_agent_role
+    - taxonomy.vocabulary.agent_role
+  content:
+    - 'taxonomy_term:agent_role:a0ca890c-d18f-4482-8df4-0f9b99d61e1e'
+id: digitalia_muni_entity.resource_to_organisation_relatio.field_agent_role
+field_name: field_agent_role
+entity_type: digitalia_muni_entity
+bundle: resource_to_organisation_relatio
+label: Role
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: a0ca890c-d18f-4482-8df4-0f9b99d61e1e
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      agent_role: agent_role
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

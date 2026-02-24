@@ -1,0 +1,19 @@
+uuid: 4a968a4c-2a99-4740-8df2-40c7495d0f44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_instrument_id
+    - taxonomy.vocabulary.instrument
+id: taxonomy_term.instrument.field_instrument_id
+field_name: field_instrument_id
+entity_type: taxonomy_term
+bundle: instrument
+label: 'Instrument ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

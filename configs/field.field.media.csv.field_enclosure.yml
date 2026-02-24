@@ -9,7 +9,7 @@ id: media.csv.field_enclosure
 field_name: field_enclosure
 entity_type: media
 bundle: csv
-label: enclosure
+label: Enclosure
 description: ''
 required: false
 translatable: false

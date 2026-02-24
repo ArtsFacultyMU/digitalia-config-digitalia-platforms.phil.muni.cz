@@ -1,16 +1,15 @@
-uuid: 8fdeb9f5-63d9-44a7-ad7b-69963fd3d040
+uuid: f0baa228-eda7-4e97-92da-1b990b0ff5ca
 langcode: en
 status: true
 dependencies:
   module:
     - digitalia_muni_entity
-    - taxonomy
 id: digitalia_muni_entity.field_affiliation
 field_name: field_affiliation
 entity_type: digitalia_muni_entity
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: digitalia_muni_entity
 module: core
 locked: false
 cardinality: -1

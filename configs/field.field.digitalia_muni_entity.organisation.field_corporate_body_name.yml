@@ -1,0 +1,19 @@
+uuid: 4ffc60ea-12a2-4c58-bbeb-a50963aa08ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - field.storage.digitalia_muni_entity.field_corporate_body_name
+id: digitalia_muni_entity.organisation.field_corporate_body_name
+field_name: field_corporate_body_name
+entity_type: digitalia_muni_entity
+bundle: organisation
+label: 'Name of organisation'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

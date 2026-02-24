@@ -1,0 +1,10 @@
+status: 2
+pattern: '[term:field_instrument_id] [term:field_instrument_type:entity:name] [term:field_model] [term:field_instrument_manufacturer] [term:field_instrument_owner]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - taxonomy.vocabulary.instrument
+new_content_behavior: 0

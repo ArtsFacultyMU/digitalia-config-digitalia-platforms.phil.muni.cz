@@ -1,0 +1,33 @@
+uuid: 3600bced-da37-4a5d-b880-ae650ae6dbfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display_blocks
+  module:
+    - node
+    - views
+  theme:
+    - islandora_muni
+id: islandora_muni__media_display_blocks_source_original
+theme: islandora_muni
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:media_display_blocks-source_original'
+settings:
+  id: 'views_block:media_display_blocks-source_original'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      dataset: dataset

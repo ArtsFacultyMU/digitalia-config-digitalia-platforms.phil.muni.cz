@@ -1,0 +1,36 @@
+uuid: 19133745-4322-4d0f-a4a8-201336887634
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_person_relationship
+    - field.field.digitalia_muni_entity.resource_to_person_relationship.field_agent_role
+    - field.field.digitalia_muni_entity.resource_to_person_relationship.field_related_person
+  module:
+    - inline_entity_form
+id: digitalia_muni_entity.resource_to_person_relationship.default
+targetEntityType: digitalia_muni_entity
+bundle: resource_to_person_relationship
+mode: default
+content:
+  field_agent_role:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_related_person:
+    type: inline_entity_form_simple
+    weight: 1
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

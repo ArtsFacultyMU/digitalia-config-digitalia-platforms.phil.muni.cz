@@ -1,0 +1,33 @@
+uuid: dc14cfb6-a384-4d7b-ac1d-071013ca547a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_use
+    - media.type.3d_model
+    - taxonomy.vocabulary.islandora_media_use
+  content:
+    - 'taxonomy_term:islandora_media_use:b41d5e18-7782-4caf-9fb1-28408cf121d3'
+id: media.3d_model.field_media_use
+field_name: field_media_use
+entity_type: media
+bundle: 3d_model
+label: 'Media Use'
+description: "Defined by <a href=\"https://pcdm.org/2015/05/12/use\">Portland Common Data Model: Use Extension</a>. 'Original File' will trigger creation of derivatives. 'Service File' will be shown on the node. Selecting multiple values is accepted. Derivatives where both the source and target terms are on the same media will be skipped."
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: b41d5e18-7782-4caf-9fb1-28408cf121d3
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      islandora_media_use: islandora_media_use
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

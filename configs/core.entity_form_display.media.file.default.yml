@@ -7,6 +7,7 @@ dependencies:
     - field.field.media.file.field_file_size
     - field.field.media.file.field_fits_file
     - field.field.media.file.field_height
+    - field.field.media.file.field_is_derived_from
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_of
     - field.field.media.file.field_media_use
@@ -16,6 +17,7 @@ dependencies:
     - media.type.file
   module:
     - file
+    - media_library
     - path
     - text
 _core:
@@ -45,6 +47,13 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_is_derived_from:
+    type: media_library_widget
+    weight: 106
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_media_file:
     type: file_generic

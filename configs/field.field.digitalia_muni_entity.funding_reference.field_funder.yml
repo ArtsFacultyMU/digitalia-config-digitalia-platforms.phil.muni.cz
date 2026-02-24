@@ -1,9 +1,10 @@
-uuid: 87cfbb8e-cc17-48ae-80ad-87c150559df5
+uuid: 4906a194-66ad-4147-9721-0b2746356a85
 langcode: en
 status: true
 dependencies:
   config:
     - digitalia_muni_entity.digitalia_muni_entity_type.funding_reference
+    - digitalia_muni_entity.digitalia_muni_entity_type.organisation
     - field.storage.digitalia_muni_entity.field_funder
 id: digitalia_muni_entity.funding_reference.field_funder
 field_name: field_funder
@@ -11,12 +12,18 @@ entity_type: digitalia_muni_entity
 bundle: funding_reference
 label: Funder
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: eca
+  handler: 'default:digitalia_muni_entity'
   handler_settings:
-    field_name: field_funder
+    target_bundles:
+      organisation: organisation
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
     - field.field.node.dataset.field_assessment_type
+    - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
     - field.field.node.dataset.field_date_accepted
     - field.field.node.dataset.field_date_available
@@ -32,6 +33,7 @@ dependencies:
     - field.field.node.dataset.field_model
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
     - field.field.node.dataset.field_resource_type
     - field.field.node.dataset.field_series_information
@@ -112,6 +114,7 @@ hidden:
   field_agent_relationship: true
   field_alternative_title: true
   field_assessment_type: true
+  field_creators_and_contributors: true
   field_data_service: true
   field_date_accepted: true
   field_date_available: true
@@ -133,6 +136,7 @@ hidden:
   field_model: true
   field_object_specification: true
   field_object_type: true
+  field_related_people: true
   field_related_resource: true
   field_series_information: true
   field_subtitle: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
     - field.field.node.dataset.field_assessment_type
+    - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
     - field.field.node.dataset.field_date_accepted
     - field.field.node.dataset.field_date_available
@@ -31,6 +32,7 @@ dependencies:
     - field.field.node.dataset.field_model
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
     - field.field.node.dataset.field_resource_type
     - field.field.node.dataset.field_series_information
@@ -44,9 +46,8 @@ dependencies:
   module:
     - content_moderation
     - controlled_access_terms
-    - datetime
     - field_group
-    - inline_entity_form
+    - ief_table_view_mode
     - link
     - text
 third_party_settings:
@@ -61,7 +62,7 @@ third_party_settings:
       label: Description
       region: content
       parent_name: ''
-      weight: 7
+      weight: 5
       format_type: details
       format_settings:
         classes: ''
@@ -77,17 +78,17 @@ third_party_settings:
         - field_temporal_subject
         - field_edtf_date_coverage
         - field_edtf_date_collected
-        - field_date_issued
-        - field_date_available
-        - field_date_valid
         - field_date_accepted
+        - field_date_available
+        - field_date_issued
         - field_date_submitted
         - field_date_updated
+        - field_date_valid
         - field_date_withdrawn
       label: 'Time Reference'
       region: content
       parent_name: ''
-      weight: 8
+      weight: 6
       format_type: details
       format_settings:
         classes: ''
@@ -108,7 +109,7 @@ third_party_settings:
       label: Subject
       region: content
       parent_name: ''
-      weight: 11
+      weight: 7
       format_type: details
       format_settings:
         classes: ''
@@ -118,17 +119,28 @@ third_party_settings:
         open: false
         description: ''
         required_fields: true
+    group_creators_and_contributors:
+      children:
+        - field_related_people
+        - field_creators_and_contributors
+      label: 'Creators and Contributors'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
 id: node.dataset.default
 targetEntityType: node
 bundle: dataset
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 9
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_abstract:
     type: text_textarea
     weight: 7
@@ -137,22 +149,9 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_agent_relationship:
-    type: inline_entity_form_simple
-    weight: 5
-    region: content
-    settings:
-      form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      collapsible: false
-      collapsed: false
-      revision: false
-    third_party_settings: {  }
   field_alternative_title:
     type: string_textarea
-    weight: 4
+    weight: 3
     region: content
     settings:
       rows: 5
@@ -164,38 +163,35 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_creators_and_contributors:
+    type: inline_entity_form_complex_table_view_mode
+    weight: 8
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Organisation
+      label_plural: Organisations
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: true
+      removed_reference: keep
+    third_party_settings: {  }
   field_data_service:
     type: link_default
-    weight: 13
+    weight: 9
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_date_available:
-    type: datetime_default
-    weight: 25
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_date_issued:
-    type: datetime_default
-    weight: 24
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_date_valid:
-    type: edtf_default
-    weight: 26
-    region: content
-    settings:
-      strict_dates: false
-      intervals: true
-      sets: false
-    third_party_settings: {  }
   field_doi:
     type: string_textfield
-    weight: 18
+    weight: 14
     region: content
     settings:
       size: 60
@@ -203,7 +199,7 @@ content:
     third_party_settings: {  }
   field_edtf_date_collected:
     type: edtf_default
-    weight: 23
+    weight: 27
     region: content
     settings:
       strict_dates: false
@@ -212,7 +208,7 @@ content:
     third_party_settings: {  }
   field_edtf_date_coverage:
     type: edtf_default
-    weight: 21
+    weight: 26
     region: content
     settings:
       strict_dates: false
@@ -221,7 +217,7 @@ content:
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
-    weight: 19
+    weight: 24
     region: content
     settings:
       strict_dates: false
@@ -230,107 +226,65 @@ content:
     third_party_settings: {  }
   field_feature_specification:
     type: options_select
-    weight: 19
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   field_feature_type:
     type: options_select
-    weight: 18
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   field_funding_reference:
-    type: inline_entity_form_simple
-    weight: 15
+    type: inline_entity_form_complex_table_view_mode
+    weight: 11
     region: content
     settings:
       form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
+      override_labels: true
+      label_singular: 'Funding reference'
+      label_plural: 'Funding references'
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
       collapsible: false
       collapsed: false
-      revision: false
+      revision: true
+      removed_reference: keep
     third_party_settings: {  }
   field_instrument:
-    type: entity_reference_autocomplete
-    weight: 12
+    type: inline_entity_form_complex_table_view_mode
+    weight: 8
     region: content
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Instrument
+      label_plural: Instruments
+      allow_new: true
+      allow_existing: false
       match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: true
+      removed_reference: keep
     third_party_settings: {  }
   field_language:
     type: options_select
-    weight: 10
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_license:
     type: options_select
-    weight: 16
+    weight: 12
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_member_of:
-    type: entity_reference_autocomplete
-    weight: 17
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_methods:
-    type: text_textarea
-    weight: 8
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_model:
-    type: options_select
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_object_specification:
-    type: options_select
-    weight: 21
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_object_type:
-    type: options_select
-    weight: 20
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_related_resource:
-    type: inline_entity_form_simple
-    weight: 14
-    region: content
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: ''
-      label_plural: ''
-      collapsible: true
-      collapsed: true
-      revision: true
-    third_party_settings: {  }
-  field_resource_type:
-    type: options_select
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_series_information:
     type: text_textarea
     weight: 9
     region: content
@@ -338,9 +292,65 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_object_specification:
+    type: options_select
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_object_type:
+    type: options_select
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_related_people:
+    type: inline_entity_form_complex_table_view_mode
+    weight: 7
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Person
+      label_plural: People
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: true
+      removed_reference: keep
+    third_party_settings: {  }
+  field_related_resource:
+    type: inline_entity_form_complex_table_view_mode
+    weight: 10
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: ' Resource'
+      label_plural: ' Resources'
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: true
+      removed_reference: keep
+    third_party_settings: {  }
+  field_series_information:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_subtitle:
     type: string_textfield
-    weight: 3
+    weight: 2
     region: content
     settings:
       size: 60
@@ -356,7 +366,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 22
+    weight: 23
     region: content
     settings:
       match_operator: CONTAINS
@@ -374,16 +384,9 @@ content:
     third_party_settings: {  }
   field_temporal_subject:
     type: options_select
-    weight: 20
+    weight: 25
     region: content
     settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 20
-    region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
@@ -391,37 +394,31 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 19
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 2
+    weight: 1
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 21
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
 hidden:
   body: true
+  created: true
+  field_agent_relationship: true
   field_date_accepted: true
+  field_date_available: true
+  field_date_issued: true
   field_date_submitted: true
   field_date_updated: true
+  field_date_valid: true
   field_date_withdrawn: true
+  field_member_of: true
+  field_model: true
+  field_resource_type: true
+  langcode: true
   path: true
   promote: true
+  status: true
   sticky: true
+  uid: true

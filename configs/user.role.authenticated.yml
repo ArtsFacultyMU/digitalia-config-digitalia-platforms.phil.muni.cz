@@ -9,6 +9,7 @@ dependencies:
   module:
     - comment
     - contact
+    - digitalia_muni_entity
     - filter
     - media
     - node
@@ -31,4 +32,5 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view dataset revisions'
+  - 'view digitalia_muni_entity'
   - 'view media'

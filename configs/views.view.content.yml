@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_member_of
     - field.storage.node.field_model
+    - node.type.dataset
     - taxonomy.vocabulary.islandora_models
   module:
     - better_exposed_filters
@@ -785,9 +786,10 @@ display:
           entity_field: type
           plugin_id: bundle
           operator: in
-          value: {  }
+          value:
+            dataset: dataset
           group: 1
-          exposed: true
+          exposed: false
           expose:
             operator_id: type_op
             label: 'Content type'

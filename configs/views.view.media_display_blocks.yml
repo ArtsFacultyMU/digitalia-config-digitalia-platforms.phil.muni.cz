@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.media.open_seadragon
     - core.entity_view_mode.media.pdfjs
-    - core.entity_view_mode.media.source
   module:
     - media
     - taxonomy
@@ -24,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Media Display'
+      title: 'Dataset Preview'
       fields:
         name:
           id: name
@@ -74,10 +73,27 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: full
         options:
           offset: 0
+          pagination_heading_level: h3
           items_per_page: 1
+          total_pages: null
+          id: 1
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '1, 5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -107,7 +123,35 @@ display:
           empty: true
           view_to_insert: 'media_display_blocks:source_original'
           inherit_arguments: true
-      sorts: {  }
+      sorts:
+        field_is_documentation_value:
+          id: field_is_documentation_value
+          table: media__field_is_documentation
+          field: field_is_documentation_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        name:
+          id: name
+          table: media_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          entity_field: name
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments:
         field_media_of_target_id:
           id: field_media_of_target_id
@@ -198,11 +242,15 @@ display:
             group_items: {  }
       style:
         type: default
+        options:
+          row_class: dataset-media-preview
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:media'
         options:
           relationship: none
-          view_mode: source
+          view_mode: default
       query:
         type: views_query
         options:
@@ -230,6 +278,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user.permissions
       tags: {  }
   openseadragon:
@@ -271,6 +320,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user.permissions
       tags: {  }
   openseadragon_original:
@@ -360,6 +410,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user.permissions
       tags: {  }
   pdfjs:
@@ -401,6 +452,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user.permissions
       tags: {  }
   pdfjs_original:
@@ -490,6 +542,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user.permissions
       tags: {  }
   source:
@@ -507,6 +560,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user.permissions
       tags: {  }
   source_original:
@@ -586,5 +640,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user.permissions
       tags: {  }

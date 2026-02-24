@@ -1,15 +1,15 @@
-uuid: 057b04a7-4908-487c-ac5d-52a1f2b132c1
+uuid: a3076772-fbf2-4e26-92a7-dbf02c78c3ba
 langcode: en
 status: true
 dependencies:
   config:
-    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_agent_relationship
+    - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
     - field.storage.digitalia_muni_entity.field_affiliation
-    - taxonomy.vocabulary.corporate_body
-id: digitalia_muni_entity.resource_to_agent_relationship.field_affiliation
+id: digitalia_muni_entity.person.field_affiliation
 field_name: field_affiliation
 entity_type: digitalia_muni_entity
-bundle: resource_to_agent_relationship
+bundle: person
 label: Affiliation
 description: ''
 required: false
@@ -17,13 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:filter_existing_terms'
+  handler: 'default:digitalia_muni_entity'
   handler_settings:
     target_bundles:
-      corporate_body: corporate_body
+      organisation: organisation
     sort:
-      field: name
-      direction: asc
+      field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

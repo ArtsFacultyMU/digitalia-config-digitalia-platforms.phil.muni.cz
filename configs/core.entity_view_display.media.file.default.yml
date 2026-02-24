@@ -7,6 +7,7 @@ dependencies:
     - field.field.media.file.field_file_size
     - field.field.media.file.field_fits_file
     - field.field.media.file.field_height
+    - field.field.media.file.field_is_derived_from
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_of
     - field.field.media.file.field_media_use
@@ -15,6 +16,7 @@ dependencies:
     - field.field.media.file.field_width
     - media.type.file
   module:
+    - download_file
     - file
     - islandora_fits
     - text
@@ -30,85 +32,74 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_file_size:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_fits_file:
-    type: fits_formatter
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 10
-    region: content
-  field_gemini_uri:
+    type: file_size
+    label: inline
     settings: {  }
     third_party_settings: {  }
     weight: 6
     region: content
-  field_height:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+  field_fits_file:
+    type: fits_formatter
+    label: inline
+    settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 9
+    region: content
+  field_gemini_uri:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_is_derived_from:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_media_file:
-    type: file_default
-    label: visually_hidden
+    type: direct_download
+    label: inline
     settings:
-      use_description_as_link_text: true
+      class: ''
+      styles: ''
     third_party_settings: {  }
     weight: 1
     region: content
   field_media_of:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_media_use:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_mime_type:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_original_name:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 7
-    region: content
-  field_width:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 4
+    weight: 8
     region: content
   name:
     type: string
@@ -120,6 +111,8 @@ content:
     region: content
 hidden:
   created: true
+  field_height: true
+  field_width: true
   langcode: true
   search_api_excerpt: true
   thumbnail: true

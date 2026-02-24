@@ -1,0 +1,11 @@
+uuid: cc65db5e-d8ad-4570-871d-171572eb6756
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: login_info
+title: 'Login info'
+content:
+  value: '<p>Select your institution and you will be redirected to your institutional login page. If your institution is not available via e-INFRA login, you can use ORCID or Google login. If it is your first time logging in, the ArchaeoVault team will first need to approve your application.</p>'
+  format: basic_html

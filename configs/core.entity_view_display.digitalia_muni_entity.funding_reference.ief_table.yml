@@ -1,0 +1,59 @@
+uuid: f2b35732-a669-4c81-a843-f93bd5ba6b28
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.digitalia_muni_entity.ief_table
+    - digitalia_muni_entity.digitalia_muni_entity_type.funding_reference
+    - field.field.digitalia_muni_entity.funding_reference.field_award_title
+    - field.field.digitalia_muni_entity.funding_reference.field_funder
+    - field.field.digitalia_muni_entity.funding_reference.field_funding_program
+    - field.field.digitalia_muni_entity.funding_reference.field_local_identifier
+  module:
+    - link
+id: digitalia_muni_entity.funding_reference.ief_table
+targetEntityType: digitalia_muni_entity
+bundle: funding_reference
+mode: ief_table
+content:
+  field_award_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_funder:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_funding_program:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_local_identifier:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  label: true
+  langcode: true
+  search_api_excerpt: true

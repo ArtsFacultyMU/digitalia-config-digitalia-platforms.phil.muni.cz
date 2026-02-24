@@ -1,0 +1,34 @@
+uuid: 3d048bc9-651b-46de-9bd8-60b29172a15c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.digitalia_muni_entity.ief_table
+    - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - field.field.digitalia_muni_entity.organisation.field_corporate_body_name
+    - field.field.digitalia_muni_entity.organisation.field_ror
+id: digitalia_muni_entity.organisation.ief_table
+targetEntityType: digitalia_muni_entity
+bundle: organisation
+mode: ief_table
+content:
+  field_corporate_body_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_ror:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  label: true
+  langcode: true
+  search_api_excerpt: true

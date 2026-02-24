@@ -1,0 +1,20 @@
+uuid: ff7bb0d3-cc15-452b-8392-024c3c9acf3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - node
+id: node.field_related_people
+field_name: field_related_people
+entity_type: node
+type: entity_reference
+settings:
+  target_type: digitalia_muni_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -11,7 +11,7 @@ entity_type: digitalia_muni_entity
 bundle: resource
 label: Title
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

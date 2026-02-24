@@ -1,0 +1,29 @@
+uuid: ea7c7a04-cf42-4de1-b7ec-8118dfaad272
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_person_relationship
+    - field.storage.node.field_related_people
+    - node.type.dataset
+id: node.dataset.field_related_people
+field_name: field_related_people
+entity_type: node
+bundle: dataset
+label: 'Creators and Contributors (people)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digitalia_muni_entity'
+  handler_settings:
+    target_bundles:
+      resource_to_person_relationship: resource_to_person_relationship
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: person
+field_type: entity_reference

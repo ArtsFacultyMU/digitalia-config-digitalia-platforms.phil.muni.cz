@@ -1,0 +1,19 @@
+uuid: 8d1f7396-716f-4edc-9045-2eff7a5db216
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
+    - field.storage.digitalia_muni_entity.field_corporate_body_name
+id: digitalia_muni_entity.person.field_corporate_body_name
+field_name: field_corporate_body_name
+entity_type: digitalia_muni_entity
+bundle: person
+label: 'Name of affiliated organisation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: einfra_aai
-label: 'e-INFRA AAI'
+label: e-INFRA
 plugin: generic
 settings:
   client_id: c024ba8e-8e60-492a-8b02-d1ff4b4e9a41

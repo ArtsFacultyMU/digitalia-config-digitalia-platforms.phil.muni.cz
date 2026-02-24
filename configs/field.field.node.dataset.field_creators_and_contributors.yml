@@ -1,0 +1,29 @@
+uuid: 195b695e-b573-46a0-af7a-0c14d39491dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_organisation_relatio
+    - field.storage.node.field_creators_and_contributors
+    - node.type.dataset
+id: node.dataset.field_creators_and_contributors
+field_name: field_creators_and_contributors
+entity_type: node
+bundle: dataset
+label: 'Creators and contributors (organisations)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digitalia_muni_entity'
+  handler_settings:
+    target_bundles:
+      resource_to_organisation_relatio: resource_to_organisation_relatio
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

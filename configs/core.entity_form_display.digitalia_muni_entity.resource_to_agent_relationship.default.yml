@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_agent_relationship
-    - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_affiliation
     - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_agent_role
     - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_agent_type
     - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_corporate_body
     - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_corporate_body_name
     - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_person
     - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_person_name
+    - field.field.digitalia_muni_entity.resource_to_agent_relationship.field_related_organisation
   module:
     - inline_entity_form
 id: digitalia_muni_entity.resource_to_agent_relationship.default
@@ -18,24 +18,6 @@ targetEntityType: digitalia_muni_entity
 bundle: resource_to_agent_relationship
 mode: default
 content:
-  field_affiliation:
-    type: inline_entity_form_complex
-    weight: 4
-    region: content
-    settings:
-      form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      allow_duplicate: false
-      collapsible: false
-      collapsed: false
-      revision: true
-      removed_reference: keep
-    third_party_settings: {  }
   field_agent_role:
     type: options_select
     weight: 0
@@ -54,9 +36,9 @@ content:
     region: content
     settings:
       form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
+      override_labels: true
+      label_singular: ' '
+      label_plural: ' '
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
@@ -80,9 +62,9 @@ content:
     region: content
     settings:
       form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
+      override_labels: true
+      label_singular: ' '
+      label_plural: ' '
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
@@ -93,8 +75,26 @@ content:
       removed_reference: keep
     third_party_settings: {  }
   field_person_name:
-    type: inline_entity_form_simple
+    type: inline_entity_form_complex
     weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: '  '
+      label_plural: '  '
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: delete
+    third_party_settings: {  }
+  field_related_organisation:
+    type: inline_entity_form_simple
+    weight: 1
     region: content
     settings:
       form_mode: default

@@ -1,0 +1,4 @@
+label: 'Má hlavičku'
+settings:
+  on_label: Ano
+  off_label: Ne

@@ -8,6 +8,8 @@ display:
           action_title: Akce
         thumbnail__target_id:
           label: Náhled
+        name:
+          label: 'Název media'
         bundle:
           label: Typ
         status:
@@ -16,6 +18,9 @@ display:
         options:
           submit_button: Filtr
       filters:
+        name:
+          expose:
+            label: 'Název media'
         bundle:
           expose:
             label: Typ

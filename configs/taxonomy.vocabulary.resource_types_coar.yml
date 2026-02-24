@@ -1,0 +1,9 @@
+uuid: 023484f0-c444-4d02-b86e-e3ac73e323db
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Types (COAR)'
+vid: resource_types_coar
+description: null
+weight: 0
+new_revision: false

@@ -3,20 +3,35 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.3d_model
+    - media.type.audio
+    - media.type.csv
+    - media.type.document
+    - media.type.extracted_text
+    - media.type.file
+    - media.type.image
+    - media.type.video
     - node.type.dataset
     - node.type.page
+    - taxonomy.vocabulary.instrument
+    - taxonomy.vocabulary.instrument_type
     - user.role.authenticated
     - user.role.contributor
     - workflows.workflow.dataset_workflow
     - workflows.workflow.research_group_workflow
   module:
     - content_moderation
+    - digitalia_muni_entity
     - group
+    - islandora
     - masquerade
+    - media
     - node
     - persistent_identifiers
     - system
+    - taxonomy
     - toolbar
+    - view_unpublished
 id: data_curator
 label: 'Data curator'
 weight: 5
@@ -28,20 +43,46 @@ permissions:
   - 'access site in maintenance mode'
   - 'access toolbar'
   - 'access user profiles'
+  - 'create 3d_model media'
+  - 'create audio media'
+  - 'create csv media'
   - 'create dataset content'
+  - 'create digitalia_muni_entity'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create media'
   - 'create research_group group'
+  - 'create terms in instrument'
+  - 'create terms in instrument_type'
+  - 'create video media'
   - 'delete any dataset content'
   - 'delete dataset revisions'
+  - 'delete digitalia_muni_entity'
   - 'delete own dataset content'
+  - 'delete terms in instrument_type'
   - 'edit any dataset content'
   - 'edit any page content'
+  - 'edit digitalia_muni_entity'
+  - 'edit own 3d_model media'
+  - 'edit own audio media'
+  - 'edit own csv media'
   - 'edit own dataset content'
+  - 'edit own document media'
+  - 'edit own extracted_text media'
+  - 'edit own file media'
+  - 'edit own image media'
   - 'edit own page content'
+  - 'edit own video media'
+  - 'edit terms in instrument'
+  - 'edit terms in instrument_type'
+  - 'manage media'
   - 'masquerade as authenticated'
   - 'masquerade as contributor'
   - 'mint persistent identifiers'
   - 'revert dataset revisions'
   - 'revert page revisions'
+  - 'update media'
   - 'use dataset_workflow transition create_new_draft'
   - 'use dataset_workflow transition finalize_draft'
   - 'use dataset_workflow transition publish'
@@ -52,6 +93,10 @@ permissions:
   - 'use research_group_workflow transition publish'
   - 'use research_group_workflow transition unpublish'
   - 'view any unpublished content'
+  - 'view any unpublished dataset content'
+  - 'view digitalia_muni_entity'
+  - 'view digitalia_muni_entity revision'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view page revisions'
   - 'view the administration theme'

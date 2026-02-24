@@ -7,6 +7,8 @@ dependencies:
     - field.field.media.document.field_description
     - field.field.media.document.field_file_size
     - field.field.media.document.field_fits_file
+    - field.field.media.document.field_is_derived_from
+    - field.field.media.document.field_is_documentation
     - field.field.media.document.field_media_document
     - field.field.media.document.field_media_of
     - field.field.media.document.field_media_use
@@ -36,6 +38,8 @@ hidden:
   field_file_size: true
   field_fits_file: true
   field_gemini_uri: true
+  field_is_derived_from: true
+  field_is_documentation: true
   field_media_of: true
   field_media_use: true
   field_mime_type: true

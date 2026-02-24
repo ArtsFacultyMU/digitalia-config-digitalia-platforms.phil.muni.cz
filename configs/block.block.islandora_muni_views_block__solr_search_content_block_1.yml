@@ -12,7 +12,7 @@ dependencies:
 id: islandora_muni_views_block__solr_search_content_block_1
 theme: islandora_muni
 region: content
-weight: -14
+weight: -19
 provider: null
 plugin: 'views_block:solr_search_content-block_1'
 settings:

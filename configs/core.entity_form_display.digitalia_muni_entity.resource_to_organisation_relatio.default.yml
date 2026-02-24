@@ -1,0 +1,36 @@
+uuid: b8ca9b2f-5072-4c04-8cb9-ac0ff30b2ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_organisation_relatio
+    - field.field.digitalia_muni_entity.resource_to_organisation_relatio.field_agent_role
+    - field.field.digitalia_muni_entity.resource_to_organisation_relatio.field_related_organisation
+  module:
+    - inline_entity_form
+id: digitalia_muni_entity.resource_to_organisation_relatio.default
+targetEntityType: digitalia_muni_entity
+bundle: resource_to_organisation_relatio
+mode: default
+content:
+  field_agent_role:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_related_organisation:
+    type: inline_entity_form_simple
+    weight: 1
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

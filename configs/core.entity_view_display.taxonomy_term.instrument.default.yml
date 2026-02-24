@@ -1,0 +1,62 @@
+uuid: 50b3abc2-01ac-497f-8a23-253990d70228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.instrument.field_instrument_id
+    - field.field.taxonomy_term.instrument.field_instrument_manufacturer
+    - field.field.taxonomy_term.instrument.field_instrument_owner
+    - field.field.taxonomy_term.instrument.field_instrument_type
+    - field.field.taxonomy_term.instrument.field_links
+    - field.field.taxonomy_term.instrument.field_model
+    - taxonomy.vocabulary.instrument
+id: taxonomy_term.instrument.default
+targetEntityType: taxonomy_term
+bundle: instrument
+mode: default
+content:
+  field_instrument_id:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_instrument_manufacturer:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_instrument_owner:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_instrument_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_model:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  description: true
+  field_links: true
+  langcode: true
+  search_api_excerpt: true

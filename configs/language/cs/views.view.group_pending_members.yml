@@ -1,6 +1,9 @@
 display:
   default:
     display_options:
+      fields:
+        name:
+          label: Název
       arguments:
         gid:
           exception:

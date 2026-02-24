@@ -1,0 +1,90 @@
+uuid: 2146f47a-bdee-4ee6-8cb4-f42672ddcc44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.instrument.field_instrument_id
+    - field.field.taxonomy_term.instrument.field_instrument_manufacturer
+    - field.field.taxonomy_term.instrument.field_instrument_owner
+    - field.field.taxonomy_term.instrument.field_instrument_type
+    - field.field.taxonomy_term.instrument.field_links
+    - field.field.taxonomy_term.instrument.field_model
+    - taxonomy.vocabulary.instrument
+  module:
+    - link
+    - text
+id: taxonomy_term.instrument.default
+targetEntityType: taxonomy_term
+bundle: instrument
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_instrument_id:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_instrument_manufacturer:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_instrument_owner:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_instrument_type:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_links:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_model:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  path: true
+  status: true

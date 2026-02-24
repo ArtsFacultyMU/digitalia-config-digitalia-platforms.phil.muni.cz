@@ -1,0 +1,50 @@
+uuid: 2a897d9b-4f82-423c-a925-c1753c57313a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_is_derived_from
+    - media.type.3d_model
+    - media.type.archaeodata
+    - media.type.audio
+    - media.type.csv
+    - media.type.document
+    - media.type.extracted_text
+    - media.type.file
+    - media.type.fits_technical_metadata
+    - media.type.image
+    - media.type.remote_video
+    - media.type.sip
+    - media.type.video
+id: media.file.field_is_derived_from
+field_name: field_is_derived_from
+entity_type: media
+bundle: file
+label: 'Is derived from'
+description: 'Select the file that this file was created from.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      3d_model: 3d_model
+      archaeodata: archaeodata
+      audio: audio
+      csv: csv
+      document: document
+      extracted_text: extracted_text
+      fits_technical_metadata: fits_technical_metadata
+      file: file
+      image: image
+      remote_video: remote_video
+      sip: sip
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: 3d_model
+field_type: entity_reference

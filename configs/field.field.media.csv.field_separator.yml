@@ -9,8 +9,8 @@ id: media.csv.field_separator
 field_name: field_separator
 entity_type: media
 bundle: csv
-label: separator
-description: ''
+label: Separator
+description: "Defaults to ','"
 required: false
 translatable: false
 default_value: {  }

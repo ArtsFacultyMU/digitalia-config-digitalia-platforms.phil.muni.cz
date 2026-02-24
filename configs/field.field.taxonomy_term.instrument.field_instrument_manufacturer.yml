@@ -1,0 +1,19 @@
+uuid: 2c4c8e70-e38a-4b27-a8d2-99d14826a7a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_instrument_manufacturer
+    - taxonomy.vocabulary.instrument
+id: taxonomy_term.instrument.field_instrument_manufacturer
+field_name: field_instrument_manufacturer
+entity_type: taxonomy_term
+bundle: instrument
+label: Manufacturer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

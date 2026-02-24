@@ -377,6 +377,14 @@ field_settings:
         'entity:node':
           ':default': search_index
           dataset: ':default'
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   type:
     label: 'Content type'
     datasource_id: 'entity:node'
@@ -401,7 +409,9 @@ processor_settings:
   custom_value: {  }
   dgi_image_discovery: {  }
   edtf_date_processor:
-    fields: {  }
+    fields:
+      node|field_edtf_date_coverage: node|field_edtf_date_coverage
+      node|field_edtf_date_created: node|field_edtf_date_created
     open_start_year: '0'
     open_end_year: ''
     spring_date: '3'

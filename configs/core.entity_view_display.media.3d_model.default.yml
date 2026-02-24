@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.field.media.3d_model.field_description
     - field.field.media.3d_model.field_fits_file
+    - field.field.media.3d_model.field_is_derived_from
     - field.field.media.3d_model.field_media_file
+    - field.field.media.3d_model.field_media_of
+    - field.field.media.3d_model.field_media_use
     - media.type.3d_model
   module:
     - file
@@ -21,14 +24,22 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_fits_file:
     type: fits_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 6
+    region: content
+  field_is_derived_from:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_media_file:
     type: file_default
@@ -36,11 +47,27 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 2
+    weight: 1
+    region: content
+  field_media_of:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_use:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
     region: content
   name:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

@@ -9,6 +9,7 @@ dependencies:
   module:
     - comment
     - contact
+    - digitalia_muni_entity
     - filter
     - media
     - node
@@ -27,4 +28,5 @@ permissions:
   - 'restful get oai_pmh'
   - 'use text format restricted_html'
   - 'view dataset revisions'
+  - 'view digitalia_muni_entity'
   - 'view media'

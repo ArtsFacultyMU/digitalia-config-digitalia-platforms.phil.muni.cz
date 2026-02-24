@@ -6,7 +6,7 @@ name: ArchaeoVault
 mail: admin@example.com
 slogan: ''
 page:
-  403: ''
+  403: /node/2753
   404: ''
   front: /collections
 admin_compact_mode: false

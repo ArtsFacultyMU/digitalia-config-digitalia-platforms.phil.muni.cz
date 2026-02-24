@@ -1,0 +1,4 @@
+label: 'Je dokumentací datasetu'
+settings:
+  on_label: Ano
+  off_label: Ne

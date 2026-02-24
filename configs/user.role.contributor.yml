@@ -3,14 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.3d_model
+    - media.type.audio
+    - media.type.csv
+    - media.type.document
+    - media.type.extracted_text
+    - media.type.file
+    - media.type.image
+    - media.type.video
     - node.type.dataset
+    - taxonomy.vocabulary.instrument
+    - taxonomy.vocabulary.instrument_type
     - workflows.workflow.dataset_workflow
     - workflows.workflow.research_group_workflow
   module:
     - content_moderation
-    - group
+    - digitalia_muni_entity
+    - islandora
+    - media
     - node
     - system
+    - taxonomy
     - toolbar
 id: contributor
 label: Contributor
@@ -18,17 +31,41 @@ weight: 6
 is_admin: null
 permissions:
   - 'access content overview'
-  - 'access group overview'
   - 'access toolbar'
+  - 'create 3d_model media'
+  - 'create audio media'
+  - 'create csv media'
   - 'create dataset content'
-  - 'create research_group group'
+  - 'create digitalia_muni_entity'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create media'
+  - 'create terms in instrument'
+  - 'create terms in instrument_type'
+  - 'create video media'
+  - 'delete digitalia_muni_entity'
   - 'delete own dataset content'
+  - 'edit digitalia_muni_entity'
+  - 'edit own 3d_model media'
+  - 'edit own audio media'
+  - 'edit own csv media'
   - 'edit own dataset content'
+  - 'edit own document media'
+  - 'edit own extracted_text media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own video media'
+  - 'edit terms in instrument_type'
+  - 'manage media'
   - 'revert dataset revisions'
+  - 'update media'
   - 'use dataset_workflow transition create_new_draft'
   - 'use dataset_workflow transition submit_to_review'
   - 'use research_group_workflow transition edit_request'
   - 'use research_group_workflow transition publish'
   - 'use research_group_workflow transition unpublish'
+  - 'view digitalia_muni_entity'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view the administration theme'

@@ -9,6 +9,7 @@ dependencies:
     - field.field.digitalia_muni_entity.funding_reference.field_funding_program
     - field.field.digitalia_muni_entity.funding_reference.field_local_identifier
   module:
+    - inline_entity_form
     - link
 id: digitalia_muni_entity.funding_reference.default
 targetEntityType: digitalia_muni_entity
@@ -17,25 +18,28 @@ mode: default
 content:
   field_award_title:
     type: string_textfield
-    weight: 26
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_funder:
-    type: entity_reference_autocomplete
-    weight: 28
+    type: inline_entity_form_simple
+    weight: 0
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
     third_party_settings: {  }
   field_funding_program:
     type: link_default
-    weight: 27
+    weight: 2
     region: content
     settings:
       placeholder_url: ''
@@ -43,17 +47,11 @@ content:
     third_party_settings: {  }
   field_local_identifier:
     type: string_textfield
-    weight: 29
+    weight: 3
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

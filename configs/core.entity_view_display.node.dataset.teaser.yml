@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
     - field.field.node.dataset.field_assessment_type
+    - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
     - field.field.node.dataset.field_date_accepted
     - field.field.node.dataset.field_date_available
@@ -32,6 +33,7 @@ dependencies:
     - field.field.node.dataset.field_model
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
     - field.field.node.dataset.field_resource_type
     - field.field.node.dataset.field_series_information
@@ -42,7 +44,6 @@ dependencies:
     - field.field.node.dataset.field_temporal_subject
     - node.type.dataset
   module:
-    - controlled_access_terms
     - text
     - user
 id: node.dataset.teaser
@@ -52,51 +53,15 @@ mode: teaser
 content:
   field_abstract:
     type: text_trimmed
-    label: hidden
+    label: visually_hidden
     settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_doi:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_edtf_date_coverage:
-    type: edtf_default
-    label: inline
-    settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
-      year_format: 'y'
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_member_of:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_model:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: false
+      trim_length: 250
     third_party_settings: {  }
     weight: 1
     region: content
   field_subtitle:
     type: string
-    label: hidden
+    label: visually_hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -104,11 +69,11 @@ content:
     region: content
   field_tags:
     type: entity_reference_label
-    label: above
+    label: visually_hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 2
     region: content
 hidden:
   body: true
@@ -117,6 +82,7 @@ hidden:
   field_agent_relationship: true
   field_alternative_title: true
   field_assessment_type: true
+  field_creators_and_contributors: true
   field_data_service: true
   field_date_accepted: true
   field_date_available: true
@@ -125,7 +91,9 @@ hidden:
   field_date_updated: true
   field_date_valid: true
   field_date_withdrawn: true
+  field_doi: true
   field_edtf_date_collected: true
+  field_edtf_date_coverage: true
   field_edtf_date_created: true
   field_feature_specification: true
   field_feature_type: true
@@ -134,9 +102,12 @@ hidden:
   field_instrument: true
   field_language: true
   field_license: true
+  field_member_of: true
   field_methods: true
+  field_model: true
   field_object_specification: true
   field_object_type: true
+  field_related_people: true
   field_related_resource: true
   field_resource_type: true
   field_series_information: true
@@ -146,4 +117,5 @@ hidden:
   islandora_fits_checksum: true
   langcode: true
   links: true
+  media_of_entity_view_1: true
   search_api_excerpt: true

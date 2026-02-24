@@ -1,10 +1,31 @@
 display:
   default:
     display_options:
+      pager:
+        options:
+          tags:
+            first: '« První'
+            last: 'Poslední »'
+      header:
+        result:
+          content: '@start - @end z @total souborů v datasetu'
+      fields:
+        name:
+          label: Název
       arguments:
         field_media_of_target_id:
           exception:
             title: Vše
+  entity_view_1:
+    display_options:
+      title: 'Přehled datasetu'
+      fields:
+        name:
+          label: Název
+        field_file_size_value:
+          label: 'Velikost souboru'
+        field_is_derived_from:
+          label: 'Je odvozeno z'
   page_1:
     display_options:
       menu:
@@ -12,3 +33,10 @@ display:
       fields:
         media_bulk_form:
           action_title: Akce
+        name:
+          label: Název
+  rest_export_1:
+    display_options:
+      fields:
+        name:
+          label: Název

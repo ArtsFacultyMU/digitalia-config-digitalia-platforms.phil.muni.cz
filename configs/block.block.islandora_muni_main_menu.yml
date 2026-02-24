@@ -1,6 +1,6 @@
 uuid: 68cbd3f3-44de-4582-a2fb-b118146fee0e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main

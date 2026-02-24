@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_instrument
     - node.type.dataset
+    - taxonomy.vocabulary.instrument
 id: node.dataset.field_instrument
 field_name: field_instrument
 entity_type: node
@@ -16,7 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: eca
+  handler: 'default:filter_existing_terms'
   handler_settings:
-    field_name: field_instrument
+    target_bundles:
+      instrument: instrument
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

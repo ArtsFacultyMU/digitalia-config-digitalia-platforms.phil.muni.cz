@@ -1,0 +1,34 @@
+uuid: dcb782da-da99-4f69-9cc8-ff21b8c147d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.digitalia_muni_entity.ief_table
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_organisation_relatio
+    - field.field.digitalia_muni_entity.resource_to_organisation_relatio.field_agent_role
+    - field.field.digitalia_muni_entity.resource_to_organisation_relatio.field_related_organisation
+id: digitalia_muni_entity.resource_to_organisation_relatio.ief_table
+targetEntityType: digitalia_muni_entity
+bundle: resource_to_organisation_relatio
+mode: ief_table
+content:
+  field_agent_role:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_related_organisation:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

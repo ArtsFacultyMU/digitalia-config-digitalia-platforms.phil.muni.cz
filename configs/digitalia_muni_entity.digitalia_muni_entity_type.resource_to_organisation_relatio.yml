@@ -1,0 +1,6 @@
+uuid: a729f046-7502-4333-8f9c-06613e47cf18
+langcode: en
+status: true
+dependencies: {  }
+id: resource_to_organisation_relatio
+label: 'Resource to organisation relationship'

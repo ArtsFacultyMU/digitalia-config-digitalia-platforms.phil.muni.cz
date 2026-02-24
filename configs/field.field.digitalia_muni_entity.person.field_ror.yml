@@ -1,0 +1,19 @@
+uuid: 99189ed7-d4a5-4640-b5bb-b6b7fbeed708
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
+    - field.storage.digitalia_muni_entity.field_ror
+id: digitalia_muni_entity.person.field_ror
+field_name: field_ror
+entity_type: digitalia_muni_entity
+bundle: person
+label: 'ROR of affiliated organisation'
+description: 'ID from https://ror.org/search'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

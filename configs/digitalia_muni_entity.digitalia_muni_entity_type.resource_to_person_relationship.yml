@@ -1,0 +1,6 @@
+uuid: d6f3c31f-faba-4fc2-bf85-fa71882e6484
+langcode: en
+status: true
+dependencies: {  }
+id: resource_to_person_relationship
+label: 'Resource to person relationship'

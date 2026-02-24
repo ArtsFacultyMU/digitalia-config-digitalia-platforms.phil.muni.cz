@@ -10,7 +10,7 @@ id: node.dataset.field_funding_reference
 field_name: field_funding_reference
 entity_type: node
 bundle: dataset
-label: 'Funding reference'
+label: Funding
 description: 'Has reference for funding of a dataset acquisition.'
 required: false
 translatable: false

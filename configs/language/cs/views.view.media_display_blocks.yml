@@ -1,0 +1,11 @@
+display:
+  default:
+    display_options:
+      title: Náhled
+      pager:
+        options:
+          tags:
+            next: 'Další ›'
+            previous: '‹ Předchozí'
+            first: '« První'
+            last: 'Poslední »'

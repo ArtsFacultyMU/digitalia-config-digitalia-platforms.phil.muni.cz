@@ -6,6 +6,8 @@ dependencies:
     - field.storage.media.field_media_use
     - media.type.image
     - taxonomy.vocabulary.islandora_media_use
+  content:
+    - 'taxonomy_term:islandora_media_use:b41d5e18-7782-4caf-9fb1-28408cf121d3'
 _core:
   default_config_hash: bfstL81O8B-mDI8L3ueHM8dLjsJt7rTvPJRpEVXXSQ8
 id: media.image.field_media_use
@@ -16,10 +18,12 @@ label: 'Media Use'
 description: "Defined by <a href=\"https://pcdm.org/2015/05/12/use\">Portland Common Data Model: Use Extension</a>. 'Original File' will trigger creation of derivatives. 'Service File' will be shown on the node. Selecting multiple values is accepted. Derivatives where both the source and target terms are on the same media will be skipped."
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    target_uuid: b41d5e18-7782-4caf-9fb1-28408cf121d3
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
       islandora_media_use: islandora_media_use

@@ -1,0 +1,29 @@
+uuid: 8795f2da-f1ec-40f8-92bb-3d03ff77293a
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_organisation_relatio
+    - field.storage.digitalia_muni_entity.field_related_organisation
+id: digitalia_muni_entity.resource_to_organisation_relatio.field_related_organisation
+field_name: field_related_organisation
+entity_type: digitalia_muni_entity
+bundle: resource_to_organisation_relatio
+label: Organisation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digitalia_muni_entity'
+  handler_settings:
+    target_bundles:
+      organisation: organisation
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

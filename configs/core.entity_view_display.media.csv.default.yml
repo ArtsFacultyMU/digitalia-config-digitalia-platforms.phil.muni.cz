@@ -6,8 +6,10 @@ dependencies:
     - field.field.media.csv.field_enclosure
     - field.field.media.csv.field_file_size
     - field.field.media.csv.field_has_header
+    - field.field.media.csv.field_is_derived_from
     - field.field.media.csv.field_media_file
     - field.field.media.csv.field_media_of
+    - field.field.media.csv.field_media_use
     - field.field.media.csv.field_mime_type
     - field.field.media.csv.field_separator
     - media.type.csv
@@ -24,7 +26,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 5
+    weight: 8
     region: content
   field_file_size:
     type: number_integer
@@ -33,7 +35,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_has_header:
     type: boolean
@@ -45,11 +47,20 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
+  field_is_derived_from:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
   field_media_file:
     type: csvfile_formatter
     label: visually_hidden
     settings:
       csvfile_formatter_download_link: '1'
+      csvfile_formatter_has_header: '1'
       csvfile_formatter_separator: ','
       csvfile_formatter_enclosure: '"'
       csvfile_formatter_escape: \
@@ -58,12 +69,11 @@ content:
       csvfile_formatter_row_class: ''
       csvfile_formatter_use_datatables: '1'
       csvfile_formatter_download_link_after_table: 0
-      csvfile_formatter_has_header: 0
       csvfile_formatter_utf8_process: 0
       csvfile_formatter_sticky_headers: 0
       csvfile_formatter_smart_urls: 0
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_media_of:
     type: entity_reference_label
@@ -71,7 +81,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
+    region: content
+  field_media_use:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_mime_type:
     type: string
@@ -79,7 +97,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_separator:
     type: string
@@ -87,12 +105,19 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 4
+    weight: 7
+    region: content
+  name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true
   langcode: true
-  name: true
   search_api_excerpt: true
   thumbnail: true
   uid: true
