@@ -1,3 +1,4 @@
+label: Vztahy
 settings:
   rel_types:
     'schema:parent': Nadřazený

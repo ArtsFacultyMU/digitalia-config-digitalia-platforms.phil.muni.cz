@@ -1,6 +1,6 @@
 uuid: 4efda753-02c2-48ea-9e36-5035a7c51cdd
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - simple_block.simple_block.footer_links

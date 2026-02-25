@@ -7,5 +7,5 @@ dependencies:
 id: front_page_jumbotron
 title: 'Front page jumbotron'
 content:
-  value: '<p><span>ArchaeoVault</span><br><span>The Czech Archaeological Repository for Analytical Data</span></p>'
+  value: "<p><span>Digitalia Platforms</span><br><span>We've heard you like platforms...</span></p>"
   format: full_html

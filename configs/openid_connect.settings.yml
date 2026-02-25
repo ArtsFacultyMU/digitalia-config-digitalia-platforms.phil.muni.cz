@@ -24,7 +24,5 @@ role_mappings:
     - nic
   data_curator:
     - nic
-    - 'urn:geant:cesnet.cz:group:VO_repo_archaeovault_prod:repository_group_admins#perun.cesnet.cz'
   contributor:
     - nic
-    - 'urn:geant:cesnet.cz:group:VO_repo_archaeovault_prod#perun.cesnet.cz'
