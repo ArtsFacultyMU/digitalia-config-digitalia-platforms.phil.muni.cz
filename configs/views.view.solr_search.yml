@@ -789,7 +789,7 @@ display:
         title: Search
         description: ''
         weight: -49
-        enabled: false
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''
