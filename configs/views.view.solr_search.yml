@@ -162,7 +162,6 @@ display:
                   is_secondary: false
                   hide_label: false
                   field_classes: ''
-                  sort_options_unsupported: ''
               facets_field_temporal_subject_name:
                 plugin_id: default
                 advanced:
@@ -175,7 +174,6 @@ display:
                   is_secondary: false
                   hide_label: false
                   field_classes: ''
-                  sort_options_unsupported: ''
               facets_field_feature_specification_name:
                 plugin_id: default
                 advanced:
@@ -188,7 +186,6 @@ display:
                   is_secondary: false
                   hide_label: false
                   field_classes: ''
-                  sort_options_unsupported: ''
               facets_field_feature_type_name:
                 plugin_id: default
                 advanced:
@@ -201,7 +198,6 @@ display:
                   is_secondary: false
                   hide_label: false
                   field_classes: ''
-                  sort_options_unsupported: ''
       access:
         type: perm
         options:
