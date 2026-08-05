@@ -79,7 +79,7 @@
         "drupal/ief_table_view_mode": "^3.0",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/islandora": "^2.8.1",
-        "drupal/islandora_mirador": "^2",
+        "drupal/islandora_mirador": "^3",
         "drupal/leaflet": "^10.3",
         "drupal/masquerade": "^2.0",
         "drupal/metatag": "^2.2",
