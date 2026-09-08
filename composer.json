@@ -186,7 +186,7 @@
 		"Enable updating DOIs": "./patches/Dois.patch"
             },
             "drupal/openid_connect": {
-		"Use 'eduperson_entitlement' as source for group mappings": "./patches/OpenIDConnect.patch",
+		"Use 'eduperson_entitlement' as source for group mappings": "./patches/OpenIDConnect-3.0.0-alpha9.patch",
 		"textfield -> textarea": "./patches/OpenIDConnectSettingsForm.patch"
             },
             "drupal/csvfile_formatter": {
